@@ -1,0 +1,6 @@
+[
+    { "ID": 0, "ItemName": "Oedon Tomb Key", "LocationName": "Father Gascoigne", "Area": "Central Yharnam", "Important": true, "AdditionalRequirements": [] },
+    { "ID": 3, "ItemName": "Molotov Cocktail", "LocationName": "Second Item Near Gate Troll", "Area": "Central Yharnam", "Important": false, "AdditionalRequirements": [] },
+    { "ID": 1, "ItemName": "Lead Elixir", "LocationName": "Dropped by Axe NPC", "Area": "Nightmare Frontier", "Important": false, "AdditionalRequirements": [] },
+    { "ID": 2, "ItemName": "Tonsil Stone", "LocationName": "Given by Patches", "Area": "Cathedral Ward", "Important": true, "AdditionalRequirements": [] }
+]

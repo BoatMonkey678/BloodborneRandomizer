@@ -1,0 +1,5 @@
+[
+    { "Name": "Central Yharnam", "Initial": true, "Requirements": [], "Connections": ["Cathedral Ward"] },
+    { "Name": "Cathedral Ward", "Initial": false, "Requirements": [0], "Connections": ["Nightmare Frontier"] },
+    { "Name": "Nightmare Frontier", "Initial": false, "Requirements": [2], "Connections": [] }
+]
