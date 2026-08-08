@@ -6,15 +6,10 @@
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
   </PropertyGroup>
-
   <ItemGroup>
-    <PackageReference Include="Newtonsoft.Json" Version="13.0.4" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <Compile Remove="ItemLotGenerator\**\*.cs" />
-    <EmbeddedResource Remove="ItemLotGenerator\**" />
-    <None Remove="ItemLotGenerator\**" />
+    <Reference Include="SoulsFormatsNEXT">
+      <HintPath>.\SoulsFormats.dll</HintPath>
+    </Reference>
   </ItemGroup>
 
 </Project>
