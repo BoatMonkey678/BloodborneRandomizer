@@ -12,7 +12,7 @@ class Program
         {
 
             #pragma warning disable CS8602 // Dereference of a possibly null reference.
-            Console.WriteLine($"{randomizer.GetItemLotByID(pair.Key).LocationName}: {randomizer.GetItemLotByID(pair.Value).ItemName}");
+            Console.WriteLine($"{pair.Key}: {randomizer.GetItemLotByID(pair.Value).ItemName}");
             #pragma warning restore CS8602 // Dereference of a possibly null reference.
         }
     }
