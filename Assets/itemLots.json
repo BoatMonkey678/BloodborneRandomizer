@@ -196,15 +196,7 @@
     "ItemName": "Rune Workshop Tool",
     "LocationName": "",
     "Area": "Hemwick Charnel Lane",
-    "Important": false,
-    "Missable": false
-  },
-  {
-    "ID": 2200365,
-    "ItemName": "Kin Coldblood (12)",
-    "LocationName": "",
-    "Area": "Hemwick Charnel Lane",
-    "Important": false,
+    "Important": true,
     "Missable": false
   },
   {
@@ -1091,8 +1083,8 @@
     "ID": 2400480,
     "ItemName": "Radiant Sword Hunter Badge",
     "LocationName": "",
-    "Area": "Cathedral Ward",
-    "Important": false,
+    "Area": "Healing Church Workshop",
+    "Important": true,
     "Missable": false
   },
   {
@@ -1284,15 +1276,7 @@
     "ItemName": "Saw Hunter Badge",
     "LocationName": "",
     "Area": "Central Yharnam",
-    "Important": false,
-    "Missable": false
-  },
-  {
-    "ID": 2410295,
-    "ItemName": "Bold Hunter's Mark",
-    "LocationName": "",
-    "Area": "Central Yharnam",
-    "Important": false,
+    "Important": true,
     "Missable": false
   },
   {
@@ -1539,7 +1523,7 @@
     "ID": 42000,
     "ItemName": "White Messenger Ribbon",
     "LocationName": "",
-    "Area": "Central Yharnam",
+    "Area": "Moonside Lake",
     "Important": false,
     "Missable": false
   },
@@ -1555,16 +1539,8 @@
     "ID": 2411000,
     "ItemName": "Blood Gem Workshop Tool",
     "LocationName": "",
-    "Area": "Central Yharnam",
-    "Important": false,
-    "Missable": false
-  },
-  {
-    "ID": 2411005,
-    "ItemName": "Kin Coldblood (12)",
-    "LocationName": "",
-    "Area": "Central Yharnam",
-    "Important": false,
+    "Area": "Cathedral Ward",
+    "Important": true,
     "Missable": false
   },
   {
@@ -1684,15 +1660,7 @@
     "ItemName": "Cosmic Eye Watcher Badge",
     "LocationName": "",
     "Area": "Upper Cathedral Ward",
-    "Important": false,
-    "Missable": false
-  },
-  {
-    "ID": 2420275,
-    "ItemName": "Bold Hunter's Mark",
-    "LocationName": "",
-    "Area": "Upper Cathedral Ward",
-    "Important": false,
+    "Important": true,
     "Missable": false
   },
   {
@@ -1701,7 +1669,8 @@
     "LocationName": "",
     "Area": "Upper Cathedral Ward",
     "Important": false,
-    "Missable": false
+    "Missable": false,
+    "AdditionalRequirements": [2420900]
   },
   {
     "ID": 2420310,
@@ -1717,7 +1686,8 @@
     "LocationName": "",
     "Area": "Upper Cathedral Ward",
     "Important": false,
-    "Missable": false
+    "Missable": false,
+    "AdditionalRequirements": [2420900]
   },
   {
     "ID": 2500100,
@@ -2220,7 +2190,7 @@
     "ItemName": "Iron Door Key",
     "LocationName": "",
     "Area": "Nightmare of Mensis",
-    "Important": false,
+    "Important": true,
     "Missable": false
   },
   {
@@ -3116,7 +3086,7 @@
     "ItemName": "Upper Cathedral Key",
     "LocationName": "",
     "Area": "Yahar'gul, Unseen Village",
-    "Important": false,
+    "Important": true,
     "Missable": false
   },
   {
@@ -3131,7 +3101,7 @@
     "ID": 2800310,
     "ItemName": "Twin Blood Stone Shards",
     "LocationName": "",
-    "Area": "Yahar'gul, Unseen Village",
+    "Area": "Hypogean Gaol",
     "Important": false,
     "Missable": false
   },
@@ -3139,7 +3109,7 @@
     "ID": 2800320,
     "ItemName": "Frenzied Coldblood (7)",
     "LocationName": "",
-    "Area": "Yahar'gul, Unseen Village",
+    "Area": "Hypogean Gaol",
     "Important": false,
     "Missable": false
   },
@@ -3147,7 +3117,7 @@
     "ID": 2800330,
     "ItemName": "Tonitrus",
     "LocationName": "",
-    "Area": "Yahar'gul, Unseen Village",
+    "Area": "Hypogean Gaol",
     "Important": false,
     "Missable": false
   },
@@ -3155,7 +3125,7 @@
     "ID": 2800340,
     "ItemName": "Bolt Paper x5",
     "LocationName": "",
-    "Area": "Yahar'gul, Unseen Village",
+    "Area": "Hypogean Gaol",
     "Important": false,
     "Missable": false
   },
@@ -3168,10 +3138,26 @@
     "Missable": false
   },
   {
+    "ID": 32000,
+    "ItemName": "Madman's Knowledge",
+    "LocationName": "",
+    "Area": "Hypogean Gaol",
+    "Important": false,
+    "Missable": true
+  },
+  {
+    "ID": 32010,
+    "ItemName": "Oedon Writhe Lv1",
+    "LocationName": "",
+    "Area": "Hypogean Gaol",
+    "Important": false,
+    "Missable": true
+  },
+  {
     "ID": 2800380,
     "ItemName": "Frenzied Coldblood (8)",
     "LocationName": "",
-    "Area": "Yahar'gul, Unseen Village",
+    "Area": "Hypogean Gaol",
     "Important": false,
     "Missable": false
   },
@@ -3211,7 +3197,7 @@
     "ID": 2800610,
     "ItemName": "Black Hooded Iron Helm",
     "LocationName": "",
-    "Area": "Yahar'gul, Unseen Village",
+    "Area": "Hypogean Gaol",
     "Important": false,
     "Missable": false
   },
@@ -3219,7 +3205,7 @@
     "ID": 2800611,
     "ItemName": "Yahar'gul Black Garb",
     "LocationName": "",
-    "Area": "Yahar'gul, Unseen Village",
+    "Area": "Hypogean Gaol",
     "Important": false,
     "Missable": false
   },
@@ -3227,7 +3213,7 @@
     "ID": 2800612,
     "ItemName": "Yahar'gul Black Gloves",
     "LocationName": "",
-    "Area": "Yahar'gul, Unseen Village",
+    "Area": "Hypogean Gaol",
     "Important": false,
     "Missable": false
   },
@@ -3235,7 +3221,7 @@
     "ID": 2800613,
     "ItemName": "Yahar'gul Black Trousers",
     "LocationName": "",
-    "Area": "Yahar'gul, Unseen Village",
+    "Area": "Hypogean Gaol",
     "Important": false,
     "Missable": false
   },
@@ -3243,7 +3229,7 @@
     "ID": 2800630,
     "ItemName": "Frenzied Coldblood (7)",
     "LocationName": "",
-    "Area": "Yahar'gul, Unseen Village",
+    "Area": "Hypogean Gaol",
     "Important": false,
     "Missable": false
   },
@@ -3251,7 +3237,7 @@
     "ID": 2800640,
     "ItemName": "Thick Coldblood (6)",
     "LocationName": "",
-    "Area": "Yahar'gul, Unseen Village",
+    "Area": "Hypogean Gaol",
     "Important": false,
     "Missable": false
   },
@@ -3259,7 +3245,7 @@
     "ID": 2800650,
     "ItemName": "Blood Vial x6",
     "LocationName": "",
-    "Area": "Yahar'gul, Unseen Village",
+    "Area": "Hypogean Gaol",
     "Important": false,
     "Missable": false
   },
@@ -3267,7 +3253,7 @@
     "ID": 2800660,
     "ItemName": "Quicksilver Bullets x10",
     "LocationName": "",
-    "Area": "Yahar'gul, Unseen Village",
+    "Area": "Hypogean Gaol",
     "Important": false,
     "Missable": false
   },
@@ -3291,7 +3277,7 @@
     "ID": 2800620,
     "ItemName": "Madman's Knowledge",
     "LocationName": "",
-    "Area": "Yahar'gul, Unseen Village",
+    "Area": "Hypogean Gaol",
     "Important": false,
     "Missable": false
   },
@@ -3299,7 +3285,7 @@
     "ID": 2800690,
     "ItemName": "Madman's Knowledge",
     "LocationName": "",
-    "Area": "Yahar'gul, Unseen Village",
+    "Area": "Hypogean Gaol",
     "Important": false,
     "Missable": false
   },
@@ -3307,7 +3293,7 @@
     "ID": 2800700,
     "ItemName": "Madman's Knowledge",
     "LocationName": "",
-    "Area": "Yahar'gul, Unseen Village",
+    "Area": "Hypogean Gaol",
     "Important": false,
     "Missable": false
   },
@@ -3323,23 +3309,23 @@
     "ID": 3200720,
     "ItemName": "Lecture Theatre Key",
     "LocationName": "",
-    "Area": "Byrgenwerth",
-    "Important": false,
+    "Area": "Lecture Building - 1F",
+    "Important": true,
     "Missable": false
   },
   {
     "ID": 3200730,
     "ItemName": "Student Uniform (Not Red)",
     "LocationName": "",
-    "Area": "Byrgenwerth",
+    "Area": "Lecture Building - 1F",
     "Important": false,
     "Missable": false
   },
   {
     "ID": 3200731,
-    "ItemName": "Student Trousers",
+    "ItemName": "Student Trousers (Not Red)",
     "LocationName": "",
-    "Area": "Byrgenwerth",
+    "Area": "Lecture Building - 1F",
     "Important": false,
     "Missable": false
   },
@@ -3395,7 +3381,7 @@
     "ID": 3200110,
     "ItemName": "Sedative x6",
     "LocationName": "",
-    "Area": "Byrgenwerth",
+    "Area": "Lecture Building - 2F",
     "Important": false,
     "Missable": false
   },
@@ -3411,7 +3397,7 @@
     "ID": 3200750,
     "ItemName": "Blood Stone Chunk",
     "LocationName": "",
-    "Area": "Byrgenwerth",
+    "Area": "Lecture Building - 2F",
     "Important": false,
     "Missable": false
   },
@@ -3451,17 +3437,19 @@
     "ID": 3200600,
     "ItemName": "Augur of Ebrietas",
     "LocationName": "",
-    "Area": "Byrgenwerth",
+    "Area": "Lecture Building - 1F",
     "Important": false,
-    "Missable": false
+    "Missable": false,
+    "AdditionalRequirements": [3200720]
   },
   {
     "ID": 3200620,
     "ItemName": "Red Jelly x2",
     "LocationName": "",
-    "Area": "Byrgenwerth",
+    "Area": "Lecture Building - 1F",
     "Important": false,
-    "Missable": false
+    "Missable": false,
+    "AdditionalRequirements": []
   },
   {
     "ID": 3200640,
@@ -4269,6 +4257,56 @@
     "LocationName": "",
     "Area": "Research Hall",
     "Important": false,
+    "Missable": false,
+    "AdditionalRequirements": [43010]
+  },
+  {
+    "ID": 43010,
+    "ItemName": "Balcony Key",
+    "LocationName": "",
+    "Area": "Research Hall",
+    "Important": false,
+    "Missable": false,
+    "AdditionalRequirements": [43400, 43500]
+  },
+  {
+    "ID": 43020,
+    "ItemName": "Milkweed",
+    "LocationName": "",
+    "Area": "Research Hall",
+    "Important": true,
+    "Missable": true
+  },
+  {
+    "ID": 43040,
+    "ItemName": "Brain Fluid",
+    "LocationName": "",
+    "Area": "Research Hall",
+    "Important": true,
+    "Missable": true
+  },
+  {
+    "ID": 43120,
+    "ItemName": "League",
+    "LocationName": "",
+    "Area": "Forbidden Woods",
+    "Important": false,
+    "Missable": true
+  },
+  {
+    "ID": 43130,
+    "ItemName": "League Staff",
+    "LocationName": "",
+    "Area": "Hunter's Nightmare",
+    "Important": false,
+    "Missable": true
+  },
+  {
+    "ID": 43200,
+    "ItemName": "Simon's Bowblade",
+    "LocationName": "",
+    "Area": "Hunter's Nightmare",
+    "Important": false,
     "Missable": false
   },
   {
@@ -4277,7 +4315,8 @@
     "LocationName": "",
     "Area": "Research Hall",
     "Important": false,
-    "Missable": false
+    "Missable": false,
+    "AdditionalRequirements": [43010]
   },
   {
     "ID": 3500110,
@@ -4299,9 +4338,10 @@
     "ID": 3500130,
     "ItemName": "Frenzied Coldblood (9)",
     "LocationName": "",
-    "Area": "Research Hall",
+    "Area": "Hunter's Nightmare",
     "Important": false,
-    "Missable": false
+    "Missable": false,
+    "AdditionalRequirements": [3500800]
   },
   {
     "ID": 3500140,
@@ -4364,7 +4404,7 @@
     "ItemName": "Underground Cell Key",
     "LocationName": "",
     "Area": "Research Hall",
-    "Important": false,
+    "Important": true,
     "Missable": false
   },
   {
@@ -4459,7 +4499,7 @@
     "ID": 3500840,
     "ItemName": "Great One's Wisdom",
     "LocationName": "",
-    "Area": "Research Hall",
+    "Area": "Hunter's Nightmare",
     "Important": false,
     "Missable": false
   },
@@ -4467,7 +4507,7 @@
     "ID": 3500530,
     "ItemName": "Blood Stone Chunk",
     "LocationName": "",
-    "Area": "Research Hall",
+    "Area": "Hunter's Nightmare",
     "Important": false,
     "Missable": false
   },
@@ -4483,15 +4523,16 @@
     "ID": 3500600,
     "ItemName": "Frenzied Coldblood (9)",
     "LocationName": "",
-    "Area": "Research Hall",
+    "Area": "Hunter's Nightmare",
     "Important": false,
-    "Missable": false
+    "Missable": false,
+    "AdditionalRequirements": [3500800]
   },
   {
     "ID": 3500810,
     "ItemName": "Fist of Gratia",
     "LocationName": "",
-    "Area": "Research Hall",
+    "Area": "Hunter's Nightmare",
     "Important": false,
     "Missable": false
   },
@@ -4517,7 +4558,8 @@
     "LocationName": "",
     "Area": "Research Hall",
     "Important": false,
-    "Missable": false
+    "Missable": false,
+    "AdditionalRequirements": [43010]
   },
   {
     "ID": 3600000,
@@ -4868,8 +4910,33 @@
     "ItemName": "Underground Cell Inner Chamber Key",
     "LocationName": "",
     "Area": "Fishing Hamlet",
-    "Important": false,
+    "Important": true,
     "Missable": false
+  },
+  {
+    "ID": 43400,
+    "ItemName": "Brain Fluid",
+    "LocationName": "",
+    "Area": "Research Hall",
+    "Important": true,
+    "Missable": false
+  },
+  {
+    "ID": 43500,
+    "ItemName": "Brain Fluid",
+    "LocationName": "",
+    "Area": "Research Hall",
+    "Important": true,
+    "Missable": false
+  },
+  {
+    "ID": 43600,
+    "ItemName": "Accursed Brew",
+    "LocationName": "",
+    "Area": "Research Hall",
+    "Important": false,
+    "Missable": true,
+    "AdditionalRequirements": [43020]
   },
   {
     "ID": 15000,
@@ -4884,7 +4951,7 @@
     "ItemName": "Notebook",
     "LocationName": "",
     "Area": "Hunter's Dream",
-    "Important": true,
+    "Important": false,
     "Missable": false
   },
   {
@@ -4892,7 +4959,7 @@
     "ItemName": "Beckoning Bell",
     "LocationName": "",
     "Area": "Hunter's Dream",
-    "Important": true,
+    "Important": false,
     "Missable": false
   },
   {
@@ -4900,7 +4967,7 @@
     "ItemName": "Silencing Blank",
     "LocationName": "",
     "Area": "Hunter's Dream",
-    "Important": true,
+    "Important": false,
     "Missable": false
   },
   {
@@ -4908,7 +4975,7 @@
     "ItemName": "Old Hunter Bell",
     "LocationName": "",
     "Area": "Hunter's Dream",
-    "Important": true,
+    "Important": false,
     "Missable": false
   },
   {
@@ -4920,51 +4987,127 @@
     "Missable": false
   },
   {
-    "ID": 2100900,
-    "ItemName": "Yharnam Messenger Hat",
+    "ID": 43700,
+    "ItemName": "Bloodletter",
     "LocationName": "",
-    "Area": "Hunter's Dream",
+    "Area": "Hunter's Nightmare",
     "Important": false,
-    "Missable": false
+    "Missable": false,
+    "AdditionalRequirements": [43221]
   },
   {
-    "ID": 2100910,
-    "ItemName": "Worn Messenger Top Hat",
+    "ID": 43710,
+    "ItemName": "Brador's Testimony",
     "LocationName": "",
-    "Area": "Hunter's Dream",
+    "Area": "Fishing Hamlet",
     "Important": false,
-    "Missable": false
+    "Missable": false,
+    "AdditionalRequirements": []
   },
   {
-    "ID": 2100920,
-    "ItemName": "Messenger Head Bandage",
+    "ID": 43720,
+    "ItemName": "Beast Hide Garb",
     "LocationName": "",
-    "Area": "Hunter's Dream",
+    "Area": "Fishing Hamlet",
     "Important": false,
-    "Missable": false
+    "Missable": false,
+    "AdditionalRequirements": []
+  },
+  {
+    "ID": 43730,
+    "ItemName": "Bloodied Arm Bands",
+    "LocationName": "",
+    "Area": "Fishing Hamlet",
+    "Important": false,
+    "Missable": false,
+    "AdditionalRequirements": []
+  },
+  {
+    "ID": 43800,
+    "ItemName": "Firing Hammer Badge",
+    "LocationName": "",
+    "Area": "Hunter's Nightmare",
+    "Important": true,
+    "Missable": false,
+    "AdditionalRequirements": []
+  },
+  {
+    "ID": 43810,
+    "ItemName": "Gatling Gun",
+    "LocationName": "",
+    "Area": "Hunter's Nightmare",
+    "Important": false,
+    "Missable": false,
+    "AdditionalRequirements": []
+  },
+  {
+    "ID": 43820,
+    "ItemName": "Church Pick",
+    "LocationName": "",
+    "Area": "Hunter's Nightmare",
+    "Important": false,
+    "Missable": false,
+    "AdditionalRequirements": [3500800]
+  },
+  {
+    "ID": 43830,
+    "ItemName": "Yamamura Hunter Hat",
+    "LocationName": "",
+    "Area": "Hunter's Nightmare",
+    "Important": false,
+    "Missable": false,
+    "AdditionalRequirements": [3500800]
+  },
+  {
+    "ID": 43831,
+    "ItemName": "Khaki Haori",
+    "LocationName": "",
+    "Area": "Hunter's Nightmare",
+    "Important": false,
+    "Missable": false,
+    "AdditionalRequirements": [3500800]
+  },
+  {
+    "ID": 43832,
+    "ItemName": "Old Hunter Arm Bands",
+    "LocationName": "",
+    "Area": "Hunter's Nightmare",
+    "Important": false,
+    "Missable": false,
+    "AdditionalRequirements": [3500800]
+  },
+  {
+    "ID": 43833,
+    "ItemName": "Wine Hakama",
+    "LocationName": "",
+    "Area": "Hunter's Nightmare",
+    "Important": false,
+    "Missable": false,
+    "AdditionalRequirements": [3500800]
+  },
+  {
+    "ID": 43740,
+    "ItemName": "Bloodied Trousers",
+    "LocationName": "",
+    "Area": "Fishing Hamlet",
+    "Important": false,
+    "Missable": false,
+    "AdditionalRequirements": []
   },
   {
     "ID": 2110800,
     "ItemName": "Small Hair Ornament",
     "LocationName": "",
     "Area": "Abandoned Old Workshop",
-    "Important": false,
-    "Missable": false
-  },
-  {
-    "ID": 2110810,
-    "ItemName": "One Third of Umbilical Cord (Workshop)",
-    "LocationName": "",
-    "Area": "Abandoned Old Workshop",
     "Important": true,
     "Missable": false
   },
   {
-    "ID": 2110000,
-    "ItemName": "Old Hunter Bone",
+    "ID": 2110810,
+    "ItemName": "One Third of Umbilical Cord",
     "LocationName": "",
     "Area": "Abandoned Old Workshop",
-    "Important": false,
+    "Important": true,
     "Missable": false
   },
   {
@@ -4987,7 +5130,7 @@
     "ID": 50800000,
     "ItemName": "Spark Hunter Badge",
     "LocationName": "",
-    "Area": "Old Yharnam",
+    "Area": "Hypogean Gaol",
     "Important": true,
     "Missable": false
   },
@@ -5003,7 +5146,7 @@
     "ID": 37000,
     "ItemName": "Madman's Knowledge",
     "LocationName": "",
-    "Area": "Cathedral Ward",
+    "Area": "Forbidden Woods",
     "Important": false,
     "Missable": false
   },
@@ -5011,7 +5154,7 @@
     "ID": 75002400,
     "ItemName": "Beast Lv1",
     "LocationName": "",
-    "Area": "Cathedral Ward",
+    "Area": "Healing Church Workshop",
     "Important": true,
     "Missable": false
   },
@@ -5032,6 +5175,22 @@
     "Missable": false
   },
   {
+    "ID": 35000,
+    "ItemName": "Bold Hunter's Mark x4",
+    "LocationName": "",
+    "Area": "Central Yharnam",
+    "Important": false,
+    "Missable": true
+  },
+  {
+    "ID": 35010,
+    "ItemName": "Hunter",
+    "LocationName": "",
+    "Area": "Moonside Lake",
+    "Important": false,
+    "Missable": true
+  },
+  {
     "ID": 31000,
     "ItemName": "Oedon Tomb Key",
     "LocationName": "",
@@ -5043,7 +5202,7 @@
     "ID": 2410990,
     "ItemName": "Cainhurst Summons",
     "LocationName": "",
-    "Area": "Central Yharnam",
+    "Area": "Forbidden Woods",
     "Important": true,
     "Missable": false
   },
@@ -5061,7 +5220,8 @@
     "LocationName": "",
     "Area": "Upper Cathedral Ward",
     "Important": true,
-    "Missable": false
+    "Missable": false,
+    "AdditionalRequirements": [2420900]
   },
   {
     "ID": 25700000,
@@ -5069,7 +5229,8 @@
     "LocationName": "",
     "Area": "Upper Cathedral Ward",
     "Important": false,
-    "Missable": false
+    "Missable": false,
+    "AdditionalRequirements": [2420900]
   },
   {
     "ID": 2502000,
@@ -5108,7 +5269,7 @@
   },
   {
     "ID": 55100000,
-    "ItemName": "One Third of Umbilical Cord (Mergo)",
+    "ItemName": "One Third of Umbilical Cord",
     "LocationName": "",
     "Area": "Nightmare of Mensis",
     "Important": true,
@@ -5145,6 +5306,30 @@
     "Area": "Forbidden Woods",
     "Important": false,
     "Missable": false
+  },
+  {
+    "ID": 39000,
+    "ItemName": "Tonsil Stone",
+    "LocationName": "",
+    "Area": "Forbidden Woods",
+    "Important": true,
+    "Missable": true
+  },
+  {
+    "ID": 39010,
+    "ItemName": "Anti-Clockwise Metamorphosis Lv2",
+    "LocationName": "",
+    "Area": "Lecture Building - 2F",
+    "Important": false,
+    "Missable": true
+  },
+  {
+    "ID": 39020,
+    "ItemName": "Great One's Wisdom",
+    "LocationName": "",
+    "Area": "Lecture Building - 2F",
+    "Important": false,
+    "Missable": true
   },
   {
     "ID": 43100,
@@ -5232,7 +5417,8 @@
     "LocationName": "",
     "Area": "Hunter's Nightmare",
     "Important": false,
-    "Missable": false
+    "Missable": false,
+    "AdditionalRequirements": [3502000]
   },
   {
     "ID": 3401810,
@@ -5284,7 +5470,7 @@
   },
   {
     "ID": 24075,
-    "ItemName": "One Third of Umbilical Cord (Iosefka)",
+    "ItemName": "One Third of Umbilical Cord",
     "LocationName": "",
     "Area": "Moonside Lake",
     "Important": true,
@@ -5299,12 +5485,164 @@
     "Missable": true
   },
   {
+    "ID": 24000,
+    "ItemName": "Numbing Mist x2",
+    "LocationName": "",
+    "Area": "Cathedral Ward",
+    "Important": false,
+    "Missable": true
+  },
+  {
+    "ID": 24010,
+    "ItemName": "Numbing Mist x2",
+    "LocationName": "",
+    "Area": "Cathedral Ward",
+    "Important": false,
+    "Missable": true
+  },
+  {
+    "ID": 24020,
+    "ItemName": "Beast Blood Pellet x2",
+    "LocationName": "",
+    "Area": "Forbidden Woods",
+    "Important": false,
+    "Missable": true
+  },
+  {
+    "ID": 24030,
+    "ItemName": "Numbing Mist x2",
+    "LocationName": "",
+    "Area": "Forbidden Woods",
+    "Important": false,
+    "Missable": true
+  },
+  {
+    "ID": 24040,
+    "ItemName": "Numbing Mist x2",
+    "LocationName": "",
+    "Area": "Forbidden Woods",
+    "Important": false,
+    "Missable": true
+  },
+  {
+    "ID": 24050,
+    "ItemName": "Lead Elixir x2",
+    "LocationName": "",
+    "Area": "Forbidden Woods",
+    "Important": false,
+    "Missable": true
+  },
+  {
+    "ID": 24060,
+    "ItemName": "Blue Elixir x3",
+    "LocationName": "",
+    "Area": "Forbidden Woods",
+    "Important": false,
+    "Missable": true
+  },
+  {
     "ID": 26040,
     "ItemName": "Sedative",
     "LocationName": "",
     "Area": "Cathedral Ward",
     "Important": false,
     "Missable": true
+  },
+  {
+    "ID": 27000,
+    "ItemName": "Pungent Blood Cocktail x2",
+    "LocationName": "",
+    "Area": "Forbidden Woods",
+    "Important": false,
+    "Missable": true
+  },
+  {
+    "ID": 27010,
+    "ItemName": "Beast Blood Pellet x2",
+    "LocationName": "",
+    "Area": "Forbidden Woods",
+    "Important": false,
+    "Missable": true
+  },
+  {
+    "ID": 27020,
+    "ItemName": "Beast Blood Pellet x3",
+    "LocationName": "",
+    "Area": "Forbidden Woods",
+    "Important": false,
+    "Missable": true
+  },
+  {
+    "ID": 27030,
+    "ItemName": "Beast Blood Pellet x2",
+    "LocationName": "",
+    "Area": "Forbidden Woods",
+    "Important": false,
+    "Missable": true
+  },
+  {
+    "ID": 27040,
+    "ItemName": "Beast Blood Pellet x2",
+    "LocationName": "",
+    "Area": "Forbidden Woods",
+    "Important": false,
+    "Missable": true
+  },
+  {
+    "ID": 27050,
+    "ItemName": "Beast Blood Pellet x3",
+    "LocationName": "",
+    "Area": "Forbidden Woods",
+    "Important": false,
+    "Missable": true
+  },
+  {
+    "ID": 27060,
+    "ItemName": "Beast Blood Pellet x2",
+    "LocationName": "",
+    "Area": "Forbidden Woods",
+    "Important": false,
+    "Missable": true
+  },
+  {
+    "ID": 29000,
+    "ItemName": "Flamesprayer",
+    "LocationName": "",
+    "Area": "Cathedral Ward",
+    "Important": false,
+    "Missable": true
+  },
+  {
+    "ID": 30000,
+    "ItemName": "Tiny Music Box",
+    "LocationName": "",
+    "Area": "Central Yharnam",
+    "Important": false,
+    "Missable": true
+  },
+  {
+    "ID": 30020,
+    "ItemName": "Formless Oedon Lv1",
+    "LocationName": "",
+    "Area": "Forbidden Woods",
+    "Important": false,
+    "Missable": true
+  },
+  {
+    "ID": 30010,
+    "ItemName": "Red Messenger Ribbon",
+    "LocationName": "",
+    "Area": "Cathedral Ward",
+    "Important": false,
+    "Missable": true
+  },
+  {
+    "ID": 29010,
+    "ItemName": "Clawmark Lv2",
+    "LocationName": "",
+    "Area": "Yahar'gul, Unseen Village",
+    "Important": false,
+    "Missable": false
   },
   {
     "ID": 22000,
@@ -5339,11 +5677,43 @@
     "Missable": true
   },
   {
-    "ID": 32030,
-    "ItemName": "Oedon Writhe Lv1",
+    "ID": 26000,
+    "ItemName": "Sedative x3",
     "LocationName": "",
-    "Area": "TBA",
+    "Area": "Cathedral Ward",
     "Important": false,
+    "Missable": true
+  },
+  {
+    "ID": 26010,
+    "ItemName": "Sedative x2",
+    "LocationName": "",
+    "Area": "Cathedral Ward",
+    "Important": false,
+    "Missable": true
+  },
+  {
+    "ID": 26020,
+    "ItemName": "Sedative",
+    "LocationName": "",
+    "Area": "Cathedral Ward",
+    "Important": false,
+    "Missable": true
+  },
+  {
+    "ID": 26030,
+    "ItemName": "Sedative",
+    "LocationName": "",
+    "Area": "Cathedral Ward",
+    "Important": false,
+    "Missable": true
+  },
+  {
+    "ID": 28040,
+    "ItemName": "One Third of Umbilical Cord",
+    "LocationName": "",
+    "Area": "Moonside Lake",
+    "Important": true,
     "Missable": true
   },
   {
@@ -5355,7 +5725,7 @@
     "Missable": true
   },
   {
-    "ID": 34031,
+    "ID": 34010,
     "ItemName": "Wheel Hunter Badge",
     "LocationName": "",
     "Area": "Forsaken Castle Cainhurst",
@@ -5366,7 +5736,7 @@
     "ID": 34020,
     "ItemName": "Radiance",
     "LocationName": "",
-    "Area": "Forbidden Woods",
+    "Area": "Forsaken Castle Cainhurst",
     "Important": false,
     "Missable": true,
     "AdditionalRequirements": [2502000]
@@ -5380,7 +5750,7 @@
     "Missable": true
   },
   {
-    "ID": 35020,
+    "ID": 35012,
     "ItemName": "Crow Hunter Badge",
     "LocationName": "",
     "Area": "Moonside Lake",
@@ -5388,7 +5758,7 @@
     "Missable": true
   },
   {
-    "ID": 33010,
+    "ID": 33000,
     "ItemName": "Powder Keg Hunter Badge",
     "LocationName": "",
     "Area": "Old Yharnam",
@@ -5455,7 +5825,7 @@
     "ID": 56000,
     "ItemName": "Blood Rapture Lv3",
     "LocationName": "",
-    "Area": "TBA",
+    "Area": "Moonside Lake",
     "Important": false,
     "Missable": true
   },
@@ -5514,5 +5884,14 @@
     "Area": "Research Hall",
     "Important": false,
     "Missable": false
+  },
+  {
+    "ID": 14000,
+    "ItemName": "Tear Stone",
+    "LocationName": "",
+    "Area": "Hunter's Dream",
+    "Important": false,
+    "Missable": false,
+    "AdditionalRequirements": [2110800]
   }
 ]
