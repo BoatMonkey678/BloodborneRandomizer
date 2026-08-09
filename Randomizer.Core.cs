@@ -91,6 +91,9 @@ public class RandomizerCore
 
             ItemLot nextLocation = availableLocations[nextLocationIndex];
 
+            if (nextLocation.Missable)
+                continue;
+
             if (nextLocation.BaseRequires(item.ID))
                 continue;
 

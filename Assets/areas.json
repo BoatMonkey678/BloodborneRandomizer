@@ -1,5 +1,24 @@
 [
-    { "Name": "Central Yharnam", "Initial": true, "Requirements": [], "Connections": ["Cathedral Ward"] },
-    { "Name": "Cathedral Ward", "Initial": false, "Requirements": [0], "Connections": ["Nightmare Frontier"] },
-    { "Name": "Nightmare Frontier", "Initial": false, "Requirements": [2], "Connections": [] }
+    { "Name": "Central Yharnam", "Initial": true, "Requirements": [], "Connections": ["Hunter's Dream", "Cathedral Ward"] },
+    { "Name": "Hunter's Dream", "Initial": false, "Requirements": [], "Connections": [] },
+    { "Name": "Cathedral Ward", "Initial": false, "Requirements": [], "Connections": ["Lecture Building - 1F", "Old Yharnam", "Hypogean Gaol", "Healing Church Workshop", "Hemwick Charnel Lane", "Forbidden Woods"] },
+    { "Name": "Old Yharnam", "Initial": false, "Requirements": [], "Connections": [] },
+    { "Name": "Healing Church Workshop", "Initial": false, "Requirements": [], "Connections": ["Upper Cathedral Ward", "Abandoned Old Workshop"] },
+    { "Name": "Abandoned Old Workshop", "Initial": false, "Requirements": [], "Connections": [] },
+    { "Name": "Upper Cathedral Ward", "Initial": false, "Requirements": [], "Connections": [] },
+    { "Name": "Hemwick Charnel Lane", "Initial": false, "Requirements": [], "Connections": ["Forsaken Castle Cainhurst"] },
+    { "Name": "Forsaken Castle Cainhurst", "Initial": false, "Requirements": [], "Connections": [] },
+    { "Name": "Hypogean Gaol", "Initial": false, "Requirements": [], "Connections": [] },
+    { "Name": "Forbidden Woods", "Initial": false, "Requirements": [], "Connections": ["Byrgenwerth"] },
+    { "Name": "Byrgenwerth", "Initial": false, "Requirements": [], "Connections": ["Moonside Lake"] },
+    { "Name": "Moonside Lake", "Initial": false, "Requirements": [], "Connections": ["Yahar'gul, Unseen Village"] },
+    { "Name": "Yahar'gul, Unseen Village", "Initial": false, "Requirements": [], "Connections": ["Lecture Building - 2F"] },
+    { "Name": "Lecture Building - 1F", "Initial": false, "Requirements": [], "Connections": ["Nightmare Frontier"] },
+    { "Name": "Lecture Building - 2F", "Initial": false, "Requirements": [], "Connections": ["Nightmare of Mensis"] },
+    { "Name": "Nightmare of Mensis", "Initial": false, "Requirements": [], "Connections": [] },
+    { "Name": "Nightmare Frontier", "Initial": false, "Requirements": [], "Connections": [] },
+    { "Name": "Hunter's Nightmare", "Initial": false, "Requirements": [], "Connections": ["Research Hall"] },
+    { "Name": "Research Hall", "Initial": false, "Requirements": [], "Connections": ["Astral Clocktower"] },
+    { "Name": "Astral Clocktower", "Initial": false, "Requirements": [], "Connections": ["Fishing Hamlet"] },
+    { "Name": "Fishing Hamlet", "Initial": false, "Requirements": [], "Connections": [] }
 ]
