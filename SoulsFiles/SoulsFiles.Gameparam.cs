@@ -1,30 +1,8 @@
 using SoulsFormats;
 
-namespace Bloodborne.Files;
+namespace BloodborneRandomizer.SoulsFiles;
 
-public class ParamTester()
-{
-    public static void TestIfRowsExist(string path, Dictionary<int, int> correctAssignment)
-    {
-        var bnd = BND4.Read(path);
-
-        var itemLotParam = PARAM.Read(bnd.Files.First(x => x.Name == @"N:\SPRJ\data\INTERROOT_ps4\param\GameParam\64bit\ItemLotParam.param").Bytes);
-
-        foreach (var pair in correctAssignment)
-        {
-            if (itemLotParam.Rows.Find(x => x.ID == pair.Key) is null)
-            {
-                Console.WriteLine(pair.Key);
-            }
-            if (itemLotParam.Rows.Find(x => x.ID == pair.Value) is null)
-            {
-                Console.WriteLine(pair.Value);
-            }
-        }
-    }
-}
-
-public class FileWriter()
+public class GameparamWriter()
 {
     private static Dictionary<int, Dictionary<string, object?>> CreateRowValueSnapshot(PARAM itemLotParam)
     {
@@ -44,11 +22,9 @@ public class FileWriter()
         return snapshot;
     }
 
-    public static PARAM RegenerateRows(string path, Dictionary<int, int> itemAssignment)
+    private static PARAM RegenerateRows(BND4 bnd, Dictionary<int, int> itemAssignment)
     {
-        var bnd = BND4.Read(path);
-
-        var itemLotParam = PARAM.Read(bnd.Files.First(x => x.Name == @"N:\SPRJ\data\INTERROOT_ps4\param\GameParam\64bit\ItemLotParam.param").Bytes);
+        var itemLotParam = PARAM.Read(bnd.Files.First(x => x.Name == Config.ItemLotParamInGameparam).Bytes);
         itemLotParam.ApplyParamdef(PARAMDEF.XmlDeserialize(@".\dist\paramdef\ItemLotParam.xml"));
 
         var originalRowValues = CreateRowValueSnapshot(itemLotParam);
@@ -78,5 +54,16 @@ public class FileWriter()
         }
 
         return itemLotParam;
+    }
+
+    public static void WriteGameparam(Dictionary<int, int> itemAssignments)
+    {
+        var bnd = BND4.Read(@$"{Config.SoulsFilesFolder}\{Config.GameparamRelativePath}");
+        
+        var itemLotParam = RegenerateRows(bnd, itemAssignments);
+
+        bnd.Files.First(x => x.Name == Config.ItemLotParamInGameparam).Bytes = itemLotParam.Write();
+
+        bnd.Write(@$"{Config.GameFileOutputFolder}\{Config.GameparamRelativePath}");
     }
 }

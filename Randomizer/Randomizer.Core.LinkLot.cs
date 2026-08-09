@@ -1,4 +1,4 @@
-namespace Randomizer.Core.Structs;
+namespace BloodborneRandomizer.Randomizer;
 
 public class LinkLot
 {
