@@ -12,11 +12,13 @@ public class RandomizerCore
     private readonly AreaTree areaTree;
     private readonly List<ItemLot> availableLocations = new();
     private readonly Dictionary<int, int> output = new();
+    private readonly List<LinkLot> linkLots = new();
 
-    public RandomizerCore(string itemLotPath, string areasPath)
+    public RandomizerCore(string itemLotPath, string areasPath, string linkedLotPath)
     {
         List<ItemLot> allItems = JsonConvert.DeserializeObject<List<ItemLot>>(File.ReadAllText(itemLotPath)) ?? throw new FileLoadException($"Failed to deserialize {itemLotPath}");
         List<JsonArea> jsonAreas = JsonConvert.DeserializeObject<List<JsonArea>>(File.ReadAllText(areasPath)) ?? throw new FileLoadException($"Failed to deserialize {areasPath}");
+        linkLots = JsonConvert.DeserializeObject<List<LinkLot>>(File.ReadAllText(linkedLotPath)) ?? throw new FileLoadException($"Failed to deserialize {linkedLotPath}");
         allItemsLookup = allItems.ToList();
         availableLocations = allItems.ToList();
 
@@ -47,6 +49,16 @@ public class RandomizerCore
     public Dictionary<int, int> Main()
     {
         RandomizeItems();
+
+        Dictionary<int, int> temp = new();
+
+        foreach (var lot in linkLots)
+        {
+            foreach(var linked in lot.Linked)
+            {
+                output.Add(linked, output[lot.To]);
+            }
+        }
         
         return output;
     }

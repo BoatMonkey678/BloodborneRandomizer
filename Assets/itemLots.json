@@ -1155,7 +1155,7 @@
     "ID": 2410130,
     "ItemName": "Coldblood Dew (1)",
     "LocationName": "",
-    "Area": "Central Yharnam",
+    "Area": "Forbidden Woods",
     "Important": false,
     "Missable": false
   },
@@ -1163,7 +1163,7 @@
     "ID": 2410140,
     "ItemName": "Madman's Knowledge",
     "LocationName": "",
-    "Area": "Central Yharnam",
+    "Area": "Forbidden Woods",
     "Important": false,
     "Missable": false
   },
@@ -4265,7 +4265,7 @@
     "ItemName": "Balcony Key",
     "LocationName": "",
     "Area": "Research Hall",
-    "Important": false,
+    "Important": true,
     "Missable": false,
     "AdditionalRequirements": [43400, 43500]
   },
@@ -5167,6 +5167,14 @@
     "Missable": false
   },
   {
+    "ID": 34000,
+    "ItemName": "Fire Paper x3",
+    "LocationName": "",
+    "Area": "Cathedral Ward",
+    "Important": false,
+    "Missable": false
+  },
+  {
     "ID": 50000010,
     "ItemName": "Sword Hunter Badge",
     "LocationName": "",
@@ -5717,14 +5725,6 @@
     "Missable": true
   },
   {
-    "ID": 34030,
-    "ItemName": "Fire Paper x3",
-    "LocationName": "",
-    "Area": "Cathedral Ward",
-    "Important": false,
-    "Missable": true
-  },
-  {
     "ID": 34010,
     "ItemName": "Wheel Hunter Badge",
     "LocationName": "",
@@ -5740,14 +5740,6 @@
     "Important": false,
     "Missable": true,
     "AdditionalRequirements": [2502000]
-  },
-  {
-    "ID": 34035,
-    "ItemName": "Fire Paper x3",
-    "LocationName": "",
-    "Area": "Cathedral Ward",
-    "Important": false,
-    "Missable": true
   },
   {
     "ID": 35012,
