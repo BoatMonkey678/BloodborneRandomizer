@@ -50,8 +50,6 @@ public class RandomizerCore
     {
         RandomizeItems();
 
-        Dictionary<int, int> temp = new();
-
         foreach (var lot in linkLots)
         {
             foreach(var linked in lot.Linked)
@@ -63,9 +61,9 @@ public class RandomizerCore
         return output;
     }
 
-    public ItemLot? GetItemLotByID(int ID)
+    public ItemLot GetItemLotByID(int ID)
     {
-        return allItemsLookup.Find(x => x.ID == ID);
+        return allItemsLookup.First(x => x.ID == ID);
     }
 
     private void RandomizeItems()
@@ -85,6 +83,8 @@ public class RandomizerCore
         while (normalItems.Count > 0)
         {
             var nextItem = normalItems[0];
+            if (nextItem.Important)
+                continue;
             normalItems.RemoveAt(0);
 
             int nextLocationIndex = random.Next(availableLocations.Count);

@@ -1,4 +1,6 @@
-﻿using Randomizer.Core;
+﻿using Bloodborne.Files;
+using Randomizer.Core;
+using SoulsFormats;
 
 class Program
 {
@@ -8,11 +10,19 @@ class Program
 
         var output = randomizer.Main();
 
+        string spoilerOutput = "";
         foreach (var pair in output)
         {
-            #pragma warning disable CS8602
-            Console.WriteLine($"{pair.Key}: {randomizer.GetItemLotByID(pair.Value).ItemName}");
-            #pragma warning restore CS8602
+            spoilerOutput += $"{pair.Key}: {randomizer.GetItemLotByID(pair.Value).ItemName}\n";
         }
+        File.WriteAllText(@".\output\spoiler.txt", spoilerOutput);
+
+        ParamTester.TestIfRowsExist(@".\dist\param\gameparam\gameparam.parambnd.dcx", output);
+        var itemLotParam = FileWriter.RegenerateRows(@".\dist\param\gameparam\gameparam.parambnd.dcx", output);
+
+        var bnd = BND4.Read(@".\dist\param\gameparam\gameparam.parambnd.dcx");
+        bnd.Files.First(x => x.Name == @"N:\SPRJ\data\INTERROOT_ps4\param\GameParam\64bit\ItemLotParam.param").Bytes = itemLotParam.Write();
+
+        bnd.Write(@".\output\dvdroot_ps4\param\gameparam\gameparam.parambnd.dcx");
     }
 }

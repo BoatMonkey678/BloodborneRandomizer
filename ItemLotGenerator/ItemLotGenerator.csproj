@@ -7,10 +7,14 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="SoulsFormatsNEXT">
-      <HintPath>.\SoulsFormats.dll</HintPath>
-    </Reference>
+    <ProjectReference Include="..\external\SoulsFormats\SoulsFormats\SoulsFormats.csproj" />
   </ItemGroup>
+  <PropertyGroup>
+    <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
+  </PropertyGroup>
+  <PropertyGroup>
+    <GenerateTargetFrameworkAttribute>false</GenerateTargetFrameworkAttribute>
+  </PropertyGroup>
   <ItemGroup>
     <PackageReference Include="Newtonsoft.Json" Version="13.0.4" />
   </ItemGroup>

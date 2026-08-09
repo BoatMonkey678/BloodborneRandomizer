@@ -5,6 +5,7 @@
     <TargetFramework>net10.0</TargetFramework>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
+    <NoWarn>CS0436</NoWarn>
   </PropertyGroup>
 
   <ItemGroup>
@@ -16,5 +17,15 @@
     <EmbeddedResource Remove="ItemLotGenerator\**" />
     <None Remove="ItemLotGenerator\**" />
   </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include=".\external\SoulsFormats\SoulsFormats\SoulsFormats.csproj" />
+  </ItemGroup>
+  <PropertyGroup>
+    <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
+  </PropertyGroup>
+  <PropertyGroup>
+    <GenerateTargetFrameworkAttribute>false</GenerateTargetFrameworkAttribute>
+  </PropertyGroup>
 
 </Project>

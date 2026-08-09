@@ -1525,7 +1525,7 @@
     "LocationName": "",
     "Area": "Moonside Lake",
     "Important": false,
-    "Missable": false
+    "Missable": true
   },
   {
     "ID": 2410920,
@@ -5155,7 +5155,7 @@
     "ItemName": "Beast Lv1",
     "LocationName": "",
     "Area": "Healing Church Workshop",
-    "Important": true,
+    "Important": false,
     "Missable": false
   },
   {
@@ -5262,7 +5262,7 @@
     "ItemName": "Corruption",
     "LocationName": "",
     "Area": "Forsaken Castle Cainhurst",
-    "Important": true,
+    "Important": false,
     "Missable": false,
     "AdditionalRequirements": [2502000]
   },
@@ -5408,6 +5408,14 @@
     "ItemName": "Guidance Lv2",
     "LocationName": "",
     "Area": "Hunter's Nightmare",
+    "Important": false,
+    "Missable": false
+  },
+  {
+    "ID": 11703510,
+    "ItemName": "Guidance Lv1",
+    "LocationName": "",
+    "Area": "Research Hall",
     "Important": false,
     "Missable": false
   },
