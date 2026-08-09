@@ -1,18 +1,17 @@
-using Randomizer.Core.Structs;
 using Newtonsoft.Json;
 
-namespace Randomizer.Core;
+namespace BloodborneRandomizer.Randomizer;
 
 public class RandomizerCore
 {
-    private readonly List<ItemLot> allItemsLookup = new();
-    private readonly List<ItemLot> normalItems = new();
-    private readonly Queue<ItemLot> keyItems = new();
-    private readonly List<ItemLot> allKeys = new();
+    private readonly List<ItemLot> allItemsLookup = [];
+    private readonly List<ItemLot> normalItems = [];
+    private readonly Queue<ItemLot> keyItems = [];
+    private readonly List<ItemLot> allKeys = [];
     private readonly AreaTree areaTree;
-    private readonly List<ItemLot> availableLocations = new();
-    private readonly Dictionary<int, int> output = new();
-    private readonly List<LinkLot> linkLots = new();
+    private readonly List<ItemLot> availableLocations = [];
+    private readonly Dictionary<int, int> output = [];
+    private readonly List<LinkLot> linkLots = [];
 
     public RandomizerCore(string itemLotPath, string areasPath, string linkedLotPath)
     {
@@ -83,8 +82,6 @@ public class RandomizerCore
         while (normalItems.Count > 0)
         {
             var nextItem = normalItems[0];
-            if (nextItem.Important)
-                continue;
             normalItems.RemoveAt(0);
 
             int nextLocationIndex = random.Next(availableLocations.Count);

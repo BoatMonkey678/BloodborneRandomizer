@@ -1,38 +1,38 @@
-namespace Randomizer.Core.Structs;
+namespace BloodborneRandomizer.Randomizer;
 
 public class JsonArea
 {
-    public required string Name { get; set; }
-    public required List<int> Requirements { get; set; }
+    public required string Name;
+    public required List<int> Requirements;
     public required bool Initial = false;
-    public List<string> Connections = new();
+    public List<string> Connections = [];
 }
 
 public class Area
 {
-    public required string Name { get; set; }
-    public required List<int> Requirements { get; set; }
+    public required string Name;
+    public required List<int> Requirements;
     public required bool Initial;
 
-    public Area? Parent { get; set; }
-    public List<Area> Connections { get; set; } = new();
+    public Area? Parent;
+    public List<Area> Connections = [];
 }
 
 public class AreaTree
 {
     public Area Root { get; private set; }
 
-    private readonly Dictionary<string, Area> _areasByName;
+    private readonly Dictionary<string, Area> areasByName;
 
     public AreaTree(List<JsonArea> areas)
     {
         Root = BuildAreaTree(areas);
-        _areasByName = BuildAreaIndex(Root);
+        areasByName = BuildAreaIndex(Root);
     }
 
     public Area GetArea(string name)
     {
-        return _areasByName.TryGetValue(name, out var area)
+        return areasByName.TryGetValue(name, out var area)
             ? area
             : throw new KeyNotFoundException($"Area '{name}' was not found.");
     }

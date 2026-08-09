@@ -1,12 +1,16 @@
-﻿using Bloodborne.Files;
-using Randomizer.Core;
-using SoulsFormats;
+﻿using BloodborneRandomizer;
+using BloodborneRandomizer.Randomizer;
+using BloodborneRandomizer.SoulsFiles;
 
 class Program
 {
     static void Main(string[] args)
     {
-        RandomizerCore randomizer = new(@".\Assets\itemLots.json", @".\Assets\areas.json", @".\Assets\linkLots.json");
+        RandomizerCore randomizer = new(
+            @$"{Config.TextAssetsFolder}\{Config.ItemLotsJson}",
+            @$"{Config.TextAssetsFolder}\{Config.AreasJson}",
+            @$"{Config.TextAssetsFolder}\{Config.LinkLotsJson}"
+        );
 
         var output = randomizer.Main();
 
@@ -15,14 +19,8 @@ class Program
         {
             spoilerOutput += $"{pair.Key}: {randomizer.GetItemLotByID(pair.Value).ItemName}\n";
         }
-        File.WriteAllText(@".\output\spoiler.txt", spoilerOutput);
+        File.WriteAllText(Config.SpoilerOutput, spoilerOutput);
 
-        ParamTester.TestIfRowsExist(@".\dist\param\gameparam\gameparam.parambnd.dcx", output);
-        var itemLotParam = FileWriter.RegenerateRows(@".\dist\param\gameparam\gameparam.parambnd.dcx", output);
-
-        var bnd = BND4.Read(@".\dist\param\gameparam\gameparam.parambnd.dcx");
-        bnd.Files.First(x => x.Name == @"N:\SPRJ\data\INTERROOT_ps4\param\GameParam\64bit\ItemLotParam.param").Bytes = itemLotParam.Write();
-
-        bnd.Write(@".\output\dvdroot_ps4\param\gameparam\gameparam.parambnd.dcx");
+        GameparamWriter.WriteGameparam(output);
     }
 }

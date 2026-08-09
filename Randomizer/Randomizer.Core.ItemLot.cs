@@ -1,6 +1,6 @@
 using Newtonsoft.Json;
 
-namespace Randomizer.Core.Structs;
+namespace BloodborneRandomizer.Randomizer;
 
 public class ItemLot
 {
@@ -11,9 +11,9 @@ public class ItemLot
     public required bool Important;
     public required bool Missable;
     [JsonProperty]
-    private List<int> AdditionalRequirements = new();
-    public List<int> Requirements = new();
-    public List<int> GeneratedRequirements = new();
+    private List<int> AdditionalRequirements = [];
+    public List<int> Requirements = [];
+    public List<int> GeneratedRequirements = [];
 
     public void AssignRequirements(Area area)
     {
