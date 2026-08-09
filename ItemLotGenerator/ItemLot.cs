@@ -7,7 +7,6 @@ public class ItemLot
     public required int ID;
     public required string ItemName;
     public required string LocationName;
-    public required string LocationInternalName;
     public required string Area;
     public required bool Important;
 }

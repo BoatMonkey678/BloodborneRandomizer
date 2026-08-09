@@ -10,7 +10,6 @@ class Program
 
         foreach (var pair in output)
         {
-
             #pragma warning disable CS8602 // Dereference of a possibly null reference.
             Console.WriteLine($"{pair.Key}: {randomizer.GetItemLotByID(pair.Value).ItemName}");
             #pragma warning restore CS8602 // Dereference of a possibly null reference.

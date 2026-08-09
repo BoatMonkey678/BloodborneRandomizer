@@ -11,7 +11,7 @@ public class RandomizerCore
     private readonly List<ItemLot> allKeys = new();
     private readonly AreaTree areaTree;
     private readonly List<ItemLot> availableLocations = new();
-    private readonly Dictionary<string, int> output = new();
+    private readonly Dictionary<int, int> output = new();
 
     public RandomizerCore(string itemLotPath, string areasPath)
     {
@@ -44,7 +44,7 @@ public class RandomizerCore
         allKeys = keyItems.ToList();
     }
 
-    public Dictionary<string, int> Main()
+    public Dictionary<int, int> Main()
     {
         RandomizeItems();
         
@@ -121,8 +121,8 @@ public class RandomizerCore
         return keyItems.FirstOrDefault(x => x.ID == ID) ?? throw new InvalidDataException($"All keys list didn't contain key item: {ID}");
     }
 
-    private static void AssignItem(Dictionary<string, int> output, ItemLot item, ItemLot location)
+    private static void AssignItem(Dictionary<int, int> output, ItemLot item, ItemLot location)
     {
-        output.Add(location.LocationInternalName, item.ID);
+        output.Add(location.ID, item.ID);
     }
 }

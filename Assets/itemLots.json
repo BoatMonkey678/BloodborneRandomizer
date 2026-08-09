@@ -1,6 +1,4405 @@
 [
-    { "ID": 0, "ItemName": "Oedon Tomb Key", "LocationName": "Father Gascoigne", "LocationInternalName": "Chinsese Hr 1", "Area": "Central Yharnam", "Important": true, "AdditionalRequirements": [] },
-    { "ID": 3, "ItemName": "Molotov Cocktail", "LocationName": "Second Item Near Gate Troll", "LocationInternalName": "Chinsese Hr 2", "Area": "Central Yharnam", "Important": false, "AdditionalRequirements": [] },
-    { "ID": 1, "ItemName": "Lead Elixir", "LocationName": "Dropped by Axe NPC", "LocationInternalName": "Chinsese Hr 3", "Area": "Nightmare Frontier", "Important": false, "AdditionalRequirements": [] },
-    { "ID": 2, "ItemName": "Tonsil Stone", "LocationName": "Given by Patches", "LocationInternalName": "Chinsese Hr 4", "Area": "Cathedral Ward", "Important": true, "AdditionalRequirements": [] }
+  {
+    "ID": 2110000,
+    "ItemName": "Old Hunter Bone",
+    "LocationName": "",
+    "Area": "Abandoned Old Workshop",
+    "Important": false
+  },
+  {
+    "ID": 2110020,
+    "ItemName": "Doll Hat",
+    "LocationName": "",
+    "Area": "Abandoned Old Workshop",
+    "Important": false
+  },
+  {
+    "ID": 2110021,
+    "ItemName": "Doll Clothes",
+    "LocationName": "",
+    "Area": "Abandoned Old Workshop",
+    "Important": false
+  },
+  {
+    "ID": 2110022,
+    "ItemName": "Doll Gloves",
+    "LocationName": "",
+    "Area": "Abandoned Old Workshop",
+    "Important": false
+  },
+  {
+    "ID": 2110023,
+    "ItemName": "Doll Skirt",
+    "LocationName": "",
+    "Area": "Abandoned Old Workshop",
+    "Important": false
+  },
+  {
+    "ID": 2200100,
+    "ItemName": "Pebble x4",
+    "LocationName": "",
+    "Area": "Hemwick Charnel Lane",
+    "Important": false
+  },
+  {
+    "ID": 2200110,
+    "ItemName": "Twin Blood Stone Shards",
+    "LocationName": "",
+    "Area": "Hemwick Charnel Lane",
+    "Important": false
+  },
+  {
+    "ID": 2200120,
+    "ItemName": "Twin Blood Stone Shards x2",
+    "LocationName": "",
+    "Area": "Hemwick Charnel Lane",
+    "Important": false
+  },
+  {
+    "ID": 2200130,
+    "ItemName": "Thick Coldblood (4)",
+    "LocationName": "",
+    "Area": "Hemwick Charnel Lane",
+    "Important": false
+  },
+  {
+    "ID": 2200140,
+    "ItemName": "Twin Blood Stone Shards x2",
+    "LocationName": "",
+    "Area": "Hemwick Charnel Lane",
+    "Important": false
+  },
+  {
+    "ID": 2200160,
+    "ItemName": "Bone Marrow Ash x8",
+    "LocationName": "",
+    "Area": "Hemwick Charnel Lane",
+    "Important": false
+  },
+  {
+    "ID": 2200170,
+    "ItemName": "Bone Marrow Ash x8",
+    "LocationName": "",
+    "Area": "Hemwick Charnel Lane",
+    "Important": false
+  },
+  {
+    "ID": 2200180,
+    "ItemName": "Bloodshot Eyeball",
+    "LocationName": "",
+    "Area": "Hemwick Charnel Lane",
+    "Important": false
+  },
+  {
+    "ID": 2200190,
+    "ItemName": "GEM: Fixed placement: Cemetery Town",
+    "LocationName": "",
+    "Area": "Hemwick Charnel Lane",
+    "Important": false
+  },
+  {
+    "ID": 2200200,
+    "ItemName": "Madman's Knowledge",
+    "LocationName": "",
+    "Area": "Hemwick Charnel Lane",
+    "Important": false
+  },
+  {
+    "ID": 2200210,
+    "ItemName": "Coldblood Dew (3)",
+    "LocationName": "",
+    "Area": "Hemwick Charnel Lane",
+    "Important": false
+  },
+  {
+    "ID": 2200220,
+    "ItemName": "Twin Blood Stone Shards x2",
+    "LocationName": "",
+    "Area": "Hemwick Charnel Lane",
+    "Important": false
+  },
+  {
+    "ID": 2200240,
+    "ItemName": "Thick Coldblood (4)",
+    "LocationName": "",
+    "Area": "Hemwick Charnel Lane",
+    "Important": false
+  },
+  {
+    "ID": 2200270,
+    "ItemName": "Thick Coldblood (4)",
+    "LocationName": "",
+    "Area": "Hemwick Charnel Lane",
+    "Important": false
+  },
+  {
+    "ID": 2200290,
+    "ItemName": "Madman's Knowledge",
+    "LocationName": "",
+    "Area": "Hemwick Charnel Lane",
+    "Important": false
+  },
+  {
+    "ID": 2200300,
+    "ItemName": "Pebble x4",
+    "LocationName": "",
+    "Area": "Hemwick Charnel Lane",
+    "Important": false
+  },
+  {
+    "ID": 2200320,
+    "ItemName": "Thick Coldblood (4)",
+    "LocationName": "",
+    "Area": "Hemwick Charnel Lane",
+    "Important": false
+  },
+  {
+    "ID": 2200330,
+    "ItemName": "Bone Marrow Ash x9",
+    "LocationName": "",
+    "Area": "Hemwick Charnel Lane",
+    "Important": false
+  },
+  {
+    "ID": 2200340,
+    "ItemName": "Thick Coldblood (4)",
+    "LocationName": "",
+    "Area": "Hemwick Charnel Lane",
+    "Important": false
+  },
+  {
+    "ID": 2200360,
+    "ItemName": "Rune Workshop Tool",
+    "LocationName": "",
+    "Area": "Hemwick Charnel Lane",
+    "Important": false
+  },
+  {
+    "ID": 2200365,
+    "ItemName": "Kin Coldblood (12)",
+    "LocationName": "",
+    "Area": "Hemwick Charnel Lane",
+    "Important": false
+  },
+  {
+    "ID": 2200370,
+    "ItemName": "Bloodshot Eyeball",
+    "LocationName": "",
+    "Area": "Hemwick Charnel Lane",
+    "Important": false
+  },
+  {
+    "ID": 2200380,
+    "ItemName": "GEM: Lake Lv1",
+    "LocationName": "",
+    "Area": "Hemwick Charnel Lane",
+    "Important": false
+  },
+  {
+    "ID": 2200385,
+    "ItemName": "Madman's Knowledge",
+    "LocationName": "",
+    "Area": "Hemwick Charnel Lane",
+    "Important": false
+  },
+  {
+    "ID": 2200390,
+    "ItemName": "Madman's Knowledge",
+    "LocationName": "",
+    "Area": "Hemwick Charnel Lane",
+    "Important": false
+  },
+  {
+    "ID": 2200280,
+    "ItemName": "GEM: Fixed placement: Cemetery Town",
+    "LocationName": "",
+    "Area": "Hemwick Charnel Lane",
+    "Important": false
+  },
+  {
+    "ID": 2300010,
+    "ItemName": "Blood Stone Shard x2",
+    "LocationName": "",
+    "Area": "Old Yharnam",
+    "Important": false
+  },
+  {
+    "ID": 2300020,
+    "ItemName": "Blood Stone Shard",
+    "LocationName": "",
+    "Area": "Old Yharnam",
+    "Important": false
+  },
+  {
+    "ID": 2300030,
+    "ItemName": "Fire Paper x2",
+    "LocationName": "",
+    "Area": "Old Yharnam",
+    "Important": false
+  },
+  {
+    "ID": 2300040,
+    "ItemName": "GEM: Fixed placement Ruins",
+    "LocationName": "",
+    "Area": "Old Yharnam",
+    "Important": false
+  },
+  {
+    "ID": 2300050,
+    "ItemName": "Coldblood Dew (3)",
+    "LocationName": "",
+    "Area": "Old Yharnam",
+    "Important": false
+  },
+  {
+    "ID": 2300060,
+    "ItemName": "Blood Stone Shard x2",
+    "LocationName": "",
+    "Area": "Old Yharnam",
+    "Important": false
+  },
+  {
+    "ID": 2300070,
+    "ItemName": "Bloody Messenger Head Bandage",
+    "LocationName": "",
+    "Area": "Old Yharnam",
+    "Important": false
+  },
+  {
+    "ID": 2300080,
+    "ItemName": "Coldblood Dew (2)",
+    "LocationName": "",
+    "Area": "Old Yharnam",
+    "Important": false
+  },
+  {
+    "ID": 2300120,
+    "ItemName": "Beast Blood Pellet x6",
+    "LocationName": "",
+    "Area": "Old Yharnam",
+    "Important": false
+  },
+  {
+    "ID": 2300130,
+    "ItemName": "Coldblood Dew (3)",
+    "LocationName": "",
+    "Area": "Old Yharnam",
+    "Important": false
+  },
+  {
+    "ID": 2300140,
+    "ItemName": "Blood Stone Shard x2",
+    "LocationName": "",
+    "Area": "Old Yharnam",
+    "Important": false
+  },
+  {
+    "ID": 2300150,
+    "ItemName": "Blood Stone Shard x2",
+    "LocationName": "",
+    "Area": "Old Yharnam",
+    "Important": false
+  },
+  {
+    "ID": 2300160,
+    "ItemName": "Madman's Knowledge",
+    "LocationName": "",
+    "Area": "Old Yharnam",
+    "Important": false
+  },
+  {
+    "ID": 2300180,
+    "ItemName": "Pungent Blood Cocktail x3",
+    "LocationName": "",
+    "Area": "Old Yharnam",
+    "Important": false
+  },
+  {
+    "ID": 2300190,
+    "ItemName": "Fire Paper x2",
+    "LocationName": "",
+    "Area": "Old Yharnam",
+    "Important": false
+  },
+  {
+    "ID": 2300200,
+    "ItemName": "Hunter's Torch",
+    "LocationName": "",
+    "Area": "Old Yharnam",
+    "Important": false
+  },
+  {
+    "ID": 2300210,
+    "ItemName": "Antidote",
+    "LocationName": "",
+    "Area": "Old Yharnam",
+    "Important": false
+  },
+  {
+    "ID": 2300220,
+    "ItemName": "Molotov Cocktail x4",
+    "LocationName": "",
+    "Area": "Old Yharnam",
+    "Important": false
+  },
+  {
+    "ID": 2300230,
+    "ItemName": "Blood Stone Shard x2",
+    "LocationName": "",
+    "Area": "Old Yharnam",
+    "Important": false
+  },
+  {
+    "ID": 2300240,
+    "ItemName": "Blood Vial x6",
+    "LocationName": "",
+    "Area": "Old Yharnam",
+    "Important": false
+  },
+  {
+    "ID": 2300250,
+    "ItemName": "Pebble x3",
+    "LocationName": "",
+    "Area": "Old Yharnam",
+    "Important": false
+  },
+  {
+    "ID": 2300260,
+    "ItemName": "Molotov Cocktail x3",
+    "LocationName": "",
+    "Area": "Old Yharnam",
+    "Important": false
+  },
+  {
+    "ID": 2300280,
+    "ItemName": "Antidote x4",
+    "LocationName": "",
+    "Area": "Old Yharnam",
+    "Important": false
+  },
+  {
+    "ID": 2300290,
+    "ItemName": "Coldblood Dew (2)",
+    "LocationName": "",
+    "Area": "Old Yharnam",
+    "Important": false
+  },
+  {
+    "ID": 2300310,
+    "ItemName": "Antidote x3",
+    "LocationName": "",
+    "Area": "Old Yharnam",
+    "Important": false
+  },
+  {
+    "ID": 2300330,
+    "ItemName": "Quicksilver Bullets x10",
+    "LocationName": "",
+    "Area": "Old Yharnam",
+    "Important": false
+  },
+  {
+    "ID": 2300350,
+    "ItemName": "Blood Stone Shard",
+    "LocationName": "",
+    "Area": "Old Yharnam",
+    "Important": false
+  },
+  {
+    "ID": 2300360,
+    "ItemName": "Madman's Knowledge",
+    "LocationName": "",
+    "Area": "Old Yharnam",
+    "Important": false
+  },
+  {
+    "ID": 2300370,
+    "ItemName": "Coldblood Dew (2)",
+    "LocationName": "",
+    "Area": "Old Yharnam",
+    "Important": false
+  },
+  {
+    "ID": 2300380,
+    "ItemName": "Blood Vial x6",
+    "LocationName": "",
+    "Area": "Old Yharnam",
+    "Important": false
+  },
+  {
+    "ID": 2300390,
+    "ItemName": "Rifle Spear",
+    "LocationName": "",
+    "Area": "Old Yharnam",
+    "Important": false
+  },
+  {
+    "ID": 2300400,
+    "ItemName": "Charred Hunter Garb",
+    "LocationName": "",
+    "Area": "Old Yharnam",
+    "Important": false
+  },
+  {
+    "ID": 2300401,
+    "ItemName": "Charred Hunter Gloves",
+    "LocationName": "",
+    "Area": "Old Yharnam",
+    "Important": false
+  },
+  {
+    "ID": 2300402,
+    "ItemName": "Charred Hunter Trousers",
+    "LocationName": "",
+    "Area": "Old Yharnam",
+    "Important": false
+  },
+  {
+    "ID": 2300430,
+    "ItemName": "Antidote x3",
+    "LocationName": "",
+    "Area": "Old Yharnam",
+    "Important": false
+  },
+  {
+    "ID": 2300440,
+    "ItemName": "Pungent Blood Cocktail x2",
+    "LocationName": "",
+    "Area": "Old Yharnam",
+    "Important": false
+  },
+  {
+    "ID": 2300450,
+    "ItemName": "Antidote",
+    "LocationName": "",
+    "Area": "Old Yharnam",
+    "Important": false
+  },
+  {
+    "ID": 2300460,
+    "ItemName": "Bold Hunter's Mark x2",
+    "LocationName": "",
+    "Area": "Old Yharnam",
+    "Important": false
+  },
+  {
+    "ID": 2300480,
+    "ItemName": "Blood Vial x6",
+    "LocationName": "",
+    "Area": "Old Yharnam",
+    "Important": false
+  },
+  {
+    "ID": 2300490,
+    "ItemName": "Antidote x3",
+    "LocationName": "",
+    "Area": "Old Yharnam",
+    "Important": false
+  },
+  {
+    "ID": 2300500,
+    "ItemName": "Coldblood Dew (2)",
+    "LocationName": "",
+    "Area": "Old Yharnam",
+    "Important": false
+  },
+  {
+    "ID": 2300510,
+    "ItemName": "Blood Stone Shard x2",
+    "LocationName": "",
+    "Area": "Old Yharnam",
+    "Important": false
+  },
+  {
+    "ID": 2300520,
+    "ItemName": "Coldblood Dew (3)",
+    "LocationName": "",
+    "Area": "Old Yharnam",
+    "Important": false
+  },
+  {
+    "ID": 2300530,
+    "ItemName": "Antidote x3",
+    "LocationName": "",
+    "Area": "Old Yharnam",
+    "Important": false
+  },
+  {
+    "ID": 2300300,
+    "ItemName": "GEM: Fixed placement Ruins",
+    "LocationName": "",
+    "Area": "Old Yharnam",
+    "Important": false
+  },
+  {
+    "ID": 2400420,
+    "ItemName": "Thick Coldblood (6)",
+    "LocationName": "",
+    "Area": "Cathedral Ward",
+    "Important": false
+  },
+  {
+    "ID": 2400120,
+    "ItemName": "Top Hat",
+    "LocationName": "",
+    "Area": "Cathedral Ward",
+    "Important": false
+  },
+  {
+    "ID": 2400121,
+    "ItemName": "Hunter Garb (No Cape)",
+    "LocationName": "",
+    "Area": "Cathedral Ward",
+    "Important": false
+  },
+  {
+    "ID": 2400122,
+    "ItemName": "Hunter Gloves",
+    "LocationName": "",
+    "Area": "Cathedral Ward",
+    "Important": false
+  },
+  {
+    "ID": 2400123,
+    "ItemName": "Hunter Trousers",
+    "LocationName": "",
+    "Area": "Cathedral Ward",
+    "Important": false
+  },
+  {
+    "ID": 2400130,
+    "ItemName": "Blood Stone Shard x2",
+    "LocationName": "",
+    "Area": "Cathedral Ward",
+    "Important": false
+  },
+  {
+    "ID": 2400140,
+    "ItemName": "Madman's Knowledge",
+    "LocationName": "",
+    "Area": "Cathedral Ward",
+    "Important": false
+  },
+  {
+    "ID": 2400150,
+    "ItemName": "Thick Coldblood (5)",
+    "LocationName": "",
+    "Area": "Cathedral Ward",
+    "Important": false
+  },
+  {
+    "ID": 2400160,
+    "ItemName": "Quicksilver Bullets x2",
+    "LocationName": "",
+    "Area": "Cathedral Ward",
+    "Important": false
+  },
+  {
+    "ID": 2400170,
+    "ItemName": "Madman's Knowledge",
+    "LocationName": "",
+    "Area": "Cathedral Ward",
+    "Important": false
+  },
+  {
+    "ID": 2400180,
+    "ItemName": "Bloodshot Eyeball",
+    "LocationName": "",
+    "Area": "Cathedral Ward",
+    "Important": false
+  },
+  {
+    "ID": 2400190,
+    "ItemName": "Blood Vial",
+    "LocationName": "",
+    "Area": "Cathedral Ward",
+    "Important": false
+  },
+  {
+    "ID": 2400200,
+    "ItemName": "Madman's Knowledge",
+    "LocationName": "",
+    "Area": "Cathedral Ward",
+    "Important": false
+  },
+  {
+    "ID": 2400210,
+    "ItemName": "Poison Knife x12",
+    "LocationName": "",
+    "Area": "Cathedral Ward",
+    "Important": false
+  },
+  {
+    "ID": 2400220,
+    "ItemName": "Madman's Knowledge",
+    "LocationName": "",
+    "Area": "Cathedral Ward",
+    "Important": false
+  },
+  {
+    "ID": 2400230,
+    "ItemName": "Blood Vial x6",
+    "LocationName": "",
+    "Area": "Cathedral Ward",
+    "Important": false
+  },
+  {
+    "ID": 2400240,
+    "ItemName": "Monocular",
+    "LocationName": "",
+    "Area": "Cathedral Ward",
+    "Important": false
+  },
+  {
+    "ID": 2400250,
+    "ItemName": "Pebble",
+    "LocationName": "",
+    "Area": "Cathedral Ward",
+    "Important": false
+  },
+  {
+    "ID": 2400260,
+    "ItemName": "Blood Vial x2",
+    "LocationName": "",
+    "Area": "Cathedral Ward",
+    "Important": false
+  },
+  {
+    "ID": 2400270,
+    "ItemName": "Black Messenger Hat",
+    "LocationName": "",
+    "Area": "Cathedral Ward",
+    "Important": false
+  },
+  {
+    "ID": 2400280,
+    "ItemName": "Numbing Mist x6",
+    "LocationName": "",
+    "Area": "Cathedral Ward",
+    "Important": false
+  },
+  {
+    "ID": 2400290,
+    "ItemName": "Black Church Hat",
+    "LocationName": "",
+    "Area": "Cathedral Ward",
+    "Important": false
+  },
+  {
+    "ID": 2400291,
+    "ItemName": "Black Church Garb",
+    "LocationName": "",
+    "Area": "Cathedral Ward",
+    "Important": false
+  },
+  {
+    "ID": 2400292,
+    "ItemName": "Surgical Long Gloves",
+    "LocationName": "",
+    "Area": "Cathedral Ward",
+    "Important": false
+  },
+  {
+    "ID": 2400293,
+    "ItemName": "Black Church Trousers/Dress",
+    "LocationName": "",
+    "Area": "Cathedral Ward",
+    "Important": false
+  },
+  {
+    "ID": 2400300,
+    "ItemName": "GEM: Fixed location Cathedral Ward A",
+    "LocationName": "",
+    "Area": "Cathedral Ward",
+    "Important": false
+  },
+  {
+    "ID": 2400310,
+    "ItemName": "Shining Coins x12",
+    "LocationName": "",
+    "Area": "Cathedral Ward",
+    "Important": false
+  },
+  {
+    "ID": 2400320,
+    "ItemName": "Blood Vial x6",
+    "LocationName": "",
+    "Area": "Cathedral Ward",
+    "Important": false
+  },
+  {
+    "ID": 2400330,
+    "ItemName": "Blood Stone Shard x3",
+    "LocationName": "",
+    "Area": "Cathedral Ward",
+    "Important": false
+  },
+  {
+    "ID": 2400340,
+    "ItemName": "Quicksilver Bullets x10",
+    "LocationName": "",
+    "Area": "Cathedral Ward",
+    "Important": false
+  },
+  {
+    "ID": 2400350,
+    "ItemName": "Thick Coldblood (4)",
+    "LocationName": "",
+    "Area": "Cathedral Ward",
+    "Important": false
+  },
+  {
+    "ID": 2400360,
+    "ItemName": "Madman's Knowledge",
+    "LocationName": "",
+    "Area": "Cathedral Ward",
+    "Important": false
+  },
+  {
+    "ID": 2400370,
+    "ItemName": "Thick Coldblood (6)",
+    "LocationName": "",
+    "Area": "Cathedral Ward",
+    "Important": false
+  },
+  {
+    "ID": 2400380,
+    "ItemName": "Throwing Knife x3",
+    "LocationName": "",
+    "Area": "Cathedral Ward",
+    "Important": false
+  },
+  {
+    "ID": 2400390,
+    "ItemName": "Molotov Cocktail x4",
+    "LocationName": "",
+    "Area": "Cathedral Ward",
+    "Important": false
+  },
+  {
+    "ID": 2400400,
+    "ItemName": "Coldblood Dew (2)",
+    "LocationName": "",
+    "Area": "Cathedral Ward",
+    "Important": false
+  },
+  {
+    "ID": 2400440,
+    "ItemName": "Thick Coldblood (6)",
+    "LocationName": "",
+    "Area": "Cathedral Ward",
+    "Important": false
+  },
+  {
+    "ID": 2400430,
+    "ItemName": "GEM: Fixed location Cathedral Ward A",
+    "LocationName": "",
+    "Area": "Cathedral Ward",
+    "Important": false
+  },
+  {
+    "ID": 2400410,
+    "ItemName": "Madman's Knowledge",
+    "LocationName": "",
+    "Area": "Cathedral Ward",
+    "Important": false
+  },
+  {
+    "ID": 2400460,
+    "ItemName": "Thick Coldblood (5)",
+    "LocationName": "",
+    "Area": "Cathedral Ward",
+    "Important": false
+  },
+  {
+    "ID": 2400470,
+    "ItemName": "Thick Coldblood (4)",
+    "LocationName": "",
+    "Area": "Cathedral Ward",
+    "Important": false
+  },
+  {
+    "ID": 2400540,
+    "ItemName": "Rumpled Yharnam Hat",
+    "LocationName": "",
+    "Area": "Cathedral Ward",
+    "Important": false
+  },
+  {
+    "ID": 2400541,
+    "ItemName": "Sweaty Clothes",
+    "LocationName": "",
+    "Area": "Cathedral Ward",
+    "Important": false
+  },
+  {
+    "ID": 2400550,
+    "ItemName": "Wooden Shield",
+    "LocationName": "",
+    "Area": "Cathedral Ward",
+    "Important": false
+  },
+  {
+    "ID": 2400560,
+    "ItemName": "Blood Stone Shard x5",
+    "LocationName": "",
+    "Area": "Cathedral Ward",
+    "Important": false
+  },
+  {
+    "ID": 2400570,
+    "ItemName": "Thick Coldblood (5)",
+    "LocationName": "",
+    "Area": "Cathedral Ward",
+    "Important": false
+  },
+  {
+    "ID": 2400580,
+    "ItemName": "Thick Coldblood (5)",
+    "LocationName": "",
+    "Area": "Cathedral Ward",
+    "Important": false
+  },
+  {
+    "ID": 2400590,
+    "ItemName": "Madman's Knowledge",
+    "LocationName": "",
+    "Area": "Cathedral Ward",
+    "Important": false
+  },
+  {
+    "ID": 2400600,
+    "ItemName": "Twin Blood Stone Shards x2",
+    "LocationName": "",
+    "Area": "Cathedral Ward",
+    "Important": false
+  },
+  {
+    "ID": 2400610,
+    "ItemName": "Antidote",
+    "LocationName": "",
+    "Area": "Cathedral Ward",
+    "Important": false
+  },
+  {
+    "ID": 2400620,
+    "ItemName": "Madman's Knowledge",
+    "LocationName": "",
+    "Area": "Cathedral Ward",
+    "Important": false
+  },
+  {
+    "ID": 2400630,
+    "ItemName": "Poison Knife x18",
+    "LocationName": "",
+    "Area": "Cathedral Ward",
+    "Important": false
+  },
+  {
+    "ID": 2400660,
+    "ItemName": "Madman's Knowledge",
+    "LocationName": "",
+    "Area": "Cathedral Ward",
+    "Important": false
+  },
+  {
+    "ID": 2400670,
+    "ItemName": "Messenger Top Hat",
+    "LocationName": "",
+    "Area": "Cathedral Ward",
+    "Important": false
+  },
+  {
+    "ID": 2400700,
+    "ItemName": "Frenzied Coldblood (7)",
+    "LocationName": "",
+    "Area": "Cathedral Ward",
+    "Important": false
+  },
+  {
+    "ID": 2400710,
+    "ItemName": "Twin Blood Stone Shards",
+    "LocationName": "",
+    "Area": "Cathedral Ward",
+    "Important": false
+  },
+  {
+    "ID": 2400720,
+    "ItemName": "Madman's Knowledge",
+    "LocationName": "",
+    "Area": "Cathedral Ward",
+    "Important": false
+  },
+  {
+    "ID": 2400730,
+    "ItemName": "Messenger Urn Festival",
+    "LocationName": "",
+    "Area": "Cathedral Ward",
+    "Important": false
+  },
+  {
+    "ID": 2400740,
+    "ItemName": "GEM: Fixed location Cathedral Ward A",
+    "LocationName": "",
+    "Area": "Cathedral Ward",
+    "Important": false
+  },
+  {
+    "ID": 2400750,
+    "ItemName": "Bold Hunter's Mark x3",
+    "LocationName": "",
+    "Area": "Cathedral Ward",
+    "Important": false
+  },
+  {
+    "ID": 2400485,
+    "ItemName": "Bold Hunter's Mark",
+    "LocationName": "",
+    "Area": "Cathedral Ward",
+    "Important": false
+  },
+  {
+    "ID": 2400480,
+    "ItemName": "Radiant Sword Hunter Badge",
+    "LocationName": "",
+    "Area": "Cathedral Ward",
+    "Important": false
+  },
+  {
+    "ID": 2400640,
+    "ItemName": "GEM: Communion Lv1",
+    "LocationName": "",
+    "Area": "Cathedral Ward",
+    "Important": false
+  },
+  {
+    "ID": 2400645,
+    "ItemName": "Madman's Knowledge",
+    "LocationName": "",
+    "Area": "Cathedral Ward",
+    "Important": false
+  },
+  {
+    "ID": 2400650,
+    "ItemName": "GEM: Fixed location Cathedral Ward A",
+    "LocationName": "",
+    "Area": "Cathedral Ward",
+    "Important": false
+  },
+  {
+    "ID": 2400690,
+    "ItemName": "GEM: Formless Oedon Lv4",
+    "LocationName": "",
+    "Area": "Cathedral Ward",
+    "Important": false
+  },
+  {
+    "ID": 2400695,
+    "ItemName": "Madman's Knowledge",
+    "LocationName": "",
+    "Area": "Cathedral Ward",
+    "Important": false
+  },
+  {
+    "ID": 2400760,
+    "ItemName": "GEM: Fixed location Cathedral Ward A",
+    "LocationName": "",
+    "Area": "Cathedral Ward",
+    "Important": false
+  },
+  {
+    "ID": 2410100,
+    "ItemName": "Saw Spear",
+    "LocationName": "",
+    "Area": "Central Yharnam",
+    "Important": false
+  },
+  {
+    "ID": 2410110,
+    "ItemName": "Blood Stone Shard x2",
+    "LocationName": "",
+    "Area": "Central Yharnam",
+    "Important": false
+  },
+  {
+    "ID": 2410120,
+    "ItemName": "Blood Vial x2",
+    "LocationName": "",
+    "Area": "Central Yharnam",
+    "Important": false
+  },
+  {
+    "ID": 2410130,
+    "ItemName": "Coldblood Dew (1)",
+    "LocationName": "",
+    "Area": "Central Yharnam",
+    "Important": false
+  },
+  {
+    "ID": 2410140,
+    "ItemName": "Madman's Knowledge",
+    "LocationName": "",
+    "Area": "Central Yharnam",
+    "Important": false
+  },
+  {
+    "ID": 2410150,
+    "ItemName": "Coldblood Dew (1)",
+    "LocationName": "",
+    "Area": "Central Yharnam",
+    "Important": false
+  },
+  {
+    "ID": 2410160,
+    "ItemName": "Pebble x8",
+    "LocationName": "",
+    "Area": "Central Yharnam",
+    "Important": false
+  },
+  {
+    "ID": 2410170,
+    "ItemName": "Blood Stone Shard",
+    "LocationName": "",
+    "Area": "Central Yharnam",
+    "Important": false
+  },
+  {
+    "ID": 2410180,
+    "ItemName": "Blood Stone Shard",
+    "LocationName": "",
+    "Area": "Central Yharnam",
+    "Important": false
+  },
+  {
+    "ID": 2410190,
+    "ItemName": "Blood Vial x2",
+    "LocationName": "",
+    "Area": "Central Yharnam",
+    "Important": false
+  },
+  {
+    "ID": 2410200,
+    "ItemName": "Molotov Cocktail x4",
+    "LocationName": "",
+    "Area": "Central Yharnam",
+    "Important": false
+  },
+  {
+    "ID": 2410210,
+    "ItemName": "Blood Stone Shard",
+    "LocationName": "",
+    "Area": "Central Yharnam",
+    "Important": false
+  },
+  {
+    "ID": 2410220,
+    "ItemName": "Pungent Blood Cocktail x2",
+    "LocationName": "",
+    "Area": "Central Yharnam",
+    "Important": false
+  },
+  {
+    "ID": 2410240,
+    "ItemName": "Coldblood Dew (3)",
+    "LocationName": "",
+    "Area": "Central Yharnam",
+    "Important": false
+  },
+  {
+    "ID": 2410250,
+    "ItemName": "Madman's Knowledge",
+    "LocationName": "",
+    "Area": "Central Yharnam",
+    "Important": false
+  },
+  {
+    "ID": 2410260,
+    "ItemName": "Coldblood Dew (1)",
+    "LocationName": "",
+    "Area": "Central Yharnam",
+    "Important": false
+  },
+  {
+    "ID": 2410270,
+    "ItemName": "Quicksilver Bullets x10",
+    "LocationName": "",
+    "Area": "Central Yharnam",
+    "Important": false
+  },
+  {
+    "ID": 2410280,
+    "ItemName": "Coldblood Dew (2)",
+    "LocationName": "",
+    "Area": "Central Yharnam",
+    "Important": false
+  },
+  {
+    "ID": 2410290,
+    "ItemName": "Saw Hunter Badge",
+    "LocationName": "",
+    "Area": "Central Yharnam",
+    "Important": false
+  },
+  {
+    "ID": 2410295,
+    "ItemName": "Bold Hunter's Mark",
+    "LocationName": "",
+    "Area": "Central Yharnam",
+    "Important": false
+  },
+  {
+    "ID": 2410310,
+    "ItemName": "Pebble x10",
+    "LocationName": "",
+    "Area": "Central Yharnam",
+    "Important": false
+  },
+  {
+    "ID": 2410330,
+    "ItemName": "Blood Stone Shard",
+    "LocationName": "",
+    "Area": "Central Yharnam",
+    "Important": false
+  },
+  {
+    "ID": 2410340,
+    "ItemName": "Blood Vial x4",
+    "LocationName": "",
+    "Area": "Central Yharnam",
+    "Important": false
+  },
+  {
+    "ID": 2410360,
+    "ItemName": "Blood Vial x2",
+    "LocationName": "",
+    "Area": "Central Yharnam",
+    "Important": false
+  },
+  {
+    "ID": 2410370,
+    "ItemName": "Oil Urn x2",
+    "LocationName": "",
+    "Area": "Central Yharnam",
+    "Important": false
+  },
+  {
+    "ID": 2410380,
+    "ItemName": "Blood Vial x2",
+    "LocationName": "",
+    "Area": "Central Yharnam",
+    "Important": false
+  },
+  {
+    "ID": 2410390,
+    "ItemName": "Blood Vial x6",
+    "LocationName": "",
+    "Area": "Central Yharnam",
+    "Important": false
+  },
+  {
+    "ID": 2410400,
+    "ItemName": "Blood Stone Shard",
+    "LocationName": "",
+    "Area": "Central Yharnam",
+    "Important": false
+  },
+  {
+    "ID": 2410430,
+    "ItemName": "Quicksilver Bullets x10",
+    "LocationName": "",
+    "Area": "Central Yharnam",
+    "Important": false
+  },
+  {
+    "ID": 2410440,
+    "ItemName": "Coldblood Dew (1)",
+    "LocationName": "",
+    "Area": "Central Yharnam",
+    "Important": false
+  },
+  {
+    "ID": 2410450,
+    "ItemName": "Coldblood Dew (1)",
+    "LocationName": "",
+    "Area": "Central Yharnam",
+    "Important": false
+  },
+  {
+    "ID": 2410470,
+    "ItemName": "Oil Urn x2",
+    "LocationName": "",
+    "Area": "Central Yharnam",
+    "Important": false
+  },
+  {
+    "ID": 2410480,
+    "ItemName": "Madman's Knowledge",
+    "LocationName": "",
+    "Area": "Central Yharnam",
+    "Important": false
+  },
+  {
+    "ID": 2410490,
+    "ItemName": "Blood Stone Shard",
+    "LocationName": "",
+    "Area": "Central Yharnam",
+    "Important": false
+  },
+  {
+    "ID": 2410510,
+    "ItemName": "Bold Hunter's Mark x2",
+    "LocationName": "",
+    "Area": "Central Yharnam",
+    "Important": false
+  },
+  {
+    "ID": 2410520,
+    "ItemName": "Torch",
+    "LocationName": "",
+    "Area": "Central Yharnam",
+    "Important": false
+  },
+  {
+    "ID": 2410530,
+    "ItemName": "Coldblood Dew (1)",
+    "LocationName": "",
+    "Area": "Central Yharnam",
+    "Important": false
+  },
+  {
+    "ID": 2410540,
+    "ItemName": "Blood Stone Shard",
+    "LocationName": "",
+    "Area": "Central Yharnam",
+    "Important": false
+  },
+  {
+    "ID": 2410560,
+    "ItemName": "Quicksilver Bullets x5",
+    "LocationName": "",
+    "Area": "Central Yharnam",
+    "Important": false
+  },
+  {
+    "ID": 2410570,
+    "ItemName": "Molotov Cocktail x4",
+    "LocationName": "",
+    "Area": "Central Yharnam",
+    "Important": false
+  },
+  {
+    "ID": 2410590,
+    "ItemName": "Molotov Cocktail x6",
+    "LocationName": "",
+    "Area": "Central Yharnam",
+    "Important": false
+  },
+  {
+    "ID": 2410600,
+    "ItemName": "Coldblood Dew (1)",
+    "LocationName": "",
+    "Area": "Central Yharnam",
+    "Important": false
+  },
+  {
+    "ID": 2410610,
+    "ItemName": "Hunter Hat",
+    "LocationName": "",
+    "Area": "Central Yharnam",
+    "Important": false
+  },
+  {
+    "ID": 2410611,
+    "ItemName": "Hunter Garb",
+    "LocationName": "",
+    "Area": "Central Yharnam",
+    "Important": false
+  },
+  {
+    "ID": 2410612,
+    "ItemName": "Hunter Gloves",
+    "LocationName": "",
+    "Area": "Central Yharnam",
+    "Important": false
+  },
+  {
+    "ID": 2410613,
+    "ItemName": "Hunter Trousers",
+    "LocationName": "",
+    "Area": "Central Yharnam",
+    "Important": false
+  },
+  {
+    "ID": 2410620,
+    "ItemName": "Thick Coldblood (5)",
+    "LocationName": "",
+    "Area": "Central Yharnam",
+    "Important": false
+  },
+  {
+    "ID": 2410630,
+    "ItemName": "Coldblood Dew (1)",
+    "LocationName": "",
+    "Area": "Central Yharnam",
+    "Important": false
+  },
+  {
+    "ID": 2410650,
+    "ItemName": "Blood Stone Shard",
+    "LocationName": "",
+    "Area": "Central Yharnam",
+    "Important": false
+  },
+  {
+    "ID": 2410800,
+    "ItemName": "Quicksilver Bullets x10",
+    "LocationName": "",
+    "Area": "Central Yharnam",
+    "Important": false
+  },
+  {
+    "ID": 42000,
+    "ItemName": "White Messenger Ribbon",
+    "LocationName": "",
+    "Area": "Central Yharnam",
+    "Important": false
+  },
+  {
+    "ID": 2410920,
+    "ItemName": "Red Jeweled Brooch",
+    "LocationName": "",
+    "Area": "Central Yharnam",
+    "Important": false
+  },
+  {
+    "ID": 2411000,
+    "ItemName": "Blood Gem Workshop Tool",
+    "LocationName": "",
+    "Area": "Central Yharnam",
+    "Important": false
+  },
+  {
+    "ID": 2411005,
+    "ItemName": "Kin Coldblood (12)",
+    "LocationName": "",
+    "Area": "Central Yharnam",
+    "Important": false
+  },
+  {
+    "ID": 2410640,
+    "ItemName": "GEM: Communion Lv3",
+    "LocationName": "",
+    "Area": "Central Yharnam",
+    "Important": false
+  },
+  {
+    "ID": 2410645,
+    "ItemName": "Madman's Knowledge",
+    "LocationName": "",
+    "Area": "Central Yharnam",
+    "Important": false
+  },
+  {
+    "ID": 2420120,
+    "ItemName": "GEM: Great Lake Lv2",
+    "LocationName": "",
+    "Area": "Upper Cathedral Ward",
+    "Important": false
+  },
+  {
+    "ID": 2420125,
+    "ItemName": "Madman's Knowledge",
+    "LocationName": "",
+    "Area": "Upper Cathedral Ward",
+    "Important": false
+  },
+  {
+    "ID": 2420130,
+    "ItemName": "Frenzied Coldblood (9)",
+    "LocationName": "",
+    "Area": "Upper Cathedral Ward",
+    "Important": false
+  },
+  {
+    "ID": 2420150,
+    "ItemName": "Choir Garb",
+    "LocationName": "",
+    "Area": "Upper Cathedral Ward",
+    "Important": false
+  },
+  {
+    "ID": 2420151,
+    "ItemName": "Choir Gloves",
+    "LocationName": "",
+    "Area": "Upper Cathedral Ward",
+    "Important": false
+  },
+  {
+    "ID": 2420152,
+    "ItemName": "Choir Trousers",
+    "LocationName": "",
+    "Area": "Upper Cathedral Ward",
+    "Important": false
+  },
+  {
+    "ID": 2420170,
+    "ItemName": "Madman's Knowledge",
+    "LocationName": "",
+    "Area": "Upper Cathedral Ward",
+    "Important": false
+  },
+  {
+    "ID": 2420180,
+    "ItemName": "Blue Elixir",
+    "LocationName": "",
+    "Area": "Upper Cathedral Ward",
+    "Important": false
+  },
+  {
+    "ID": 2420190,
+    "ItemName": "Blindfold Cap",
+    "LocationName": "",
+    "Area": "Upper Cathedral Ward",
+    "Important": false
+  },
+  {
+    "ID": 2420200,
+    "ItemName": "Madman's Knowledge",
+    "LocationName": "",
+    "Area": "Upper Cathedral Ward",
+    "Important": false
+  },
+  {
+    "ID": 2420210,
+    "ItemName": "Madman's Knowledge",
+    "LocationName": "",
+    "Area": "Upper Cathedral Ward",
+    "Important": false
+  },
+  {
+    "ID": 2420220,
+    "ItemName": "Pearl Slug x2",
+    "LocationName": "",
+    "Area": "Upper Cathedral Ward",
+    "Important": false
+  },
+  {
+    "ID": 2420240,
+    "ItemName": "Ritual Blood (5) x3",
+    "LocationName": "",
+    "Area": "Upper Cathedral Ward",
+    "Important": false
+  },
+  {
+    "ID": 2420270,
+    "ItemName": "Cosmic Eye Watcher Badge",
+    "LocationName": "",
+    "Area": "Upper Cathedral Ward",
+    "Important": false
+  },
+  {
+    "ID": 2420275,
+    "ItemName": "Bold Hunter's Mark",
+    "LocationName": "",
+    "Area": "Upper Cathedral Ward",
+    "Important": false
+  },
+  {
+    "ID": 2420320,
+    "ItemName": "A Call Beyond",
+    "LocationName": "",
+    "Area": "Upper Cathedral Ward",
+    "Important": false
+  },
+  {
+    "ID": 2420310,
+    "ItemName": "Blue Elixir",
+    "LocationName": "",
+    "Area": "Upper Cathedral Ward",
+    "Important": false
+  },
+  {
+    "ID": 2420300,
+    "ItemName": "Frenzied Coldblood (9)",
+    "LocationName": "",
+    "Area": "Upper Cathedral Ward",
+    "Important": false
+  },
+  {
+    "ID": 2500100,
+    "ItemName": "Frenzied Coldblood (9)",
+    "LocationName": "",
+    "Area": "Forsaken Castle Cainhurst",
+    "Important": false
+  },
+  {
+    "ID": 2500110,
+    "ItemName": "Numbing Mist x2",
+    "LocationName": "",
+    "Area": "Forsaken Castle Cainhurst",
+    "Important": false
+  },
+  {
+    "ID": 2500120,
+    "ItemName": "Numbing Mist x4",
+    "LocationName": "",
+    "Area": "Forsaken Castle Cainhurst",
+    "Important": false
+  },
+  {
+    "ID": 2500130,
+    "ItemName": "Numbing Mist x4",
+    "LocationName": "",
+    "Area": "Forsaken Castle Cainhurst",
+    "Important": false
+  },
+  {
+    "ID": 2500140,
+    "ItemName": "Frenzied Coldblood (8)",
+    "LocationName": "",
+    "Area": "Forsaken Castle Cainhurst",
+    "Important": false
+  },
+  {
+    "ID": 2500150,
+    "ItemName": "Frenzied Coldblood (9)",
+    "LocationName": "",
+    "Area": "Forsaken Castle Cainhurst",
+    "Important": false
+  },
+  {
+    "ID": 2500160,
+    "ItemName": "Noble Dress",
+    "LocationName": "",
+    "Area": "Forsaken Castle Cainhurst",
+    "Important": false
+  },
+  {
+    "ID": 2500170,
+    "ItemName": "Vileblood Register",
+    "LocationName": "",
+    "Area": "Forsaken Castle Cainhurst",
+    "Important": false
+  },
+  {
+    "ID": 2500180,
+    "ItemName": "Quicksilver Bullets x6",
+    "LocationName": "",
+    "Area": "Forsaken Castle Cainhurst",
+    "Important": false
+  },
+  {
+    "ID": 2500190,
+    "ItemName": "Kin Coldblood (10)",
+    "LocationName": "",
+    "Area": "Forsaken Castle Cainhurst",
+    "Important": false
+  },
+  {
+    "ID": 2500210,
+    "ItemName": "Madman's Knowledge",
+    "LocationName": "",
+    "Area": "Forsaken Castle Cainhurst",
+    "Important": false
+  },
+  {
+    "ID": 2500220,
+    "ItemName": "Madman's Knowledge",
+    "LocationName": "",
+    "Area": "Forsaken Castle Cainhurst",
+    "Important": false
+  },
+  {
+    "ID": 2500230,
+    "ItemName": "Blood Stone Chunk",
+    "LocationName": "",
+    "Area": "Forsaken Castle Cainhurst",
+    "Important": false
+  },
+  {
+    "ID": 2500240,
+    "ItemName": "Quicksilver Bullets x4",
+    "LocationName": "",
+    "Area": "Forsaken Castle Cainhurst",
+    "Important": false
+  },
+  {
+    "ID": 2500250,
+    "ItemName": "Executioner's Gloves",
+    "LocationName": "",
+    "Area": "Forsaken Castle Cainhurst",
+    "Important": false
+  },
+  {
+    "ID": 2500260,
+    "ItemName": "Kin Coldblood (10)",
+    "LocationName": "",
+    "Area": "Forsaken Castle Cainhurst",
+    "Important": false
+  },
+  {
+    "ID": 2500270,
+    "ItemName": "Bold Hunter's Mark x2",
+    "LocationName": "",
+    "Area": "Forsaken Castle Cainhurst",
+    "Important": false
+  },
+  {
+    "ID": 2501000,
+    "ItemName": "Reiterpallasch",
+    "LocationName": "",
+    "Area": "Forsaken Castle Cainhurst",
+    "Important": false
+  },
+  {
+    "ID": 2501010,
+    "ItemName": "Blood Stone Chunk",
+    "LocationName": "",
+    "Area": "Forsaken Castle Cainhurst",
+    "Important": false
+  },
+  {
+    "ID": 2501020,
+    "ItemName": "Executioner Garb",
+    "LocationName": "",
+    "Area": "Forsaken Castle Cainhurst",
+    "Important": false
+  },
+  {
+    "ID": 2501021,
+    "ItemName": "Executioner Gauntlets",
+    "LocationName": "",
+    "Area": "Forsaken Castle Cainhurst",
+    "Important": false
+  },
+  {
+    "ID": 2501022,
+    "ItemName": "Executioner Trousers",
+    "LocationName": "",
+    "Area": "Forsaken Castle Cainhurst",
+    "Important": false
+  },
+  {
+    "ID": 2501030,
+    "ItemName": "Blood Stone Chunk",
+    "LocationName": "",
+    "Area": "Forsaken Castle Cainhurst",
+    "Important": false
+  },
+  {
+    "ID": 2501040,
+    "ItemName": "GEM: Fixed placement Old castle",
+    "LocationName": "",
+    "Area": "Forsaken Castle Cainhurst",
+    "Important": false
+  },
+  {
+    "ID": 2501050,
+    "ItemName": "Knight's Wig",
+    "LocationName": "",
+    "Area": "Forsaken Castle Cainhurst",
+    "Important": false
+  },
+  {
+    "ID": 2501060,
+    "ItemName": "GEM: Fixed placement Old castle",
+    "LocationName": "",
+    "Area": "Forsaken Castle Cainhurst",
+    "Important": false
+  },
+  {
+    "ID": 2501070,
+    "ItemName": "Knight's Garb",
+    "LocationName": "",
+    "Area": "Forsaken Castle Cainhurst",
+    "Important": false
+  },
+  {
+    "ID": 2501071,
+    "ItemName": "Knight's Gloves",
+    "LocationName": "",
+    "Area": "Forsaken Castle Cainhurst",
+    "Important": false
+  },
+  {
+    "ID": 2501072,
+    "ItemName": "Knight's Trousers/Dress",
+    "LocationName": "",
+    "Area": "Forsaken Castle Cainhurst",
+    "Important": false
+  },
+  {
+    "ID": 2501080,
+    "ItemName": "Evelyn",
+    "LocationName": "",
+    "Area": "Forsaken Castle Cainhurst",
+    "Important": false
+  },
+  {
+    "ID": 2600560,
+    "ItemName": "Blood Stone Chunk",
+    "LocationName": "",
+    "Area": "Nightmare of Mensis",
+    "Important": false
+  },
+  {
+    "ID": 2600580,
+    "ItemName": "Blood Vial x8",
+    "LocationName": "",
+    "Area": "Nightmare of Mensis",
+    "Important": false
+  },
+  {
+    "ID": 2600100,
+    "ItemName": "Shaman Bone Blade x6",
+    "LocationName": "",
+    "Area": "Nightmare of Mensis",
+    "Important": false
+  },
+  {
+    "ID": 2600110,
+    "ItemName": "Madman's Knowledge",
+    "LocationName": "",
+    "Area": "Nightmare of Mensis",
+    "Important": false
+  },
+  {
+    "ID": 2600120,
+    "ItemName": "Great One's Wisdom",
+    "LocationName": "",
+    "Area": "Nightmare of Mensis",
+    "Important": false
+  },
+  {
+    "ID": 2600130,
+    "ItemName": "Great One's Wisdom",
+    "LocationName": "",
+    "Area": "Nightmare of Mensis",
+    "Important": false
+  },
+  {
+    "ID": 2600140,
+    "ItemName": "Great One's Wisdom",
+    "LocationName": "",
+    "Area": "Nightmare of Mensis",
+    "Important": false
+  },
+  {
+    "ID": 2600150,
+    "ItemName": "GEM: Fixed placement Trap Lord",
+    "LocationName": "",
+    "Area": "Nightmare of Mensis",
+    "Important": false
+  },
+  {
+    "ID": 2600160,
+    "ItemName": "Great One's Wisdom",
+    "LocationName": "",
+    "Area": "Nightmare of Mensis",
+    "Important": false
+  },
+  {
+    "ID": 2600170,
+    "ItemName": "Frenzied Coldblood (9)",
+    "LocationName": "",
+    "Area": "Nightmare of Mensis",
+    "Important": false
+  },
+  {
+    "ID": 2600180,
+    "ItemName": "Frenzied Coldblood (9)",
+    "LocationName": "",
+    "Area": "Nightmare of Mensis",
+    "Important": false
+  },
+  {
+    "ID": 2600190,
+    "ItemName": "Blood Vial x8",
+    "LocationName": "",
+    "Area": "Nightmare of Mensis",
+    "Important": false
+  },
+  {
+    "ID": 2600200,
+    "ItemName": "GEM: Fixed placement Trap Lord",
+    "LocationName": "",
+    "Area": "Nightmare of Mensis",
+    "Important": false
+  },
+  {
+    "ID": 2600210,
+    "ItemName": "Blood Stone Chunk",
+    "LocationName": "",
+    "Area": "Nightmare of Mensis",
+    "Important": false
+  },
+  {
+    "ID": 2600220,
+    "ItemName": "GEM: Fixed placement Trap Lord",
+    "LocationName": "",
+    "Area": "Nightmare of Mensis",
+    "Important": false
+  },
+  {
+    "ID": 2600230,
+    "ItemName": "Quicksilver Bullets x6",
+    "LocationName": "",
+    "Area": "Nightmare of Mensis",
+    "Important": false
+  },
+  {
+    "ID": 2600240,
+    "ItemName": "Madman's Knowledge",
+    "LocationName": "",
+    "Area": "Nightmare of Mensis",
+    "Important": false
+  },
+  {
+    "ID": 2600250,
+    "ItemName": "Lead Elixir x2",
+    "LocationName": "",
+    "Area": "Nightmare of Mensis",
+    "Important": false
+  },
+  {
+    "ID": 2600270,
+    "ItemName": "Quicksilver Bullets x6",
+    "LocationName": "",
+    "Area": "Nightmare of Mensis",
+    "Important": false
+  },
+  {
+    "ID": 2600280,
+    "ItemName": "Blood Stone Chunk",
+    "LocationName": "",
+    "Area": "Nightmare of Mensis",
+    "Important": false
+  },
+  {
+    "ID": 2600290,
+    "ItemName": "Frenzied Coldblood (9)",
+    "LocationName": "",
+    "Area": "Nightmare of Mensis",
+    "Important": false
+  },
+  {
+    "ID": 2600300,
+    "ItemName": "GEM: Eye Lv1",
+    "LocationName": "",
+    "Area": "Nightmare of Mensis",
+    "Important": false
+  },
+  {
+    "ID": 2600305,
+    "ItemName": "Madman's Knowledge",
+    "LocationName": "",
+    "Area": "Nightmare of Mensis",
+    "Important": false
+  },
+  {
+    "ID": 2600310,
+    "ItemName": "Blood Stone Chunk",
+    "LocationName": "",
+    "Area": "Nightmare of Mensis",
+    "Important": false
+  },
+  {
+    "ID": 2600320,
+    "ItemName": "Kin Coldblood (10)",
+    "LocationName": "",
+    "Area": "Nightmare of Mensis",
+    "Important": false
+  },
+  {
+    "ID": 2600330,
+    "ItemName": "Frenzied Coldblood (9)",
+    "LocationName": "",
+    "Area": "Nightmare of Mensis",
+    "Important": false
+  },
+  {
+    "ID": 2600340,
+    "ItemName": "Blue Elixir x2",
+    "LocationName": "",
+    "Area": "Nightmare of Mensis",
+    "Important": false
+  },
+  {
+    "ID": 2600360,
+    "ItemName": "Kin Coldblood (10)",
+    "LocationName": "",
+    "Area": "Nightmare of Mensis",
+    "Important": false
+  },
+  {
+    "ID": 2600380,
+    "ItemName": "Sedative x3",
+    "LocationName": "",
+    "Area": "Nightmare of Mensis",
+    "Important": false
+  },
+  {
+    "ID": 2600390,
+    "ItemName": "GEM: Moon Lv2",
+    "LocationName": "",
+    "Area": "Nightmare of Mensis",
+    "Important": false
+  },
+  {
+    "ID": 2600395,
+    "ItemName": "Madman's Knowledge",
+    "LocationName": "",
+    "Area": "Nightmare of Mensis",
+    "Important": false
+  },
+  {
+    "ID": 2600410,
+    "ItemName": "Kin Coldblood (10)",
+    "LocationName": "",
+    "Area": "Nightmare of Mensis",
+    "Important": false
+  },
+  {
+    "ID": 2600420,
+    "ItemName": "Blood Stone Chunk x2",
+    "LocationName": "",
+    "Area": "Nightmare of Mensis",
+    "Important": false
+  },
+  {
+    "ID": 2600440,
+    "ItemName": "Madman's Knowledge",
+    "LocationName": "",
+    "Area": "Nightmare of Mensis",
+    "Important": false
+  },
+  {
+    "ID": 2600610,
+    "ItemName": "Iron Door Key",
+    "LocationName": "",
+    "Area": "Nightmare of Mensis",
+    "Important": false
+  },
+  {
+    "ID": 2600450,
+    "ItemName": "Blood Stone Chunk x2",
+    "LocationName": "",
+    "Area": "Nightmare of Mensis",
+    "Important": false
+  },
+  {
+    "ID": 2600460,
+    "ItemName": "Kin Coldblood (11)",
+    "LocationName": "",
+    "Area": "Nightmare of Mensis",
+    "Important": false
+  },
+  {
+    "ID": 2600470,
+    "ItemName": "Kin Coldblood (11)",
+    "LocationName": "",
+    "Area": "Nightmare of Mensis",
+    "Important": false
+  },
+  {
+    "ID": 2600480,
+    "ItemName": "GEM: Fixed placement Trap Lord",
+    "LocationName": "",
+    "Area": "Nightmare of Mensis",
+    "Important": false
+  },
+  {
+    "ID": 2600490,
+    "ItemName": "Blood Stone Chunk x2",
+    "LocationName": "",
+    "Area": "Nightmare of Mensis",
+    "Important": false
+  },
+  {
+    "ID": 2600500,
+    "ItemName": "Kin Coldblood (11)",
+    "LocationName": "",
+    "Area": "Nightmare of Mensis",
+    "Important": false
+  },
+  {
+    "ID": 2600510,
+    "ItemName": "GEM: Fixed placement Trap Lord",
+    "LocationName": "",
+    "Area": "Nightmare of Mensis",
+    "Important": false
+  },
+  {
+    "ID": 2600540,
+    "ItemName": "Blood Rock",
+    "LocationName": "",
+    "Area": "Nightmare of Mensis",
+    "Important": false
+  },
+  {
+    "ID": 2601000,
+    "ItemName": "Iosefka's Blood Vial",
+    "LocationName": "",
+    "Area": "Nightmare of Mensis",
+    "Important": false
+  },
+  {
+    "ID": 2601010,
+    "ItemName": "Yellow Backbone x2",
+    "LocationName": "",
+    "Area": "Nightmare of Mensis",
+    "Important": false
+  },
+  {
+    "ID": 2600590,
+    "ItemName": "Inflicted Organ",
+    "LocationName": "",
+    "Area": "Nightmare of Mensis",
+    "Important": false
+  },
+  {
+    "ID": 2600600,
+    "ItemName": "Choir Bell",
+    "LocationName": "",
+    "Area": "Nightmare of Mensis",
+    "Important": false
+  },
+  {
+    "ID": 2700100,
+    "ItemName": "Twin Blood Stone Shards x3",
+    "LocationName": "",
+    "Area": "Forbidden Woods",
+    "Important": false
+  },
+  {
+    "ID": 2700110,
+    "ItemName": "Poison Knife x8",
+    "LocationName": "",
+    "Area": "Forbidden Woods",
+    "Important": false
+  },
+  {
+    "ID": 2700120,
+    "ItemName": "Cannon",
+    "LocationName": "",
+    "Area": "Forbidden Woods",
+    "Important": false
+  },
+  {
+    "ID": 2700130,
+    "ItemName": "Madman's Knowledge",
+    "LocationName": "",
+    "Area": "Forbidden Woods",
+    "Important": false
+  },
+  {
+    "ID": 2700140,
+    "ItemName": "Molotov Cocktail x11",
+    "LocationName": "",
+    "Area": "Forbidden Woods",
+    "Important": false
+  },
+  {
+    "ID": 2700150,
+    "ItemName": "White Church Hat",
+    "LocationName": "",
+    "Area": "Forbidden Woods",
+    "Important": false
+  },
+  {
+    "ID": 2700151,
+    "ItemName": "White Church Garb",
+    "LocationName": "",
+    "Area": "Forbidden Woods",
+    "Important": false
+  },
+  {
+    "ID": 2700152,
+    "ItemName": "Surgical Long Gloves",
+    "LocationName": "",
+    "Area": "Forbidden Woods",
+    "Important": false
+  },
+  {
+    "ID": 2700153,
+    "ItemName": "White Church Trousers/Dress",
+    "LocationName": "",
+    "Area": "Forbidden Woods",
+    "Important": false
+  },
+  {
+    "ID": 2700170,
+    "ItemName": "Thick Coldblood (6)",
+    "LocationName": "",
+    "Area": "Forbidden Woods",
+    "Important": false
+  },
+  {
+    "ID": 2700770,
+    "ItemName": "Thick Coldblood (6)",
+    "LocationName": "",
+    "Area": "Forbidden Woods",
+    "Important": false
+  },
+  {
+    "ID": 2700190,
+    "ItemName": "Twin Blood Stone Shards",
+    "LocationName": "",
+    "Area": "Forbidden Woods",
+    "Important": false
+  },
+  {
+    "ID": 2700200,
+    "ItemName": "GEM: Dissipating Lake Lv1",
+    "LocationName": "",
+    "Area": "Forbidden Woods",
+    "Important": false
+  },
+  {
+    "ID": 2700205,
+    "ItemName": "Madman's Knowledge",
+    "LocationName": "",
+    "Area": "Forbidden Woods",
+    "Important": false
+  },
+  {
+    "ID": 2700210,
+    "ItemName": "Madman's Knowledge",
+    "LocationName": "",
+    "Area": "Forbidden Woods",
+    "Important": false
+  },
+  {
+    "ID": 2700220,
+    "ItemName": "Twin Blood Stone Shards",
+    "LocationName": "",
+    "Area": "Forbidden Woods",
+    "Important": false
+  },
+  {
+    "ID": 2700230,
+    "ItemName": "Frenzied Coldblood (8)",
+    "LocationName": "",
+    "Area": "Forbidden Woods",
+    "Important": false
+  },
+  {
+    "ID": 2700240,
+    "ItemName": "Twin Blood Stone Shards",
+    "LocationName": "",
+    "Area": "Forbidden Woods",
+    "Important": false
+  },
+  {
+    "ID": 2700250,
+    "ItemName": "Madman's Knowledge",
+    "LocationName": "",
+    "Area": "Forbidden Woods",
+    "Important": false
+  },
+  {
+    "ID": 2700260,
+    "ItemName": "Madman's Knowledge",
+    "LocationName": "",
+    "Area": "Forbidden Woods",
+    "Important": false
+  },
+  {
+    "ID": 2700270,
+    "ItemName": "Madman's Knowledge",
+    "LocationName": "",
+    "Area": "Forbidden Woods",
+    "Important": false
+  },
+  {
+    "ID": 2700290,
+    "ItemName": "Madman's Knowledge",
+    "LocationName": "",
+    "Area": "Forbidden Woods",
+    "Important": false
+  },
+  {
+    "ID": 2700300,
+    "ItemName": "GEM: Fixed placement forest",
+    "LocationName": "",
+    "Area": "Forbidden Woods",
+    "Important": false
+  },
+  {
+    "ID": 2700310,
+    "ItemName": "Frenzied Coldblood (7)",
+    "LocationName": "",
+    "Area": "Forbidden Woods",
+    "Important": false
+  },
+  {
+    "ID": 2700320,
+    "ItemName": "Blood Vial x6",
+    "LocationName": "",
+    "Area": "Forbidden Woods",
+    "Important": false
+  },
+  {
+    "ID": 2700330,
+    "ItemName": "Twin Blood Stone Shards",
+    "LocationName": "",
+    "Area": "Forbidden Woods",
+    "Important": false
+  },
+  {
+    "ID": 2700340,
+    "ItemName": "Antidote x3",
+    "LocationName": "",
+    "Area": "Forbidden Woods",
+    "Important": false
+  },
+  {
+    "ID": 2700350,
+    "ItemName": "Antidote x4",
+    "LocationName": "",
+    "Area": "Forbidden Woods",
+    "Important": false
+  },
+  {
+    "ID": 2700360,
+    "ItemName": "Twin Blood Stone Shards x2",
+    "LocationName": "",
+    "Area": "Forbidden Woods",
+    "Important": false
+  },
+  {
+    "ID": 2700370,
+    "ItemName": "Blood Stone Chunk",
+    "LocationName": "",
+    "Area": "Forbidden Woods",
+    "Important": false
+  },
+  {
+    "ID": 2700380,
+    "ItemName": "GEM: Anti-Clockwise Metamorphosis Lv1",
+    "LocationName": "",
+    "Area": "Forbidden Woods",
+    "Important": false
+  },
+  {
+    "ID": 2700385,
+    "ItemName": "Madman's Knowledge",
+    "LocationName": "",
+    "Area": "Forbidden Woods",
+    "Important": false
+  },
+  {
+    "ID": 2700390,
+    "ItemName": "Poison Knife x3",
+    "LocationName": "",
+    "Area": "Forbidden Woods",
+    "Important": false
+  },
+  {
+    "ID": 2700400,
+    "ItemName": "Beast Blood Pellet x6",
+    "LocationName": "",
+    "Area": "Forbidden Woods",
+    "Important": false
+  },
+  {
+    "ID": 2700410,
+    "ItemName": "Graveguard Robe",
+    "LocationName": "",
+    "Area": "Forbidden Woods",
+    "Important": false
+  },
+  {
+    "ID": 2700411,
+    "ItemName": "Graveguard Manchettes",
+    "LocationName": "",
+    "Area": "Forbidden Woods",
+    "Important": false
+  },
+  {
+    "ID": 2700412,
+    "ItemName": "Graveguard Kilt",
+    "LocationName": "",
+    "Area": "Forbidden Woods",
+    "Important": false
+  },
+  {
+    "ID": 2700420,
+    "ItemName": "Twin Blood Stone Shards x2",
+    "LocationName": "",
+    "Area": "Forbidden Woods",
+    "Important": false
+  },
+  {
+    "ID": 2700430,
+    "ItemName": "Shining Coins x5",
+    "LocationName": "",
+    "Area": "Forbidden Woods",
+    "Important": false
+  },
+  {
+    "ID": 2700440,
+    "ItemName": "Twin Blood Stone Shards",
+    "LocationName": "",
+    "Area": "Forbidden Woods",
+    "Important": false
+  },
+  {
+    "ID": 2700450,
+    "ItemName": "Twin Blood Stone Shards",
+    "LocationName": "",
+    "Area": "Forbidden Woods",
+    "Important": false
+  },
+  {
+    "ID": 2700460,
+    "ItemName": "Twin Blood Stone Shards x2",
+    "LocationName": "",
+    "Area": "Forbidden Woods",
+    "Important": false
+  },
+  {
+    "ID": 2700470,
+    "ItemName": "Twin Blood Stone Shards",
+    "LocationName": "",
+    "Area": "Forbidden Woods",
+    "Important": false
+  },
+  {
+    "ID": 2700480,
+    "ItemName": "Beast Roar",
+    "LocationName": "",
+    "Area": "Forbidden Woods",
+    "Important": false
+  },
+  {
+    "ID": 2700490,
+    "ItemName": "Twin Blood Stone Shards x2",
+    "LocationName": "",
+    "Area": "Forbidden Woods",
+    "Important": false
+  },
+  {
+    "ID": 2700500,
+    "ItemName": "Frenzied Coldblood (7)",
+    "LocationName": "",
+    "Area": "Forbidden Woods",
+    "Important": false
+  },
+  {
+    "ID": 2700510,
+    "ItemName": "Quicksilver Bullets x6",
+    "LocationName": "",
+    "Area": "Forbidden Woods",
+    "Important": false
+  },
+  {
+    "ID": 2700520,
+    "ItemName": "Twin Blood Stone Shards",
+    "LocationName": "",
+    "Area": "Forbidden Woods",
+    "Important": false
+  },
+  {
+    "ID": 2700540,
+    "ItemName": "GEM: Deep Sea Lv2",
+    "LocationName": "",
+    "Area": "Forbidden Woods",
+    "Important": false
+  },
+  {
+    "ID": 2700545,
+    "ItemName": "Madman's Knowledge",
+    "LocationName": "",
+    "Area": "Forbidden Woods",
+    "Important": false
+  },
+  {
+    "ID": 2700550,
+    "ItemName": "Twin Blood Stone Shards",
+    "LocationName": "",
+    "Area": "Forbidden Woods",
+    "Important": false
+  },
+  {
+    "ID": 2700560,
+    "ItemName": "Graveguard Mask",
+    "LocationName": "",
+    "Area": "Forbidden Woods",
+    "Important": false
+  },
+  {
+    "ID": 2700570,
+    "ItemName": "GEM: Clockwise Metamorphosis Lv1",
+    "LocationName": "",
+    "Area": "Forbidden Woods",
+    "Important": false
+  },
+  {
+    "ID": 2700575,
+    "ItemName": "Madman's Knowledge",
+    "LocationName": "",
+    "Area": "Forbidden Woods",
+    "Important": false
+  },
+  {
+    "ID": 2700580,
+    "ItemName": "Twin Blood Stone Shards",
+    "LocationName": "",
+    "Area": "Forbidden Woods",
+    "Important": false
+  },
+  {
+    "ID": 2700590,
+    "ItemName": "Beast Blood Pellet x3",
+    "LocationName": "",
+    "Area": "Forbidden Woods",
+    "Important": false
+  },
+  {
+    "ID": 2700600,
+    "ItemName": "Thick Coldblood (6)",
+    "LocationName": "",
+    "Area": "Forbidden Woods",
+    "Important": false
+  },
+  {
+    "ID": 2700610,
+    "ItemName": "Blood Vial x2",
+    "LocationName": "",
+    "Area": "Forbidden Woods",
+    "Important": false
+  },
+  {
+    "ID": 2700640,
+    "ItemName": "Blood Vial x6",
+    "LocationName": "",
+    "Area": "Forbidden Woods",
+    "Important": false
+  },
+  {
+    "ID": 2700650,
+    "ItemName": "GEM: Fixed placement forest",
+    "LocationName": "",
+    "Area": "Forbidden Woods",
+    "Important": false
+  },
+  {
+    "ID": 2700660,
+    "ItemName": "GEM: Fixed placement forest",
+    "LocationName": "",
+    "Area": "Forbidden Woods",
+    "Important": false
+  },
+  {
+    "ID": 2700670,
+    "ItemName": "Frenzied Coldblood (7)",
+    "LocationName": "",
+    "Area": "Forbidden Woods",
+    "Important": false
+  },
+  {
+    "ID": 2700690,
+    "ItemName": "GEM: Fixed placement forest",
+    "LocationName": "",
+    "Area": "Forbidden Woods",
+    "Important": false
+  },
+  {
+    "ID": 2700700,
+    "ItemName": "GEM: Fixed placement forest",
+    "LocationName": "",
+    "Area": "Forbidden Woods",
+    "Important": false
+  },
+  {
+    "ID": 2700720,
+    "ItemName": "Twin Blood Stone Shards",
+    "LocationName": "",
+    "Area": "Forbidden Woods",
+    "Important": false
+  },
+  {
+    "ID": 2700740,
+    "ItemName": "Frenzied Coldblood (7)",
+    "LocationName": "",
+    "Area": "Forbidden Woods",
+    "Important": false
+  },
+  {
+    "ID": 2700750,
+    "ItemName": "Shining Coins x6",
+    "LocationName": "",
+    "Area": "Forbidden Woods",
+    "Important": false
+  },
+  {
+    "ID": 2700760,
+    "ItemName": "Twin Blood Stone Shards",
+    "LocationName": "",
+    "Area": "Forbidden Woods",
+    "Important": false
+  },
+  {
+    "ID": 2700180,
+    "ItemName": "GEM: Clear Deep Sea Lv1",
+    "LocationName": "",
+    "Area": "Forbidden Woods",
+    "Important": false
+  },
+  {
+    "ID": 2700185,
+    "ItemName": "Madman's Knowledge",
+    "LocationName": "",
+    "Area": "Forbidden Woods",
+    "Important": false
+  },
+  {
+    "ID": 2700780,
+    "ItemName": "Antidote x4",
+    "LocationName": "",
+    "Area": "Forbidden Woods",
+    "Important": false
+  },
+  {
+    "ID": 2700960,
+    "ItemName": "Twin Blood Stone Shards x2",
+    "LocationName": "",
+    "Area": "Forbidden Woods",
+    "Important": false
+  },
+  {
+    "ID": 2700790,
+    "ItemName": "Quicksilver Bullets x10",
+    "LocationName": "",
+    "Area": "Forbidden Woods",
+    "Important": false
+  },
+  {
+    "ID": 2700810,
+    "ItemName": "Pebble x2",
+    "LocationName": "",
+    "Area": "Forbidden Woods",
+    "Important": false
+  },
+  {
+    "ID": 2700860,
+    "ItemName": "Twin Blood Stone Shards",
+    "LocationName": "",
+    "Area": "Forbidden Woods",
+    "Important": false
+  },
+  {
+    "ID": 2700870,
+    "ItemName": "Thick Coldblood (6)",
+    "LocationName": "",
+    "Area": "Forbidden Woods",
+    "Important": false
+  },
+  {
+    "ID": 2700880,
+    "ItemName": "Blood Vial x5",
+    "LocationName": "",
+    "Area": "Forbidden Woods",
+    "Important": false
+  },
+  {
+    "ID": 2700890,
+    "ItemName": "Blue Elixir x4",
+    "LocationName": "",
+    "Area": "Forbidden Woods",
+    "Important": false
+  },
+  {
+    "ID": 2700900,
+    "ItemName": "Pungent Blood Cocktail x3",
+    "LocationName": "",
+    "Area": "Forbidden Woods",
+    "Important": false
+  },
+  {
+    "ID": 2700910,
+    "ItemName": "Pungent Blood Cocktail x4",
+    "LocationName": "",
+    "Area": "Forbidden Woods",
+    "Important": false
+  },
+  {
+    "ID": 2700920,
+    "ItemName": "Beast Blood Pellet x4",
+    "LocationName": "",
+    "Area": "Forbidden Woods",
+    "Important": false
+  },
+  {
+    "ID": 2700930,
+    "ItemName": "Frenzied Coldblood (7)",
+    "LocationName": "",
+    "Area": "Forbidden Woods",
+    "Important": false
+  },
+  {
+    "ID": 2700940,
+    "ItemName": "Madman's Knowledge",
+    "LocationName": "",
+    "Area": "Forbidden Woods",
+    "Important": false
+  },
+  {
+    "ID": 2700950,
+    "ItemName": "Antidote x2",
+    "LocationName": "",
+    "Area": "Forbidden Woods",
+    "Important": false
+  },
+  {
+    "ID": 2700800,
+    "ItemName": "Burial Blade",
+    "LocationName": "",
+    "Area": "Forbidden Woods",
+    "Important": false
+  },
+  {
+    "ID": 2800000,
+    "ItemName": "Frenzied Coldblood (8)",
+    "LocationName": "",
+    "Area": "Yahar'gul, Unseen Village",
+    "Important": false
+  },
+  {
+    "ID": 2800010,
+    "ItemName": "Blood Stone Chunk",
+    "LocationName": "",
+    "Area": "Yahar'gul, Unseen Village",
+    "Important": false
+  },
+  {
+    "ID": 2800020,
+    "ItemName": "GEM: Fixed placement Sacrifice",
+    "LocationName": "",
+    "Area": "Yahar'gul, Unseen Village",
+    "Important": false
+  },
+  {
+    "ID": 2800030,
+    "ItemName": "Bolt Paper x3",
+    "LocationName": "",
+    "Area": "Yahar'gul, Unseen Village",
+    "Important": false
+  },
+  {
+    "ID": 2800040,
+    "ItemName": "Frenzied Coldblood (8)",
+    "LocationName": "",
+    "Area": "Yahar'gul, Unseen Village",
+    "Important": false
+  },
+  {
+    "ID": 2800050,
+    "ItemName": "GEM: Heir Lv2",
+    "LocationName": "",
+    "Area": "Yahar'gul, Unseen Village",
+    "Important": false
+  },
+  {
+    "ID": 2800055,
+    "ItemName": "Madman's Knowledge",
+    "LocationName": "",
+    "Area": "Yahar'gul, Unseen Village",
+    "Important": false
+  },
+  {
+    "ID": 2800060,
+    "ItemName": "Frenzied Coldblood (8)",
+    "LocationName": "",
+    "Area": "Yahar'gul, Unseen Village",
+    "Important": false
+  },
+  {
+    "ID": 2800070,
+    "ItemName": "Frenzied Coldblood (8)",
+    "LocationName": "",
+    "Area": "Yahar'gul, Unseen Village",
+    "Important": false
+  },
+  {
+    "ID": 2800080,
+    "ItemName": "Blood Vial x8",
+    "LocationName": "",
+    "Area": "Yahar'gul, Unseen Village",
+    "Important": false
+  },
+  {
+    "ID": 2800100,
+    "ItemName": "Iron Yahar'gul Helm",
+    "LocationName": "",
+    "Area": "Yahar'gul, Unseen Village",
+    "Important": false
+  },
+  {
+    "ID": 2800110,
+    "ItemName": "Blood Stone Chunk",
+    "LocationName": "",
+    "Area": "Yahar'gul, Unseen Village",
+    "Important": false
+  },
+  {
+    "ID": 2800120,
+    "ItemName": "Frenzied Coldblood (8)",
+    "LocationName": "",
+    "Area": "Yahar'gul, Unseen Village",
+    "Important": false
+  },
+  {
+    "ID": 2800130,
+    "ItemName": "Blood Vial x6",
+    "LocationName": "",
+    "Area": "Yahar'gul, Unseen Village",
+    "Important": false
+  },
+  {
+    "ID": 2800140,
+    "ItemName": "GEM: Arcane Lake Lv1",
+    "LocationName": "",
+    "Area": "Yahar'gul, Unseen Village",
+    "Important": false
+  },
+  {
+    "ID": 2800145,
+    "ItemName": "Madman's Knowledge",
+    "LocationName": "",
+    "Area": "Yahar'gul, Unseen Village",
+    "Important": false
+  },
+  {
+    "ID": 2800150,
+    "ItemName": "Madman's Knowledge",
+    "LocationName": "",
+    "Area": "Yahar'gul, Unseen Village",
+    "Important": false
+  },
+  {
+    "ID": 2800160,
+    "ItemName": "Madman's Knowledge",
+    "LocationName": "",
+    "Area": "Yahar'gul, Unseen Village",
+    "Important": false
+  },
+  {
+    "ID": 2800180,
+    "ItemName": "Quicksilver Bullets x10",
+    "LocationName": "",
+    "Area": "Yahar'gul, Unseen Village",
+    "Important": false
+  },
+  {
+    "ID": 2800210,
+    "ItemName": "Blood Stone Chunk",
+    "LocationName": "",
+    "Area": "Yahar'gul, Unseen Village",
+    "Important": false
+  },
+  {
+    "ID": 2800710,
+    "ItemName": "GEM: Fixed placement University (Nightmare Classroom)",
+    "LocationName": "",
+    "Area": "Yahar'gul, Unseen Village",
+    "Important": false
+  },
+  {
+    "ID": 2800290,
+    "ItemName": "Upper Cathedral Key",
+    "LocationName": "",
+    "Area": "Yahar'gul, Unseen Village",
+    "Important": false
+  },
+  {
+    "ID": 2800300,
+    "ItemName": "Pungent Blood Cocktail",
+    "LocationName": "",
+    "Area": "Yahar'gul, Unseen Village",
+    "Important": false
+  },
+  {
+    "ID": 2800310,
+    "ItemName": "Twin Blood Stone Shards",
+    "LocationName": "",
+    "Area": "Yahar'gul, Unseen Village",
+    "Important": false
+  },
+  {
+    "ID": 2800320,
+    "ItemName": "Frenzied Coldblood (7)",
+    "LocationName": "",
+    "Area": "Yahar'gul, Unseen Village",
+    "Important": false
+  },
+  {
+    "ID": 2800330,
+    "ItemName": "Tonitrus",
+    "LocationName": "",
+    "Area": "Yahar'gul, Unseen Village",
+    "Important": false
+  },
+  {
+    "ID": 2800340,
+    "ItemName": "Bolt Paper x5",
+    "LocationName": "",
+    "Area": "Yahar'gul, Unseen Village",
+    "Important": false
+  },
+  {
+    "ID": 2800350,
+    "ItemName": "GEM: Moon Lv1",
+    "LocationName": "",
+    "Area": "Yahar'gul, Unseen Village",
+    "Important": false
+  },
+  {
+    "ID": 2800355,
+    "ItemName": "Madman's Knowledge",
+    "LocationName": "",
+    "Area": "Yahar'gul, Unseen Village",
+    "Important": false
+  },
+  {
+    "ID": 2800380,
+    "ItemName": "Frenzied Coldblood (8)",
+    "LocationName": "",
+    "Area": "Yahar'gul, Unseen Village",
+    "Important": false
+  },
+  {
+    "ID": 2800400,
+    "ItemName": "Blood Stone Chunk x2",
+    "LocationName": "",
+    "Area": "Yahar'gul, Unseen Village",
+    "Important": false
+  },
+  {
+    "ID": 2800410,
+    "ItemName": "Blood Stone Chunk x2",
+    "LocationName": "",
+    "Area": "Yahar'gul, Unseen Village",
+    "Important": false
+  },
+  {
+    "ID": 2800440,
+    "ItemName": "Blood Stone Chunk x2",
+    "LocationName": "",
+    "Area": "Yahar'gul, Unseen Village",
+    "Important": false
+  },
+  {
+    "ID": 2800450,
+    "ItemName": "Blood Stone Chunk x2",
+    "LocationName": "",
+    "Area": "Yahar'gul, Unseen Village",
+    "Important": false
+  },
+  {
+    "ID": 2800610,
+    "ItemName": "Black Hooded Iron Helm",
+    "LocationName": "",
+    "Area": "Yahar'gul, Unseen Village",
+    "Important": false
+  },
+  {
+    "ID": 2800611,
+    "ItemName": "Yahar'gul Black Garb",
+    "LocationName": "",
+    "Area": "Yahar'gul, Unseen Village",
+    "Important": false
+  },
+  {
+    "ID": 2800612,
+    "ItemName": "Yahar'gul Black Gloves",
+    "LocationName": "",
+    "Area": "Yahar'gul, Unseen Village",
+    "Important": false
+  },
+  {
+    "ID": 2800613,
+    "ItemName": "Yahar'gul Black Trousers",
+    "LocationName": "",
+    "Area": "Yahar'gul, Unseen Village",
+    "Important": false
+  },
+  {
+    "ID": 2800630,
+    "ItemName": "Frenzied Coldblood (7)",
+    "LocationName": "",
+    "Area": "Yahar'gul, Unseen Village",
+    "Important": false
+  },
+  {
+    "ID": 2800640,
+    "ItemName": "Thick Coldblood (6)",
+    "LocationName": "",
+    "Area": "Yahar'gul, Unseen Village",
+    "Important": false
+  },
+  {
+    "ID": 2800650,
+    "ItemName": "Blood Vial x6",
+    "LocationName": "",
+    "Area": "Yahar'gul, Unseen Village",
+    "Important": false
+  },
+  {
+    "ID": 2800660,
+    "ItemName": "Quicksilver Bullets x10",
+    "LocationName": "",
+    "Area": "Yahar'gul, Unseen Village",
+    "Important": false
+  },
+  {
+    "ID": 2800670,
+    "ItemName": "Lead Elixir x3",
+    "LocationName": "",
+    "Area": "Yahar'gul, Unseen Village",
+    "Important": false
+  },
+  {
+    "ID": 2800680,
+    "ItemName": "Frenzied Coldblood (8)",
+    "LocationName": "",
+    "Area": "Yahar'gul, Unseen Village",
+    "Important": false
+  },
+  {
+    "ID": 2800620,
+    "ItemName": "Madman's Knowledge",
+    "LocationName": "",
+    "Area": "Yahar'gul, Unseen Village",
+    "Important": false
+  },
+  {
+    "ID": 2800690,
+    "ItemName": "Madman's Knowledge",
+    "LocationName": "",
+    "Area": "Yahar'gul, Unseen Village",
+    "Important": false
+  },
+  {
+    "ID": 2800700,
+    "ItemName": "Madman's Knowledge",
+    "LocationName": "",
+    "Area": "Yahar'gul, Unseen Village",
+    "Important": false
+  },
+  {
+    "ID": 2800500,
+    "ItemName": "Tiny Tonitrus",
+    "LocationName": "",
+    "Area": "Yahar'gul, Unseen Village",
+    "Important": false
+  },
+  {
+    "ID": 3200720,
+    "ItemName": "Lecture Theatre Key",
+    "LocationName": "",
+    "Area": "Byrgenwerth",
+    "Important": false
+  },
+  {
+    "ID": 3200730,
+    "ItemName": "Student Uniform (Not Red)",
+    "LocationName": "",
+    "Area": "Byrgenwerth",
+    "Important": false
+  },
+  {
+    "ID": 3200731,
+    "ItemName": "Student Trousers",
+    "LocationName": "",
+    "Area": "Byrgenwerth",
+    "Important": false
+  },
+  {
+    "ID": 3200000,
+    "ItemName": "Madman's Knowledge",
+    "LocationName": "",
+    "Area": "Byrgenwerth",
+    "Important": false
+  },
+  {
+    "ID": 3200010,
+    "ItemName": "GEM: Arcane Lake Lv2",
+    "LocationName": "",
+    "Area": "Byrgenwerth",
+    "Important": false
+  },
+  {
+    "ID": 3200015,
+    "ItemName": "Madman's Knowledge",
+    "LocationName": "",
+    "Area": "Byrgenwerth",
+    "Important": false
+  },
+  {
+    "ID": 3200020,
+    "ItemName": "Madman's Knowledge",
+    "LocationName": "",
+    "Area": "Byrgenwerth",
+    "Important": false
+  },
+  {
+    "ID": 3200030,
+    "ItemName": "Great One's Wisdom",
+    "LocationName": "",
+    "Area": "Byrgenwerth",
+    "Important": false
+  },
+  {
+    "ID": 3200040,
+    "ItemName": "Sedative x5",
+    "LocationName": "",
+    "Area": "Byrgenwerth",
+    "Important": false
+  },
+  {
+    "ID": 3200100,
+    "ItemName": "Madman's Knowledge",
+    "LocationName": "",
+    "Area": "Byrgenwerth",
+    "Important": false
+  },
+  {
+    "ID": 3200110,
+    "ItemName": "Sedative x6",
+    "LocationName": "",
+    "Area": "Byrgenwerth",
+    "Important": false
+  },
+  {
+    "ID": 3200740,
+    "ItemName": "Madman's Knowledge",
+    "LocationName": "",
+    "Area": "Byrgenwerth",
+    "Important": false
+  },
+  {
+    "ID": 3200750,
+    "ItemName": "Blood Stone Chunk",
+    "LocationName": "",
+    "Area": "Byrgenwerth",
+    "Important": false
+  },
+  {
+    "ID": 3200500,
+    "ItemName": "Empty Phantasm Shell",
+    "LocationName": "",
+    "Area": "Byrgenwerth",
+    "Important": false
+  },
+  {
+    "ID": 3200700,
+    "ItemName": "Pearl Slug",
+    "LocationName": "",
+    "Area": "Byrgenwerth",
+    "Important": false
+  },
+  {
+    "ID": 3200540,
+    "ItemName": "Student Uniform",
+    "LocationName": "",
+    "Area": "Byrgenwerth",
+    "Important": false
+  },
+  {
+    "ID": 3200541,
+    "ItemName": "Student Trousers",
+    "LocationName": "",
+    "Area": "Byrgenwerth",
+    "Important": false
+  },
+  {
+    "ID": 3200600,
+    "ItemName": "Augur of Ebrietas",
+    "LocationName": "",
+    "Area": "Byrgenwerth",
+    "Important": false
+  },
+  {
+    "ID": 3200620,
+    "ItemName": "Red Jelly x2",
+    "LocationName": "",
+    "Area": "Byrgenwerth",
+    "Important": false
+  },
+  {
+    "ID": 3200640,
+    "ItemName": "GEM: Communion Lv2",
+    "LocationName": "",
+    "Area": "Byrgenwerth",
+    "Important": false
+  },
+  {
+    "ID": 3200645,
+    "ItemName": "Madman's Knowledge",
+    "LocationName": "",
+    "Area": "Byrgenwerth",
+    "Important": false
+  },
+  {
+    "ID": 3300000,
+    "ItemName": "Madman's Knowledge",
+    "LocationName": "",
+    "Area": "Nightmare Frontier",
+    "Important": false
+  },
+  {
+    "ID": 3300010,
+    "ItemName": "GEM: Fading Lake Lv1",
+    "LocationName": "",
+    "Area": "Nightmare Frontier",
+    "Important": false
+  },
+  {
+    "ID": 3300015,
+    "ItemName": "Madman's Knowledge",
+    "LocationName": "",
+    "Area": "Nightmare Frontier",
+    "Important": false
+  },
+  {
+    "ID": 3300020,
+    "ItemName": "Bolt Paper x2",
+    "LocationName": "",
+    "Area": "Nightmare Frontier",
+    "Important": false
+  },
+  {
+    "ID": 3300030,
+    "ItemName": "Lead Elixir x2",
+    "LocationName": "",
+    "Area": "Nightmare Frontier",
+    "Important": false
+  },
+  {
+    "ID": 3300050,
+    "ItemName": "GEM: Great Deep Sea Lv2",
+    "LocationName": "",
+    "Area": "Nightmare Frontier",
+    "Important": false
+  },
+  {
+    "ID": 3300055,
+    "ItemName": "Madman's Knowledge",
+    "LocationName": "",
+    "Area": "Nightmare Frontier",
+    "Important": false
+  },
+  {
+    "ID": 3300060,
+    "ItemName": "Frenzied Coldblood (9)",
+    "LocationName": "",
+    "Area": "Nightmare Frontier",
+    "Important": false
+  },
+  {
+    "ID": 3300120,
+    "ItemName": "Madman's Knowledge",
+    "LocationName": "",
+    "Area": "Nightmare Frontier",
+    "Important": false
+  },
+  {
+    "ID": 3300130,
+    "ItemName": "Madman's Knowledge",
+    "LocationName": "",
+    "Area": "Nightmare Frontier",
+    "Important": false
+  },
+  {
+    "ID": 3300140,
+    "ItemName": "Frenzied Coldblood (9)",
+    "LocationName": "",
+    "Area": "Nightmare Frontier",
+    "Important": false
+  },
+  {
+    "ID": 3300150,
+    "ItemName": "Blood Vial x2",
+    "LocationName": "",
+    "Area": "Nightmare Frontier",
+    "Important": false
+  },
+  {
+    "ID": 3300160,
+    "ItemName": "Lead Elixir x2",
+    "LocationName": "",
+    "Area": "Nightmare Frontier",
+    "Important": false
+  },
+  {
+    "ID": 3300170,
+    "ItemName": "Madman's Knowledge",
+    "LocationName": "",
+    "Area": "Nightmare Frontier",
+    "Important": false
+  },
+  {
+    "ID": 3300180,
+    "ItemName": "Coldblood Flowerbud",
+    "LocationName": "",
+    "Area": "Nightmare Frontier",
+    "Important": false
+  },
+  {
+    "ID": 3300200,
+    "ItemName": "Frenzied Coldblood (8)",
+    "LocationName": "",
+    "Area": "Nightmare Frontier",
+    "Important": false
+  },
+  {
+    "ID": 3300210,
+    "ItemName": "Antidote x4",
+    "LocationName": "",
+    "Area": "Nightmare Frontier",
+    "Important": false
+  },
+  {
+    "ID": 3300220,
+    "ItemName": "GEM: Clear Deep Sea Lv2",
+    "LocationName": "",
+    "Area": "Nightmare Frontier",
+    "Important": false
+  },
+  {
+    "ID": 3300225,
+    "ItemName": "Madman's Knowledge",
+    "LocationName": "",
+    "Area": "Nightmare Frontier",
+    "Important": false
+  },
+  {
+    "ID": 3300230,
+    "ItemName": "Messenger's Gift",
+    "LocationName": "",
+    "Area": "Nightmare Frontier",
+    "Important": false
+  },
+  {
+    "ID": 3300240,
+    "ItemName": "Frenzied Coldblood (8)",
+    "LocationName": "",
+    "Area": "Nightmare Frontier",
+    "Important": false
+  },
+  {
+    "ID": 3300250,
+    "ItemName": "Lead Elixir x3",
+    "LocationName": "",
+    "Area": "Nightmare Frontier",
+    "Important": false
+  },
+  {
+    "ID": 3300260,
+    "ItemName": "Madman's Knowledge",
+    "LocationName": "",
+    "Area": "Nightmare Frontier",
+    "Important": false
+  },
+  {
+    "ID": 3300270,
+    "ItemName": "Blood Vial x3",
+    "LocationName": "",
+    "Area": "Nightmare Frontier",
+    "Important": false
+  },
+  {
+    "ID": 3300280,
+    "ItemName": "Madman's Knowledge",
+    "LocationName": "",
+    "Area": "Nightmare Frontier",
+    "Important": false
+  },
+  {
+    "ID": 3300290,
+    "ItemName": "Frenzied Coldblood (9)",
+    "LocationName": "",
+    "Area": "Nightmare Frontier",
+    "Important": false
+  },
+  {
+    "ID": 3300300,
+    "ItemName": "Kin Coldblood (10)",
+    "LocationName": "",
+    "Area": "Nightmare Frontier",
+    "Important": false
+  },
+  {
+    "ID": 3300310,
+    "ItemName": "Bold Hunter's Mark x3",
+    "LocationName": "",
+    "Area": "Nightmare Frontier",
+    "Important": false
+  },
+  {
+    "ID": 3300320,
+    "ItemName": "GEM: Clockwise Metamorphosis Lv2",
+    "LocationName": "",
+    "Area": "Nightmare Frontier",
+    "Important": false
+  },
+  {
+    "ID": 3300325,
+    "ItemName": "Madman's Knowledge",
+    "LocationName": "",
+    "Area": "Nightmare Frontier",
+    "Important": false
+  },
+  {
+    "ID": 3300330,
+    "ItemName": "Coldblood Flowerbud x2",
+    "LocationName": "",
+    "Area": "Nightmare Frontier",
+    "Important": false
+  },
+  {
+    "ID": 3300340,
+    "ItemName": "Lead Elixir x2",
+    "LocationName": "",
+    "Area": "Nightmare Frontier",
+    "Important": false
+  },
+  {
+    "ID": 3300350,
+    "ItemName": "Antidote x3",
+    "LocationName": "",
+    "Area": "Nightmare Frontier",
+    "Important": false
+  },
+  {
+    "ID": 3300360,
+    "ItemName": "Coldblood Flowerbud",
+    "LocationName": "",
+    "Area": "Nightmare Frontier",
+    "Important": false
+  },
+  {
+    "ID": 3300370,
+    "ItemName": "Blood Vial x2",
+    "LocationName": "",
+    "Area": "Nightmare Frontier",
+    "Important": false
+  },
+  {
+    "ID": 3300380,
+    "ItemName": "GEM: Stunning Deep Sea Lv2",
+    "LocationName": "",
+    "Area": "Nightmare Frontier",
+    "Important": false
+  },
+  {
+    "ID": 3300385,
+    "ItemName": "Madman's Knowledge",
+    "LocationName": "",
+    "Area": "Nightmare Frontier",
+    "Important": false
+  },
+  {
+    "ID": 3300390,
+    "ItemName": "Madman's Knowledge",
+    "LocationName": "",
+    "Area": "Nightmare Frontier",
+    "Important": false
+  },
+  {
+    "ID": 3400000,
+    "ItemName": "Twin Blood Stone Shards",
+    "LocationName": "",
+    "Area": "Hunter's Nightmare",
+    "Important": false
+  },
+  {
+    "ID": 3400010,
+    "ItemName": "Frenzied Coldblood (9)",
+    "LocationName": "",
+    "Area": "Hunter's Nightmare",
+    "Important": false
+  },
+  {
+    "ID": 3400020,
+    "ItemName": "Old Hunter Trousers",
+    "LocationName": "",
+    "Area": "Hunter's Nightmare",
+    "Important": false
+  },
+  {
+    "ID": 3400030,
+    "ItemName": "Molotov Cocktail x4",
+    "LocationName": "",
+    "Area": "Hunter's Nightmare",
+    "Important": false
+  },
+  {
+    "ID": 3400040,
+    "ItemName": "Old Hunter Garb",
+    "LocationName": "",
+    "Area": "Hunter's Nightmare",
+    "Important": false
+  },
+  {
+    "ID": 3400050,
+    "ItemName": "Blood Vial x3",
+    "LocationName": "",
+    "Area": "Hunter's Nightmare",
+    "Important": false
+  },
+  {
+    "ID": 3400060,
+    "ItemName": "Beast Cutter",
+    "LocationName": "",
+    "Area": "Hunter's Nightmare",
+    "Important": false
+  },
+  {
+    "ID": 3400070,
+    "ItemName": "Madman's Knowledge",
+    "LocationName": "",
+    "Area": "Hunter's Nightmare",
+    "Important": false
+  },
+  {
+    "ID": 3400080,
+    "ItemName": "Blood Vial x6",
+    "LocationName": "",
+    "Area": "Hunter's Nightmare",
+    "Important": false
+  },
+  {
+    "ID": 3400100,
+    "ItemName": "Blood Vial x6",
+    "LocationName": "",
+    "Area": "Hunter's Nightmare",
+    "Important": false
+  },
+  {
+    "ID": 3400110,
+    "ItemName": "Blood Vial",
+    "LocationName": "",
+    "Area": "Hunter's Nightmare",
+    "Important": false
+  },
+  {
+    "ID": 3400120,
+    "ItemName": "Delayed Molotov x5",
+    "LocationName": "",
+    "Area": "Hunter's Nightmare",
+    "Important": false
+  },
+  {
+    "ID": 3400130,
+    "ItemName": "Boom Hammer",
+    "LocationName": "",
+    "Area": "Hunter's Nightmare",
+    "Important": false
+  },
+  {
+    "ID": 3400140,
+    "ItemName": "Beast Blood Pellet x3",
+    "LocationName": "",
+    "Area": "Hunter's Nightmare",
+    "Important": false
+  },
+  {
+    "ID": 3400160,
+    "ItemName": "Old Hunter Top Hat",
+    "LocationName": "",
+    "Area": "Hunter's Nightmare",
+    "Important": false
+  },
+  {
+    "ID": 3400170,
+    "ItemName": "Blood Stone Chunk",
+    "LocationName": "",
+    "Area": "Hunter's Nightmare",
+    "Important": false
+  },
+  {
+    "ID": 3400180,
+    "ItemName": "Twin Blood Stone Shards",
+    "LocationName": "",
+    "Area": "Hunter's Nightmare",
+    "Important": false
+  },
+  {
+    "ID": 3400190,
+    "ItemName": "Blood Stone Chunk",
+    "LocationName": "",
+    "Area": "Hunter's Nightmare",
+    "Important": false
+  },
+  {
+    "ID": 3400200,
+    "ItemName": "Twin Blood Stone Shards x2",
+    "LocationName": "",
+    "Area": "Hunter's Nightmare",
+    "Important": false
+  },
+  {
+    "ID": 3400210,
+    "ItemName": "Twin Blood Stone Shards x2",
+    "LocationName": "",
+    "Area": "Hunter's Nightmare",
+    "Important": false
+  },
+  {
+    "ID": 3400220,
+    "ItemName": "Amygdalan Arm",
+    "LocationName": "",
+    "Area": "Hunter's Nightmare",
+    "Important": false
+  },
+  {
+    "ID": 3400230,
+    "ItemName": "Frenzied Coldblood (8)",
+    "LocationName": "",
+    "Area": "Hunter's Nightmare",
+    "Important": false
+  },
+  {
+    "ID": 3400240,
+    "ItemName": "Quicksilver Bullets x6",
+    "LocationName": "",
+    "Area": "Hunter's Nightmare",
+    "Important": false
+  },
+  {
+    "ID": 3400250,
+    "ItemName": "Blood Vial",
+    "LocationName": "",
+    "Area": "Hunter's Nightmare",
+    "Important": false
+  },
+  {
+    "ID": 3400270,
+    "ItemName": "Constable's Garb",
+    "LocationName": "",
+    "Area": "Hunter's Nightmare",
+    "Important": false
+  },
+  {
+    "ID": 3400280,
+    "ItemName": "Whirligig Saw",
+    "LocationName": "",
+    "Area": "Hunter's Nightmare",
+    "Important": false
+  },
+  {
+    "ID": 3400350,
+    "ItemName": "Constable's Gloves",
+    "LocationName": "",
+    "Area": "Hunter's Nightmare",
+    "Important": false
+  },
+  {
+    "ID": 3400360,
+    "ItemName": "Constable's Trousers",
+    "LocationName": "",
+    "Area": "Hunter's Nightmare",
+    "Important": false
+  },
+  {
+    "ID": 3400370,
+    "ItemName": "Madman's Knowledge",
+    "LocationName": "",
+    "Area": "Hunter's Nightmare",
+    "Important": false
+  },
+  {
+    "ID": 3400380,
+    "ItemName": "Blood Vial x3",
+    "LocationName": "",
+    "Area": "Hunter's Nightmare",
+    "Important": false
+  },
+  {
+    "ID": 3400390,
+    "ItemName": "Twin Blood Stone Shards x3",
+    "LocationName": "",
+    "Area": "Hunter's Nightmare",
+    "Important": false
+  },
+  {
+    "ID": 3400400,
+    "ItemName": "Twin Blood Stone Shards",
+    "LocationName": "",
+    "Area": "Hunter's Nightmare",
+    "Important": false
+  },
+  {
+    "ID": 3400410,
+    "ItemName": "Blood Vial x3",
+    "LocationName": "",
+    "Area": "Hunter's Nightmare",
+    "Important": false
+  },
+  {
+    "ID": 3400420,
+    "ItemName": "Blood Vial x3",
+    "LocationName": "",
+    "Area": "Hunter's Nightmare",
+    "Important": false
+  },
+  {
+    "ID": 3400430,
+    "ItemName": "Frenzied Coldblood (9)",
+    "LocationName": "",
+    "Area": "Hunter's Nightmare",
+    "Important": false
+  },
+  {
+    "ID": 3400440,
+    "ItemName": "Beasthunter Saif",
+    "LocationName": "",
+    "Area": "Hunter's Nightmare",
+    "Important": false
+  },
+  {
+    "ID": 3400450,
+    "ItemName": "Madman's Knowledge",
+    "LocationName": "",
+    "Area": "Hunter's Nightmare",
+    "Important": false
+  },
+  {
+    "ID": 3400460,
+    "ItemName": "Blood Vial x6",
+    "LocationName": "",
+    "Area": "Hunter's Nightmare",
+    "Important": false
+  },
+  {
+    "ID": 3400470,
+    "ItemName": "Pebble",
+    "LocationName": "",
+    "Area": "Hunter's Nightmare",
+    "Important": false
+  },
+  {
+    "ID": 3400480,
+    "ItemName": "Twin Blood Stone Shards x2",
+    "LocationName": "",
+    "Area": "Hunter's Nightmare",
+    "Important": false
+  },
+  {
+    "ID": 3400490,
+    "ItemName": "Blood Vial x2",
+    "LocationName": "",
+    "Area": "Hunter's Nightmare",
+    "Important": false
+  },
+  {
+    "ID": 3400500,
+    "ItemName": "Oil Urn x3",
+    "LocationName": "",
+    "Area": "Hunter's Nightmare",
+    "Important": false
+  },
+  {
+    "ID": 3400510,
+    "ItemName": "Butcher Mask",
+    "LocationName": "",
+    "Area": "Hunter's Nightmare",
+    "Important": false
+  },
+  {
+    "ID": 3400511,
+    "ItemName": "Butcher Garb",
+    "LocationName": "",
+    "Area": "Hunter's Nightmare",
+    "Important": false
+  },
+  {
+    "ID": 3400512,
+    "ItemName": "Butcher Gloves",
+    "LocationName": "",
+    "Area": "Hunter's Nightmare",
+    "Important": false
+  },
+  {
+    "ID": 3400513,
+    "ItemName": "Butcher Trousers",
+    "LocationName": "",
+    "Area": "Hunter's Nightmare",
+    "Important": false
+  },
+  {
+    "ID": 3400520,
+    "ItemName": "Quicksilver Bullets x4",
+    "LocationName": "",
+    "Area": "Hunter's Nightmare",
+    "Important": false
+  },
+  {
+    "ID": 3400530,
+    "ItemName": "Frenzied Coldblood (8)",
+    "LocationName": "",
+    "Area": "Hunter's Nightmare",
+    "Important": false
+  },
+  {
+    "ID": 3400540,
+    "ItemName": "Molotov Cocktail x3",
+    "LocationName": "",
+    "Area": "Hunter's Nightmare",
+    "Important": false
+  },
+  {
+    "ID": 3400580,
+    "ItemName": "Old Hunter Cap",
+    "LocationName": "",
+    "Area": "Hunter's Nightmare",
+    "Important": false
+  },
+  {
+    "ID": 3400590,
+    "ItemName": "Twin Blood Stone Shards x3",
+    "LocationName": "",
+    "Area": "Hunter's Nightmare",
+    "Important": false
+  },
+  {
+    "ID": 3400600,
+    "ItemName": "Blood Vial",
+    "LocationName": "",
+    "Area": "Hunter's Nightmare",
+    "Important": false
+  },
+  {
+    "ID": 3400610,
+    "ItemName": "Old Hunter Gloves",
+    "LocationName": "",
+    "Area": "Hunter's Nightmare",
+    "Important": false
+  },
+  {
+    "ID": 3401000,
+    "ItemName": "Delayed Molotov x5",
+    "LocationName": "",
+    "Area": "Hunter's Nightmare",
+    "Important": false
+  },
+  {
+    "ID": 3401010,
+    "ItemName": "Oil Urn x3",
+    "LocationName": "",
+    "Area": "Hunter's Nightmare",
+    "Important": false
+  },
+  {
+    "ID": 3401020,
+    "ItemName": "Bone Marrow Ash x3",
+    "LocationName": "",
+    "Area": "Hunter's Nightmare",
+    "Important": false
+  },
+  {
+    "ID": 3401030,
+    "ItemName": "Fire Paper x3",
+    "LocationName": "",
+    "Area": "Hunter's Nightmare",
+    "Important": false
+  },
+  {
+    "ID": 3401050,
+    "ItemName": "Blood Vial",
+    "LocationName": "",
+    "Area": "Hunter's Nightmare",
+    "Important": false
+  },
+  {
+    "ID": 3401060,
+    "ItemName": "Oil Urn x4",
+    "LocationName": "",
+    "Area": "Hunter's Nightmare",
+    "Important": false
+  },
+  {
+    "ID": 3401070,
+    "ItemName": "Quicksilver Bullets x8",
+    "LocationName": "",
+    "Area": "Hunter's Nightmare",
+    "Important": false
+  },
+  {
+    "ID": 3401080,
+    "ItemName": "Quicksilver Bullets x10",
+    "LocationName": "",
+    "Area": "Hunter's Nightmare",
+    "Important": false
+  },
+  {
+    "ID": 3401090,
+    "ItemName": "Blood Vial x10",
+    "LocationName": "",
+    "Area": "Hunter's Nightmare",
+    "Important": false
+  },
+  {
+    "ID": 3401100,
+    "ItemName": "Blood Vial x4",
+    "LocationName": "",
+    "Area": "Hunter's Nightmare",
+    "Important": false
+  },
+  {
+    "ID": 3401110,
+    "ItemName": "Pebble",
+    "LocationName": "",
+    "Area": "Hunter's Nightmare",
+    "Important": false
+  },
+  {
+    "ID": 3401120,
+    "ItemName": "Fire Paper",
+    "LocationName": "",
+    "Area": "Hunter's Nightmare",
+    "Important": false
+  },
+  {
+    "ID": 3401130,
+    "ItemName": "Quicksilver Bullets x10",
+    "LocationName": "",
+    "Area": "Hunter's Nightmare",
+    "Important": false
+  },
+  {
+    "ID": 3500000,
+    "ItemName": "Kin Coldblood (10)",
+    "LocationName": "",
+    "Area": "Research Hall",
+    "Important": false
+  },
+  {
+    "ID": 3500830,
+    "ItemName": "Blacksky Eye",
+    "LocationName": "",
+    "Area": "Research Hall",
+    "Important": false
+  },
+  {
+    "ID": 3500110,
+    "ItemName": "Blood Vial x2",
+    "LocationName": "",
+    "Area": "Research Hall",
+    "Important": false
+  },
+  {
+    "ID": 3500120,
+    "ItemName": "Blue Elixir x2",
+    "LocationName": "",
+    "Area": "Research Hall",
+    "Important": false
+  },
+  {
+    "ID": 3500130,
+    "ItemName": "Frenzied Coldblood (9)",
+    "LocationName": "",
+    "Area": "Research Hall",
+    "Important": false
+  },
+  {
+    "ID": 3500140,
+    "ItemName": "Blood Stone Chunk",
+    "LocationName": "",
+    "Area": "Research Hall",
+    "Important": false
+  },
+  {
+    "ID": 3500150,
+    "ItemName": "Blue Elixir",
+    "LocationName": "",
+    "Area": "Research Hall",
+    "Important": false
+  },
+  {
+    "ID": 3500310,
+    "ItemName": "Quicksilver Bullets x4",
+    "LocationName": "",
+    "Area": "Research Hall",
+    "Important": false
+  },
+  {
+    "ID": 3500820,
+    "ItemName": "Enlarged Head",
+    "LocationName": "",
+    "Area": "Research Hall",
+    "Important": false
+  },
+  {
+    "ID": 3500190,
+    "ItemName": "GEM: Fixed placement _ Clock Tower Rank 15",
+    "LocationName": "",
+    "Area": "Research Hall",
+    "Important": false
+  },
+  {
+    "ID": 3500860,
+    "ItemName": "Loch Shield",
+    "LocationName": "",
+    "Area": "Research Hall",
+    "Important": false
+  },
+  {
+    "ID": 3500210,
+    "ItemName": "Frenzied Coldblood (9)",
+    "LocationName": "",
+    "Area": "Research Hall",
+    "Important": false
+  },
+  {
+    "ID": 3500800,
+    "ItemName": "Underground Cell Key",
+    "LocationName": "",
+    "Area": "Research Hall",
+    "Important": false
+  },
+  {
+    "ID": 3500230,
+    "ItemName": "Madman's Knowledge",
+    "LocationName": "",
+    "Area": "Research Hall",
+    "Important": false
+  },
+  {
+    "ID": 3500270,
+    "ItemName": "Blood Vial x5",
+    "LocationName": "",
+    "Area": "Research Hall",
+    "Important": false
+  },
+  {
+    "ID": 3500300,
+    "ItemName": "Antidote x2",
+    "LocationName": "",
+    "Area": "Research Hall",
+    "Important": false
+  },
+  {
+    "ID": 3500620,
+    "ItemName": "Blue Elixir x4",
+    "LocationName": "",
+    "Area": "Research Hall",
+    "Important": false
+  },
+  {
+    "ID": 3500220,
+    "ItemName": "Sedative x3",
+    "LocationName": "",
+    "Area": "Research Hall",
+    "Important": false
+  },
+  {
+    "ID": 3500260,
+    "ItemName": "Quicksilver Bullets x3",
+    "LocationName": "",
+    "Area": "Research Hall",
+    "Important": false
+  },
+  {
+    "ID": 3500870,
+    "ItemName": "Decorative Old Hunter Garb",
+    "LocationName": "",
+    "Area": "Research Hall",
+    "Important": false
+  },
+  {
+    "ID": 3500871,
+    "ItemName": "Decorative Old Hunter Trousers",
+    "LocationName": "",
+    "Area": "Research Hall",
+    "Important": false
+  },
+  {
+    "ID": 3500160,
+    "ItemName": "GEM: Fixed placement _ Clock Tower Rank 15",
+    "LocationName": "",
+    "Area": "Research Hall",
+    "Important": false
+  },
+  {
+    "ID": 3500200,
+    "ItemName": "Kin Coldblood (10)",
+    "LocationName": "",
+    "Area": "Research Hall",
+    "Important": false
+  },
+  {
+    "ID": 3500250,
+    "ItemName": "Beast Blood Pellet x6",
+    "LocationName": "",
+    "Area": "Research Hall",
+    "Important": false
+  },
+  {
+    "ID": 3500840,
+    "ItemName": "Great One's Wisdom",
+    "LocationName": "",
+    "Area": "Research Hall",
+    "Important": false
+  },
+  {
+    "ID": 3500530,
+    "ItemName": "Blood Stone Chunk",
+    "LocationName": "",
+    "Area": "Research Hall",
+    "Important": false
+  },
+  {
+    "ID": 3500540,
+    "ItemName": "Great One's Wisdom",
+    "LocationName": "",
+    "Area": "Research Hall",
+    "Important": false
+  },
+  {
+    "ID": 3500600,
+    "ItemName": "Frenzied Coldblood (9)",
+    "LocationName": "",
+    "Area": "Research Hall",
+    "Important": false
+  },
+  {
+    "ID": 3500810,
+    "ItemName": "Fist of Gratia",
+    "LocationName": "",
+    "Area": "Research Hall",
+    "Important": false
+  },
+  {
+    "ID": 3501100,
+    "ItemName": "GEM: Fixed placement _ Cathedral Quarter D_ Rank 14",
+    "LocationName": "",
+    "Area": "Research Hall",
+    "Important": false
+  },
+  {
+    "ID": 3500850,
+    "ItemName": "Church Cannon",
+    "LocationName": "",
+    "Area": "Research Hall",
+    "Important": false
+  },
+  {
+    "ID": 3501500,
+    "ItemName": "GEM: Fixed placement _ Clock Tower Rank 15",
+    "LocationName": "",
+    "Area": "Research Hall",
+    "Important": false
+  },
+  {
+    "ID": 3600000,
+    "ItemName": "Lead Elixir",
+    "LocationName": "",
+    "Area": "Fishing Hamlet",
+    "Important": false
+  },
+  {
+    "ID": 3600010,
+    "ItemName": "Madman's Knowledge",
+    "LocationName": "",
+    "Area": "Fishing Hamlet",
+    "Important": false
+  },
+  {
+    "ID": 3600100,
+    "ItemName": "Blood Vial x3",
+    "LocationName": "",
+    "Area": "Fishing Hamlet",
+    "Important": false
+  },
+  {
+    "ID": 3600110,
+    "ItemName": "Lead Elixir x2",
+    "LocationName": "",
+    "Area": "Fishing Hamlet",
+    "Important": false
+  },
+  {
+    "ID": 3600120,
+    "ItemName": "Kin Coldblood (10)",
+    "LocationName": "",
+    "Area": "Fishing Hamlet",
+    "Important": false
+  },
+  {
+    "ID": 3600130,
+    "ItemName": "Oil Urn x4",
+    "LocationName": "",
+    "Area": "Fishing Hamlet",
+    "Important": false
+  },
+  {
+    "ID": 3600140,
+    "ItemName": "GEM: Fixed placement _ Cathedral Quarter D_ Rank 14",
+    "LocationName": "",
+    "Area": "Fishing Hamlet",
+    "Important": false
+  },
+  {
+    "ID": 3600150,
+    "ItemName": "Great One's Wisdom",
+    "LocationName": "",
+    "Area": "Fishing Hamlet",
+    "Important": false
+  },
+  {
+    "ID": 3600160,
+    "ItemName": "GEM: Fixed placement _ Fishing Village Rank 17",
+    "LocationName": "",
+    "Area": "Fishing Hamlet",
+    "Important": false
+  },
+  {
+    "ID": 3600170,
+    "ItemName": "Blood Stone Chunk",
+    "LocationName": "",
+    "Area": "Fishing Hamlet",
+    "Important": false
+  },
+  {
+    "ID": 3600200,
+    "ItemName": "Blood Stone Chunk",
+    "LocationName": "",
+    "Area": "Fishing Hamlet",
+    "Important": false
+  },
+  {
+    "ID": 3600210,
+    "ItemName": "Great One's Wisdom",
+    "LocationName": "",
+    "Area": "Fishing Hamlet",
+    "Important": false
+  },
+  {
+    "ID": 3600220,
+    "ItemName": "Kin Coldblood (10)",
+    "LocationName": "",
+    "Area": "Fishing Hamlet",
+    "Important": false
+  },
+  {
+    "ID": 3600230,
+    "ItemName": "Kin Coldblood (10)",
+    "LocationName": "",
+    "Area": "Fishing Hamlet",
+    "Important": false
+  },
+  {
+    "ID": 3600300,
+    "ItemName": "Blood Stone Chunk x2",
+    "LocationName": "",
+    "Area": "Fishing Hamlet",
+    "Important": false
+  },
+  {
+    "ID": 3600310,
+    "ItemName": "Blood Vial x3",
+    "LocationName": "",
+    "Area": "Fishing Hamlet",
+    "Important": false
+  },
+  {
+    "ID": 3600320,
+    "ItemName": "Blood Stone Chunk",
+    "LocationName": "",
+    "Area": "Fishing Hamlet",
+    "Important": false
+  },
+  {
+    "ID": 3600330,
+    "ItemName": "Blood Stone Chunk",
+    "LocationName": "",
+    "Area": "Fishing Hamlet",
+    "Important": false
+  },
+  {
+    "ID": 3600340,
+    "ItemName": "GEM: Fixed placement _ Fishing Village Rank 17",
+    "LocationName": "",
+    "Area": "Fishing Hamlet",
+    "Important": false
+  },
+  {
+    "ID": 3600350,
+    "ItemName": "Kin Coldblood (10)",
+    "LocationName": "",
+    "Area": "Fishing Hamlet",
+    "Important": false
+  },
+  {
+    "ID": 3600360,
+    "ItemName": "Kin Coldblood (10)",
+    "LocationName": "",
+    "Area": "Fishing Hamlet",
+    "Important": false
+  },
+  {
+    "ID": 3600400,
+    "ItemName": "Oil Urn x4",
+    "LocationName": "",
+    "Area": "Fishing Hamlet",
+    "Important": false
+  },
+  {
+    "ID": 3600410,
+    "ItemName": "Blood Vial x6",
+    "LocationName": "",
+    "Area": "Fishing Hamlet",
+    "Important": false
+  },
+  {
+    "ID": 3600420,
+    "ItemName": "Madman's Knowledge",
+    "LocationName": "",
+    "Area": "Fishing Hamlet",
+    "Important": false
+  },
+  {
+    "ID": 3600430,
+    "ItemName": "GEM: Fixed placement _ Fishing Village Rank 17",
+    "LocationName": "",
+    "Area": "Fishing Hamlet",
+    "Important": false
+  },
+  {
+    "ID": 3600440,
+    "ItemName": "Twin Blood Stone Shards x3",
+    "LocationName": "",
+    "Area": "Fishing Hamlet",
+    "Important": false
+  },
+  {
+    "ID": 3600450,
+    "ItemName": "Blood Stone Chunk",
+    "LocationName": "",
+    "Area": "Fishing Hamlet",
+    "Important": false
+  },
+  {
+    "ID": 3600460,
+    "ItemName": "Blood Stone Chunk",
+    "LocationName": "",
+    "Area": "Fishing Hamlet",
+    "Important": false
+  },
+  {
+    "ID": 3600470,
+    "ItemName": "Blood Stone Chunk",
+    "LocationName": "",
+    "Area": "Fishing Hamlet",
+    "Important": false
+  },
+  {
+    "ID": 3600500,
+    "ItemName": "Lead Elixir",
+    "LocationName": "",
+    "Area": "Fishing Hamlet",
+    "Important": false
+  },
+  {
+    "ID": 3600510,
+    "ItemName": "Kin Coldblood (11)",
+    "LocationName": "",
+    "Area": "Fishing Hamlet",
+    "Important": false
+  },
+  {
+    "ID": 3600520,
+    "ItemName": "Madman's Knowledge",
+    "LocationName": "",
+    "Area": "Fishing Hamlet",
+    "Important": false
+  },
+  {
+    "ID": 3600530,
+    "ItemName": "Great One's Wisdom",
+    "LocationName": "",
+    "Area": "Fishing Hamlet",
+    "Important": false
+  },
+  {
+    "ID": 3600540,
+    "ItemName": "Lead Elixir x2",
+    "LocationName": "",
+    "Area": "Fishing Hamlet",
+    "Important": false
+  },
+  {
+    "ID": 3600550,
+    "ItemName": "Kin Coldblood (11)",
+    "LocationName": "",
+    "Area": "Fishing Hamlet",
+    "Important": false
+  },
+  {
+    "ID": 3600560,
+    "ItemName": "GEM: Fixed placement _ Fishing Village Rank 16-18",
+    "LocationName": "",
+    "Area": "Fishing Hamlet",
+    "Important": false
+  },
+  {
+    "ID": 3600570,
+    "ItemName": "GEM: Fixed placement _ Fishing Village Rank 17",
+    "LocationName": "",
+    "Area": "Fishing Hamlet",
+    "Important": false
+  },
+  {
+    "ID": 3600600,
+    "ItemName": "Blood Rock",
+    "LocationName": "",
+    "Area": "Fishing Hamlet",
+    "Important": false
+  },
+  {
+    "ID": 3600610,
+    "ItemName": "GEM: Fixed placement _ Fishing Village Rank 17",
+    "LocationName": "",
+    "Area": "Fishing Hamlet",
+    "Important": false
+  },
+  {
+    "ID": 3600700,
+    "ItemName": "Harrowed Hood",
+    "LocationName": "",
+    "Area": "Fishing Hamlet",
+    "Important": false
+  },
+  {
+    "ID": 3600701,
+    "ItemName": "Harrowed Garb",
+    "LocationName": "",
+    "Area": "Fishing Hamlet",
+    "Important": false
+  },
+  {
+    "ID": 3600702,
+    "ItemName": "Harrowed Gloves",
+    "LocationName": "",
+    "Area": "Fishing Hamlet",
+    "Important": false
+  },
+  {
+    "ID": 3600703,
+    "ItemName": "Harrowed Trousers",
+    "LocationName": "",
+    "Area": "Fishing Hamlet",
+    "Important": false
+  },
+  {
+    "ID": 43221,
+    "ItemName": "Underground Cell Inner Chamber Key",
+    "LocationName": "",
+    "Area": "Fishing Hamlet",
+    "Important": false
+  }
 ]
