@@ -4942,7 +4942,7 @@
     "ID": 15000,
     "ItemName": "Old Hunter Badge",
     "LocationName": "",
-    "Area": "Hunter's Dream",
+    "Area": "Nightmare of Mensis",
     "Important": true,
     "Missable": false
   },
@@ -4982,7 +4982,7 @@
     "ID": 10040,
     "ItemName": "Eye of a Blood-drunk Hunter",
     "LocationName": "",
-    "Area": "Hunter's Dream",
+    "Area": "Forbidden Woods",
     "Important": true,
     "Missable": false
   },

@@ -2,7 +2,7 @@ using SoulsFormats;
 
 namespace BloodborneRandomizer.SoulsFiles;
 
-public class GameparamWriter()
+public class GameparamManipulator()
 {
     private static Dictionary<int, Dictionary<string, object?>> CreateRowValueSnapshot(PARAM itemLotParam)
     {
@@ -22,10 +22,10 @@ public class GameparamWriter()
         return snapshot;
     }
 
-    private static PARAM RegenerateRows(BND4 bnd, Dictionary<int, int> itemAssignment)
+    public static PARAM RegenerateItemLotParamRows(BND4 bnd, Dictionary<int, int> itemAssignment)
     {
         var itemLotParam = PARAM.Read(bnd.Files.First(x => x.Name == Config.ItemLotParamInGameparam).Bytes);
-        itemLotParam.ApplyParamdef(PARAMDEF.XmlDeserialize(Path.Combine(Config.SoulsFilesFolder, Config.ItemLotParamdef)));
+        itemLotParam.ApplyParamdef(PARAMDEF.XmlDeserialize(Path.Combine(Config.Dist, Config.ItemLotParamdef)));
 
         var originalRowValues = CreateRowValueSnapshot(itemLotParam);
 
@@ -55,15 +55,17 @@ public class GameparamWriter()
 
         return itemLotParam;
     }
+}
 
-    public static void WriteGameparam(Dictionary<int, int> itemAssignments)
+public static class GameparamWriter
+{
+    public static void WriteGameparamWithReplacement(BND4 bnd, Dictionary<string, PARAM> generatedParam)
     {
-        var bnd = BND4.Read(Path.Combine(Config.SoulsFilesFolder, Config.GameparamRelativePath));
-        
-        var itemLotParam = RegenerateRows(bnd, itemAssignments);
+        foreach (var pair in generatedParam)
+        {
+            bnd.Files.First(x => x.Name == pair.Key).Bytes = pair.Value.Write();
+        }
 
-        bnd.Files.First(x => x.Name == Config.ItemLotParamInGameparam).Bytes = itemLotParam.Write();
-
-        bnd.Write(Path.Combine(Config.GameFileOutputFolder, Config.GameparamRelativePath));
+        bnd.Write(Path.Combine(Config.dvdroot_ps4, Config.Gameparam));
     }
 }

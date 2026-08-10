@@ -5,44 +5,30 @@ namespace BloodborneRandomizer.Randomizer;
 public class RandomizerCore
 {
     private readonly List<ItemLot> allItemsLookup = [];
-    private readonly List<ItemLot> normalItems = [];
-    private readonly Queue<ItemLot> keyItems = [];
-    private readonly List<ItemLot> allKeys = [];
+    private readonly List<ItemLot> allItems = [];
     private readonly AreaTree areaTree;
     private readonly List<ItemLot> availableLocations = [];
     private readonly Dictionary<int, int> output = [];
     private readonly List<LinkLot> linkLots = [];
 
-    public RandomizerCore(string itemLotPath, string areasPath, string linkedLotPath)
+    public RandomizerCore(List<ItemLot> itemLots, List<JsonArea> jsonAreas, List<LinkLot> linkedLots)
     {
-        List<ItemLot> allItems = JsonConvert.DeserializeObject<List<ItemLot>>(File.ReadAllText(itemLotPath)) ?? throw new FileLoadException($"Failed to deserialize {itemLotPath}");
-        List<JsonArea> jsonAreas = JsonConvert.DeserializeObject<List<JsonArea>>(File.ReadAllText(areasPath)) ?? throw new FileLoadException($"Failed to deserialize {areasPath}");
-        linkLots = JsonConvert.DeserializeObject<List<LinkLot>>(File.ReadAllText(linkedLotPath)) ?? throw new FileLoadException($"Failed to deserialize {linkedLotPath}");
+        allItems = [.. itemLots];
+        allItems.Sort((a, b) => b.Important.CompareTo(a.Important));
         allItemsLookup = [.. allItems];
+
         availableLocations = [.. allItems];
+        linkLots = linkedLots;
 
         if (jsonAreas.FindAll(x => x.Initial).Count != 1)
             throw new InvalidDataException($"There should be exactly 1 initial area ({jsonAreas.FindAll(x => x.Initial).Count} were found)");
 
         areaTree = new AreaTree(jsonAreas);
 
-        foreach (var item in allItems)
-        {
-            if (item.Important)
-            {
-                keyItems.Enqueue(item);
-                continue;
-            }
-
-            normalItems.Add(item);
-        }
-
         foreach (var loc in availableLocations)
         {
             loc.AssignRequirements(areaTree.GetArea(loc.Area));
         }
-
-        allKeys = [.. keyItems];
     }
 
     public Dictionary<int, int> Main()
@@ -69,26 +55,24 @@ public class RandomizerCore
     {
         var random = new Random();
 
-        while (keyItems.Count > 0)
+        while (allItems.Count > 0)
         {
-            var nextItem = keyItems.Dequeue();
-            ItemLot targetLocation = PickKeyLocation(random, nextItem);
+            var nextItem = allItems[0];
+            allItems.RemoveAt(0);
+            if (nextItem.Important)
+            {
+                ItemLot targetLocation = PickKeyLocation(random, nextItem);
+                GetKeyItem(allItemsLookup, nextItem).GeneratedRequirements = targetLocation.Requirements;
+                AssignItem(output, nextItem, targetLocation);
+            }
+            else
+            {
+                int nextLocationIndex = random.Next(availableLocations.Count);
+                var nextLocation = availableLocations[nextLocationIndex];
+                availableLocations.RemoveAt(nextLocationIndex);
 
-            GetKeyItem(allKeys, nextItem).GeneratedRequirements = targetLocation.Requirements;
-
-            AssignItem(output, nextItem, targetLocation);
-        }
-
-        while (normalItems.Count > 0)
-        {
-            var nextItem = normalItems[0];
-            normalItems.RemoveAt(0);
-
-            int nextLocationIndex = random.Next(availableLocations.Count);
-            var nextLocation = availableLocations[nextLocationIndex];
-            availableLocations.RemoveAt(nextLocationIndex);
-
-            AssignItem(output, nextItem, nextLocation);
+                AssignItem(output, nextItem, nextLocation);
+            }
         }
     }
 
@@ -108,7 +92,7 @@ public class RandomizerCore
 
             foreach (var req in nextLocation.Requirements)
             {
-                var requiredItem = GetKeyItem(allKeys, req);
+                var requiredItem = GetKeyItem(allItemsLookup, req);
 
                 if (requiredItem.GeneratedRequires(item.ID))
                     goto ContinueWhile;
