@@ -105,7 +105,7 @@
   },
   {
     "ID": 2200190,
-    "ItemName": "Tempering Blood Gemstone",  
+    "ItemName": "Tempering Blood Gemstone (1)",  
     "LocationName": "",
     "Area": "Hemwick Charnel Lane",
     "Important": false,
@@ -225,7 +225,7 @@
   },
   {
     "ID": 2200280,
-    "ItemName": "Adept Blood Gemstone",
+    "ItemName": "Adept Blood Gemstone (1)",
     "LocationName": "",
     "Area": "Hemwick Charnel Lane",
     "Important": false,
@@ -257,7 +257,7 @@
   },
   {
     "ID": 2300040,
-    "ItemName": "Bloodtinge Gemstone",
+    "ItemName": "Bloodtinge Gemstone (1)",
     "LocationName": "",
     "Area": "Old Yharnam",
     "Important": false,
@@ -585,7 +585,7 @@
   },
   {
     "ID": 2300300,
-    "ItemName": "Tempering Blood Gemstone",
+    "ItemName": "Tempering Blood Gemstone (1)",
     "LocationName": "",
     "Area": "Old Yharnam",
     "Important": false,
@@ -793,7 +793,7 @@
   },
   {
     "ID": 2400300,
-    "ItemName": "Tempering Blood Gemstone",
+    "ItemName": "Tempering Blood Gemstone (2)",
     "LocationName": "",
     "Area": "Cathedral Ward",
     "Important": false,
@@ -889,7 +889,7 @@
   },
   {
     "ID": 2400430,
-    "ItemName": "Fire Blood Gemstone",
+    "ItemName": "Fire Blood Gemstone (3)",
     "LocationName": "",
     "Area": "Cathedral Ward",
     "Important": false,
@@ -1057,7 +1057,7 @@
   },
   {
     "ID": 2400740,
-    "ItemName": "Tempering Blood Gemstone",
+    "ItemName": "Tempering Blood Gemstone (1)",
     "LocationName": "",
     "Area": "Cathedral Ward",
     "Important": false,
@@ -1097,7 +1097,7 @@
   },
   {
     "ID": 2400650,
-    "ItemName": "Bloodtinge Gemstone",
+    "ItemName": "Bloodtinge Gemstone (2)",
     "LocationName": "",
     "Area": "Cathedral Ward",
     "Important": false,
@@ -1113,7 +1113,7 @@
   },
   {
     "ID": 2400760,
-    "ItemName": "Tempering Blood Gemstone",
+    "ItemName": "Tempering Blood Gemstone (1)",
     "LocationName": "",
     "Area": "Cathedral Ward",
     "Important": false,
@@ -1875,7 +1875,7 @@
   },
   {
     "ID": 2501040,
-    "ItemName": "Warm Blood Gemstone",
+    "ItemName": "Warm Blood Gemstone (3)",
     "LocationName": "",
     "Area": "Forsaken Castle Cainhurst",
     "Important": false,
@@ -1891,7 +1891,7 @@
   },
   {
     "ID": 2501060,
-    "ItemName": "Tempering Blood Gemstone",
+    "ItemName": "Tempering Blood Gemstone (3)",
     "LocationName": "",
     "Area": "Forsaken Castle Cainhurst",
     "Important": false,
