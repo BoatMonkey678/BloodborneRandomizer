@@ -1,4 +1,4 @@
-using BloodborneRandomizer.Randomizer;
+using BloodborneRandomizer.ItemRandomizer;
 using Newtonsoft.Json;
 
 namespace BloodborneRandomizer.NormalFiles;

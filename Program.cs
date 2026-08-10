@@ -1,6 +1,6 @@
 ﻿using BloodborneRandomizer;
 using BloodborneRandomizer.NormalFiles;
-using BloodborneRandomizer.Randomizer;
+using BloodborneRandomizer.ItemRandomizer;
 using BloodborneRandomizer.SoulsFiles;
 using SoulsFormats;
 

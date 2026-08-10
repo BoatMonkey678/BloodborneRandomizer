@@ -1,4 +1,4 @@
-using BloodborneRandomizer.Randomizer;
+using BloodborneRandomizer.ItemRandomizer;
 
 namespace BloodborneRandomizer.NormalFiles;
 

@@ -1,6 +1,6 @@
 using Newtonsoft.Json;
 
-namespace BloodborneRandomizer.Randomizer;
+namespace BloodborneRandomizer.ItemRandomizer;
 
 public class ItemLot
 {
