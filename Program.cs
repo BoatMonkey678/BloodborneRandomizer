@@ -27,9 +27,9 @@ class Program
         var bnd = BND4.Read(Path.Combine(Config.Dist, Config.Gameparam));
 
         Dictionary<string, PARAM> paramsToWrite = new(){{
-            Config.ItemLotParamInGameparam, GameparamManipulator.RegenerateItemLotParamRows(bnd, output)
+            Config.ItemLotParamInterroot, ItemLotParam.RegenerateItemLotParamRows(bnd, output)
         }};
 
-        GameparamWriter.WriteGameparamWithReplacement(bnd, paramsToWrite);
+        Gameparam.WriteGameparamWithReplacement(bnd, paramsToWrite, Path.Combine(Config.dvdroot_ps4, Config.Gameparam));
     }
 }
