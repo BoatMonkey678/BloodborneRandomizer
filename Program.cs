@@ -7,9 +7,9 @@ class Program
     static void Main(string[] args)
     {
         RandomizerCore randomizer = new(
-            @$"{Config.TextAssetsFolder}\{Config.ItemLotsJson}",
-            @$"{Config.TextAssetsFolder}\{Config.AreasJson}",
-            @$"{Config.TextAssetsFolder}\{Config.LinkLotsJson}"
+            Path.Combine(Config.TextAssetsFolder, Config.ItemLotsJson),
+            Path.Combine(Config.TextAssetsFolder, Config.AreasJson),
+            Path.Combine(Config.TextAssetsFolder, Config.LinkLotsJson)
         );
 
         var output = randomizer.Main();

@@ -18,8 +18,8 @@ public class RandomizerCore
         List<ItemLot> allItems = JsonConvert.DeserializeObject<List<ItemLot>>(File.ReadAllText(itemLotPath)) ?? throw new FileLoadException($"Failed to deserialize {itemLotPath}");
         List<JsonArea> jsonAreas = JsonConvert.DeserializeObject<List<JsonArea>>(File.ReadAllText(areasPath)) ?? throw new FileLoadException($"Failed to deserialize {areasPath}");
         linkLots = JsonConvert.DeserializeObject<List<LinkLot>>(File.ReadAllText(linkedLotPath)) ?? throw new FileLoadException($"Failed to deserialize {linkedLotPath}");
-        allItemsLookup = allItems.ToList();
-        availableLocations = allItems.ToList();
+        allItemsLookup = [.. allItems];
+        availableLocations = [.. allItems];
 
         if (jsonAreas.FindAll(x => x.Initial).Count != 1)
             throw new InvalidDataException($"There should be exactly 1 initial area ({jsonAreas.FindAll(x => x.Initial).Count} were found)");
@@ -42,7 +42,7 @@ public class RandomizerCore
             loc.AssignRequirements(areaTree.GetArea(loc.Area));
         }
 
-        allKeys = keyItems.ToList();
+        allKeys = [.. keyItems];
     }
 
     public Dictionary<int, int> Main()

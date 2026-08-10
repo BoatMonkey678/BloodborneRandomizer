@@ -105,7 +105,7 @@
   },
   {
     "ID": 2200190,
-    "ItemName": "GEM: Fixed placement: Cemetery Town",
+    "ItemName": "Tempering Blood Gemstone",  
     "LocationName": "",
     "Area": "Hemwick Charnel Lane",
     "Important": false,
@@ -225,7 +225,7 @@
   },
   {
     "ID": 2200280,
-    "ItemName": "GEM: Fixed placement: Cemetery Town",
+    "ItemName": "Adept Blood Gemstone",
     "LocationName": "",
     "Area": "Hemwick Charnel Lane",
     "Important": false,
@@ -257,7 +257,7 @@
   },
   {
     "ID": 2300040,
-    "ItemName": "GEM: Fixed placement Ruins",
+    "ItemName": "Bloodtinge Gemstone",
     "LocationName": "",
     "Area": "Old Yharnam",
     "Important": false,
@@ -585,7 +585,7 @@
   },
   {
     "ID": 2300300,
-    "ItemName": "GEM: Fixed placement Ruins",
+    "ItemName": "Tempering Blood Gemstone",
     "LocationName": "",
     "Area": "Old Yharnam",
     "Important": false,
@@ -793,7 +793,7 @@
   },
   {
     "ID": 2400300,
-    "ItemName": "GEM: Fixed location Cathedral Ward A",
+    "ItemName": "Tempering Blood Gemstone",
     "LocationName": "",
     "Area": "Cathedral Ward",
     "Important": false,
@@ -889,7 +889,7 @@
   },
   {
     "ID": 2400430,
-    "ItemName": "GEM: Fixed location Cathedral Ward A",
+    "ItemName": "Fire Blood Gemstone",
     "LocationName": "",
     "Area": "Cathedral Ward",
     "Important": false,
@@ -1057,7 +1057,7 @@
   },
   {
     "ID": 2400740,
-    "ItemName": "GEM: Fixed location Cathedral Ward A",
+    "ItemName": "Tempering Blood Gemstone",
     "LocationName": "",
     "Area": "Cathedral Ward",
     "Important": false,
@@ -1091,13 +1091,13 @@
     "ID": 2400640,
     "ItemName": "Communion Lv1",
     "LocationName": "",
-    "Area": "Cathedral Ward",
+    "Area": "Healing Church Workshop",
     "Important": false,
     "Missable": false
   },
   {
     "ID": 2400650,
-    "ItemName": "GEM: Fixed location Cathedral Ward A",
+    "ItemName": "Bloodtinge Gemstone",
     "LocationName": "",
     "Area": "Cathedral Ward",
     "Important": false,
@@ -1107,13 +1107,13 @@
     "ID": 2400690,
     "ItemName": "Formless Oedon Lv4",
     "LocationName": "",
-    "Area": "Cathedral Ward",
+    "Area": "Healing Church Workshop",
     "Important": false,
     "Missable": false
   },
   {
     "ID": 2400760,
-    "ItemName": "GEM: Fixed location Cathedral Ward A",
+    "ItemName": "Tempering Blood Gemstone",
     "LocationName": "",
     "Area": "Cathedral Ward",
     "Important": false,
@@ -1875,7 +1875,7 @@
   },
   {
     "ID": 2501040,
-    "ItemName": "GEM: Fixed placement Old castle",
+    "ItemName": "Warm Blood Gemstone",
     "LocationName": "",
     "Area": "Forsaken Castle Cainhurst",
     "Important": false,
@@ -1891,7 +1891,7 @@
   },
   {
     "ID": 2501060,
-    "ItemName": "GEM: Fixed placement Old castle",
+    "ItemName": "Tempering Blood Gemstone",
     "LocationName": "",
     "Area": "Forsaken Castle Cainhurst",
     "Important": false,
@@ -1987,7 +1987,7 @@
   },
   {
     "ID": 2600150,
-    "ItemName": "GEM: Fixed placement Trap Lord",
+    "ItemName": "Arcane Damp Blood Gem (5)",
     "LocationName": "",
     "Area": "Nightmare of Mensis",
     "Important": false,
@@ -2027,7 +2027,7 @@
   },
   {
     "ID": 2600200,
-    "ItemName": "GEM: Fixed placement Trap Lord",
+    "ItemName": "Tempering Damp Blood Gem (5)",
     "LocationName": "",
     "Area": "Nightmare of Mensis",
     "Important": false,
@@ -2043,7 +2043,7 @@
   },
   {
     "ID": 2600220,
-    "ItemName": "GEM: Fixed placement Trap Lord",
+    "ItemName": "Damp Bloodtinge Gem (5)",
     "LocationName": "",
     "Area": "Nightmare of Mensis",
     "Important": false,
@@ -2219,7 +2219,7 @@
   },
   {
     "ID": 2600480,
-    "ItemName": "GEM: Fixed placement Trap Lord",
+    "ItemName": "Nourishing Damp Blood Gem (4)",
     "LocationName": "",
     "Area": "Nightmare of Mensis",
     "Important": false,
@@ -2243,7 +2243,7 @@
   },
   {
     "ID": 2600510,
-    "ItemName": "GEM: Fixed placement Trap Lord",
+    "ItemName": "Tempering Damp Blood Gem (5)",
     "LocationName": "",
     "Area": "Nightmare of Mensis",
     "Important": false,
@@ -2459,7 +2459,7 @@
   },
   {
     "ID": 2700300,
-    "ItemName": "GEM: Fixed placement forest",
+    "ItemName": "Sharp Blood Gemstone (3)",
     "LocationName": "",
     "Area": "Forbidden Woods",
     "Important": false,
@@ -2731,7 +2731,7 @@
   },
   {
     "ID": 2700650,
-    "ItemName": "GEM: Fixed placement forest",
+    "ItemName": "Arcane Blood Gemstone (2)",
     "LocationName": "",
     "Area": "Forbidden Woods",
     "Important": false,
@@ -2739,7 +2739,7 @@
   },
   {
     "ID": 2700660,
-    "ItemName": "GEM: Fixed placement forest",
+    "ItemName": "Nourishing Blood Gemstone (2)",
     "LocationName": "",
     "Area": "Forbidden Woods",
     "Important": false,
@@ -2755,7 +2755,7 @@
   },
   {
     "ID": 2700690,
-    "ItemName": "GEM: Fixed placement forest",
+    "ItemName": "Dirty Blood Gemstone (3)",
     "LocationName": "",
     "Area": "Forbidden Woods",
     "Important": false,
@@ -2763,7 +2763,7 @@
   },
   {
     "ID": 2700700,
-    "ItemName": "GEM: Fixed placement forest",
+    "ItemName": "Adept Blood Gemstone (2)",
     "LocationName": "",
     "Area": "Forbidden Woods",
     "Important": false,
@@ -2947,7 +2947,7 @@
   },
   {
     "ID": 2800020,
-    "ItemName": "GEM: Fixed placement Sacrifice",
+    "ItemName": "Bolt Damp Blood Gem (4)",
     "LocationName": "",
     "Area": "Yahar'gul, Unseen Village",
     "Important": false,
@@ -3075,7 +3075,7 @@
   },
   {
     "ID": 2800710,
-    "ItemName": "GEM: Fixed placement University (Nightmare Classroom)",
+    "ItemName": "Tempering Damp Blood Gem (5)",
     "LocationName": "",
     "Area": "Yahar'gul, Unseen Village",
     "Important": false,
@@ -4377,7 +4377,7 @@
   },
   {
     "ID": 3500190,
-    "ItemName": "GEM: Fixed placement _ Clock Tower Rank 15",
+    "ItemName": "Dirty Damp Blood Gem (5)",
     "LocationName": "",
     "Area": "Research Hall",
     "Important": false,
@@ -4473,7 +4473,7 @@
   },
   {
     "ID": 3500160,
-    "ItemName": "GEM: Fixed placement _ Clock Tower Rank 15",
+    "ItemName": "Lethal Damp Blood Gem (5)",
     "LocationName": "",
     "Area": "Research Hall",
     "Important": false,
@@ -4538,7 +4538,7 @@
   },
   {
     "ID": 3501100,
-    "ItemName": "GEM: Fixed placement _ Cathedral Quarter D_ Rank 14",
+    "ItemName": "Finestrike Damp Blood Gem (5)",
     "LocationName": "",
     "Area": "Research Hall",
     "Important": false,
@@ -4554,7 +4554,7 @@
   },
   {
     "ID": 3501500,
-    "ItemName": "GEM: Fixed placement _ Clock Tower Rank 15",
+    "ItemName": "Pulsing Damp Blood Gem (5)",
     "LocationName": "",
     "Area": "Research Hall",
     "Important": false,
@@ -4611,7 +4611,7 @@
   },
   {
     "ID": 3600140,
-    "ItemName": "GEM: Fixed placement _ Cathedral Quarter D_ Rank 14",
+    "ItemName": "Odd Fire Damp Blood Gem (5)",
     "LocationName": "",
     "Area": "Fishing Hamlet",
     "Important": false,
@@ -4627,7 +4627,7 @@
   },
   {
     "ID": 3600160,
-    "ItemName": "GEM: Fixed placement _ Fishing Village Rank 17",
+    "ItemName": "Tempering Damp Blood Gem (6)",
     "LocationName": "",
     "Area": "Fishing Hamlet",
     "Important": false,
@@ -4707,7 +4707,7 @@
   },
   {
     "ID": 3600340,
-    "ItemName": "GEM: Fixed placement _ Fishing Village Rank 17",
+    "ItemName": "Tempering Damp Blood Gem (6)",
     "LocationName": "",
     "Area": "Fishing Hamlet",
     "Important": false,
@@ -4755,7 +4755,7 @@
   },
   {
     "ID": 3600430,
-    "ItemName": "GEM: Fixed placement _ Fishing Village Rank 17",
+    "ItemName": "Odd Arcane Damp Blood Gem (6)",
     "LocationName": "",
     "Area": "Fishing Hamlet",
     "Important": false,
@@ -4843,7 +4843,7 @@
   },
   {
     "ID": 3600560,
-    "ItemName": "GEM: Fixed placement _ Fishing Village Rank 16-18",
+    "ItemName": "Tempering Damp Blood Gem (5)",
     "LocationName": "",
     "Area": "Fishing Hamlet",
     "Important": false,
@@ -4851,7 +4851,7 @@
   },
   {
     "ID": 3600570,
-    "ItemName": "GEM: Fixed placement _ Fishing Village Rank 17",
+    "ItemName": "Cursed Kinhunter's Damp Blood Gem (6)",
     "LocationName": "",
     "Area": "Fishing Hamlet",
     "Important": false,
@@ -4867,7 +4867,7 @@
   },
   {
     "ID": 3600610,
-    "ItemName": "GEM: Fixed placement _ Fishing Village Rank 17",
+    "ItemName": "Odd Bolt Damp Blood Gem (5)",
     "LocationName": "",
     "Area": "Fishing Hamlet",
     "Important": false,

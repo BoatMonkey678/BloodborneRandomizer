@@ -25,7 +25,7 @@ public class GameparamWriter()
     private static PARAM RegenerateRows(BND4 bnd, Dictionary<int, int> itemAssignment)
     {
         var itemLotParam = PARAM.Read(bnd.Files.First(x => x.Name == Config.ItemLotParamInGameparam).Bytes);
-        itemLotParam.ApplyParamdef(PARAMDEF.XmlDeserialize(@$"{Config.SoulsFilesFolder}\{Config.ItemLotParamdef}"));
+        itemLotParam.ApplyParamdef(PARAMDEF.XmlDeserialize(Path.Combine(Config.SoulsFilesFolder, Config.ItemLotParamdef)));
 
         var originalRowValues = CreateRowValueSnapshot(itemLotParam);
 
@@ -58,12 +58,12 @@ public class GameparamWriter()
 
     public static void WriteGameparam(Dictionary<int, int> itemAssignments)
     {
-        var bnd = BND4.Read(@$"{Config.SoulsFilesFolder}\{Config.GameparamRelativePath}");
+        var bnd = BND4.Read(Path.Combine(Config.SoulsFilesFolder, Config.GameparamRelativePath));
         
         var itemLotParam = RegenerateRows(bnd, itemAssignments);
 
         bnd.Files.First(x => x.Name == Config.ItemLotParamInGameparam).Bytes = itemLotParam.Write();
 
-        bnd.Write(@$"{Config.GameFileOutputFolder}\{Config.GameparamRelativePath}");
+        bnd.Write(Path.Combine(Config.GameFileOutputFolder, Config.GameparamRelativePath));
     }
 }
