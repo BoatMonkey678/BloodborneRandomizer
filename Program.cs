@@ -18,9 +18,10 @@ class Program
             Path.Combine(StaticConfig.Assets, StaticConfig.AvailableGunsTxt)
         );
 
+
         Console.WriteLine("Successfully loaded assets");
 
-        UserConfig userConfig = new(true, "do not", "do not", "do not");
+        UserConfig userConfig = new(true, "important", "important", "important", "anywhere");
 
         Console.WriteLine("Successfully loaded user config");
 
@@ -34,7 +35,8 @@ class Program
             initialData.LinkLots,
             userConfig.KeyItemsLocation,
             userConfig.BadgeLocation,
-            userConfig.RuneLocation
+            userConfig.RuneLocation,
+            userConfig.ToolLocation
         );
 
         ShopLineupRandomizer shopLineupRandomizer = new(

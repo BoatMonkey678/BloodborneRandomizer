@@ -1,0 +1,10 @@
+{
+    "Seed": -1,
+    "ItemRandomizerOptions": {
+        "RandomizeKeyItems": 1,
+        "RandomizeBadges": 1,
+        "RandomizeRunes": 1,
+        "RandomizeTools": 1,
+        "RandomizeStartingWeapons": true
+    }
+}

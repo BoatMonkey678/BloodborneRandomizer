@@ -23,4 +23,5 @@ public static class StaticConfig
     public static string EngGbItemMsgbnd = Path.Combine("msg", "enggb", "item.msgbnd.dcx");
     public static string dvdroot_ps4 = Path.Combine(Directory.GetCurrentDirectory(), "output", "dvdroot_ps4");
     public static string spoiler = Path.Combine(Directory.GetCurrentDirectory(), "output", "spoiler.txt");
+    public static string config = Path.Combine(Directory.GetCurrentDirectory(), "config.toml");
 }

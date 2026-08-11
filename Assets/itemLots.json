@@ -5,6 +5,7 @@
     "LocationName": "",
     "Area": "Abandoned Old Workshop",
     "Important": false,
+    "Tool": true,
     "Missable": false
   },
   {
@@ -1677,6 +1678,7 @@
     "LocationName": "",
     "Area": "Upper Cathedral Ward",
     "Important": false,
+    "Tool": true,
     "Missable": false,
     "AdditionalRequirements": [2420900]
   },
@@ -1815,6 +1817,7 @@
     "LocationName": "",
     "Area": "Forsaken Castle Cainhurst",
     "Important": false,
+    "Tool": true,
     "Missable": false
   },
   {
@@ -2297,6 +2300,7 @@
     "LocationName": "",
     "Area": "Nightmare of Mensis",
     "Important": false,
+    "Tool": true,
     "Missable": false
   },
   {
@@ -2635,6 +2639,7 @@
     "LocationName": "",
     "Area": "Forbidden Woods",
     "Important": false,
+    "Tool": true,
     "Missable": false
   },
   {
@@ -3322,6 +3327,7 @@
     "LocationName": "",
     "Area": "Yahar'gul, Unseen Village",
     "Important": false,
+    "Tool": true,
     "Missable": false
   },
   {
@@ -3427,6 +3433,7 @@
     "LocationName": "",
     "Area": "Byrgenwerth",
     "Important": false,
+    "Tool": true,
     "Missable": false
   },
   {
@@ -3459,6 +3466,7 @@
     "LocationName": "",
     "Area": "Lecture Building - 1F",
     "Important": false,
+    "Tool": true,
     "Missable": false,
     "AdditionalRequirements": [3200720]
   },
@@ -3617,6 +3625,7 @@
     "LocationName": "",
     "Area": "Nightmare Frontier",
     "Important": false,
+    "Tool": true,
     "Missable": false
   },
   {
@@ -4343,6 +4352,7 @@
     "LocationName": "",
     "Area": "Research Hall",
     "Important": false,
+    "Tool": true,
     "Missable": false,
     "AdditionalRequirements": [43010]
   },
@@ -4963,6 +4973,7 @@
     "LocationName": "",
     "Area": "Research Hall",
     "Important": false,
+    "Tool": true,
     "Missable": true,
     "AdditionalRequirements": [43020]
   },
@@ -5401,6 +5412,7 @@
     "LocationName": "",
     "Area": "Forbidden Woods",
     "Important": false,
+    "Tool": true,
     "Missable": false
   },
   {

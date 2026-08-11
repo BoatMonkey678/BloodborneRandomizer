@@ -9,9 +9,17 @@ public class ItemLotRandomizer
     private readonly Dictionary<int, int> output = [];
     private readonly List<LinkLot> linkLots;
     private readonly List<ItemLot> keyLocations = [];
-    private readonly bool randomizeKeys = true, randomizeBadges = true, randomizeRunes = true;
+    private readonly bool randomizeKeys = true, randomizeBadges = true, randomizeRunes = true, randomizeTools = true;
 
-    public ItemLotRandomizer(List<ItemLot> itemLots, List<JsonArea> jsonAreas, List<LinkLot> linkedLots, UserConfig.ItemLocationTargets keyItemLocationTarget, UserConfig.ItemLocationTargets badgeLocationTarget, UserConfig.ItemLocationTargets runeLocationTarget)
+    public ItemLotRandomizer(
+        List<ItemLot> itemLots,
+        List<JsonArea> jsonAreas,
+        List<LinkLot> linkedLots,
+        UserConfig.ItemLocationTargets keyItemLocationTarget,
+        UserConfig.ItemLocationTargets badgeLocationTarget,
+        UserConfig.ItemLocationTargets runeLocationTarget,
+        UserConfig.ItemLocationTargets toolLocationTarget
+    )
     {
         List<ItemLot> allItems = [.. itemLots];
         eligibleItems = [.. allItems];
@@ -49,6 +57,21 @@ public class ItemLotRandomizer
                 foreach (var rune in eligibleItems.FindAll(x => x.Rune))
                 {
                     rune.Important = true;
+                }
+                break;
+        }
+
+        switch (toolLocationTarget)
+        {
+            case UserConfig.ItemLocationTargets.Anywhere:
+                break;
+            case UserConfig.ItemLocationTargets.DoNotRandomize:
+                randomizeTools = false;
+                break;
+            case UserConfig.ItemLocationTargets.ImportantLocations:
+                foreach (var tool in eligibleItems.FindAll(x => x.Tool))
+                {
+                    tool.Important = true;
                 }
                 break;
         }
@@ -104,7 +127,7 @@ public class ItemLotRandomizer
                 if (item.Important)
                 {
                     output.Add(item.ID, item.ID);
-                    availableLocations.RemoveAll(x => x.Important);
+                    availableLocations.RemoveAll(x => x.ID == item.ID);
                     eligibleItems.RemoveAll(x => x.ID == item.ID);
                 }
             }
@@ -117,7 +140,7 @@ public class ItemLotRandomizer
                 if (item.Badge)
                 {
                     output.Add(item.ID, item.ID);
-                    availableLocations.RemoveAll(x => x.Badge);
+                    availableLocations.RemoveAll(x => x.ID == item.ID);
                     eligibleItems.RemoveAll(x => x.ID == item.ID);
                 }
             }
@@ -132,7 +155,20 @@ public class ItemLotRandomizer
                     if (!randomizeKeys && item.ID == 43020)
                         continue;
                     output.Add(item.ID, item.ID);
-                    availableLocations.RemoveAll(x => x.Rune);
+                    availableLocations.RemoveAll(x => x.ID == item.ID);
+                    eligibleItems.RemoveAll(x => x.ID == item.ID);
+                }
+            }
+        }
+
+        if (!randomizeTools)
+        {
+            foreach (var item in allItems)
+            {
+                if (item.Tool)
+                {
+                    output.Add(item.ID, item.ID);
+                    availableLocations.RemoveAll(x => x.ID == item.ID);
                     eligibleItems.RemoveAll(x => x.ID == item.ID);
                 }
             }

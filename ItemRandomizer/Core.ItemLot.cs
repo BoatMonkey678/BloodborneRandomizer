@@ -12,6 +12,7 @@ public class ItemLot
     public required bool Badge;
     public required bool Rune;
     public required bool Missable;
+    public required bool Tool;
     [JsonProperty]
     private List<int> AdditionalRequirements = [];
     public List<int> Requirements = [];
