@@ -24,8 +24,8 @@ public class ItemLotParam
 
     public static PARAM RegenerateItemLotParamRows(BND4 bnd, Dictionary<int, int> itemAssignment)
     {
-        var itemLotParam = PARAM.Read(bnd.Files.First(x => x.Name == Config.ItemLotParamInterroot).Bytes);
-        itemLotParam.ApplyParamdef(PARAMDEF.XmlDeserialize(Path.Combine(Config.Dist, Config.Paramdef, "ItemLotParam.xml")));
+        var itemLotParam = PARAM.Read(bnd.Files.First(x => x.Name == StaticConfig.ItemLotParamInterroot).Bytes);
+        itemLotParam.ApplyParamdef(PARAMDEF.XmlDeserialize(Path.Combine(StaticConfig.Dist, StaticConfig.Paramdef, "ItemLotParam.xml")));
 
         var originalRowValues = CreateRowValueSnapshot(itemLotParam);
 

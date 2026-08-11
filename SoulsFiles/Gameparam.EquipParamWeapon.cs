@@ -24,8 +24,8 @@ public class EquipParamWeapon
 
     public static PARAM RegenerateEquipParamWeapon(BND4 bnd, Dictionary<int, int> shopAssignment)
     {
-        var equipParamWeapon = PARAM.Read(bnd.Files.First(x => x.Name == Config.EquipParamWeaponInterroot).Bytes);
-        equipParamWeapon.ApplyParamdef(PARAMDEF.XmlDeserialize(Path.Combine(Config.Dist, Config.Paramdef, "EquipParamWeapon.xml")));
+        var equipParamWeapon = PARAM.Read(bnd.Files.First(x => x.Name == StaticConfig.EquipParamWeaponInterroot).Bytes);
+        equipParamWeapon.ApplyParamdef(PARAMDEF.XmlDeserialize(Path.Combine(StaticConfig.Dist, StaticConfig.Paramdef, "EquipParamWeapon.xml")));
 
         var originalRowValues = CreateRowValueSnapshot(equipParamWeapon);
 

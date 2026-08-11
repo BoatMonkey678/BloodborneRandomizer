@@ -9,6 +9,8 @@ public class ItemLot
     public required string LocationName;
     public required string Area;
     public required bool Important;
+    public required bool Badge;
+    public required bool Rune;
     public required bool Missable;
     [JsonProperty]
     private List<int> AdditionalRequirements = [];

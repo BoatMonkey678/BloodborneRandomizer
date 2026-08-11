@@ -9,8 +9,8 @@ public class WeaponFMG
 
     public WeaponFMG(BND4 msgbnd)
     {
-        weaponNames = FMG.Read(msgbnd.Files.First(x => x.Name == Config.EngusFMGWeaponNames).Bytes);
-        weaponDescriptions = FMG.Read(msgbnd.Files.First(x => x.Name == Config.EngusFMGWeaponDescriptions).Bytes);
+        weaponNames = FMG.Read(msgbnd.Files.First(x => x.Name == StaticConfig.EngusFMGWeaponNames).Bytes);
+        weaponDescriptions = FMG.Read(msgbnd.Files.First(x => x.Name == StaticConfig.EngusFMGWeaponDescriptions).Bytes);
     }
 
     private Dictionary<int, string> GetOriginalWeaponNames()
@@ -57,15 +57,15 @@ public class WeaponFMG
         if (engus)
         {
             return new Dictionary<string, FMG>() {
-                {Config.EngusFMGWeaponNames, weaponNames},
-                {Config.EngusFMGWeaponDescriptions, weaponDescriptions}
+                {StaticConfig.EngusFMGWeaponNames, weaponNames},
+                {StaticConfig.EngusFMGWeaponDescriptions, weaponDescriptions}
             };
         }
         else
         {
             return new Dictionary<string, FMG>() {
-                {Config.EngGbFMGWeaponNames, weaponNames},
-                {Config.EngGbFMGWeaponDescriptions, weaponDescriptions}
+                {StaticConfig.EngGbFMGWeaponNames, weaponNames},
+                {StaticConfig.EngGbFMGWeaponDescriptions, weaponDescriptions}
             };
         }
         

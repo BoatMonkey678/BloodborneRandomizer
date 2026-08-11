@@ -1,6 +1,6 @@
 namespace BloodborneRandomizer;
 
-public static class Config
+public static class StaticConfig
 {
     public const string ItemLotParamInterroot = @"N:\SPRJ\data\INTERROOT_ps4\param\GameParam\64bit\ItemLotParam.param";
     public const string ShopLineupParamInterroot = @"N:\SPRJ\data\INTERROOT_ps4\param\GameParam\64bit\ShopLineupParam.param";

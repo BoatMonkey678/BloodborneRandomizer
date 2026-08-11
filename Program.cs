@@ -11,73 +11,83 @@ class Program
     static void Main(string[] args)
     {
         InitialData initialData = new(
-            Path.Combine(Config.Assets, Config.ItemLotsJson),
-            Path.Combine(Config.Assets, Config.AreasJson),
-            Path.Combine(Config.Assets, Config.LinkLotsJson),
-            Path.Combine(Config.Assets, Config.AvailableWeaponsTxt),
-            Path.Combine(Config.Assets, Config.AvailableGunsTxt)
+            Path.Combine(StaticConfig.Assets, StaticConfig.ItemLotsJson),
+            Path.Combine(StaticConfig.Assets, StaticConfig.AreasJson),
+            Path.Combine(StaticConfig.Assets, StaticConfig.LinkLotsJson),
+            Path.Combine(StaticConfig.Assets, StaticConfig.AvailableWeaponsTxt),
+            Path.Combine(StaticConfig.Assets, StaticConfig.AvailableGunsTxt)
         );
 
         Console.WriteLine("Successfully loaded assets");
 
-        var gameparam = BND4.Read(Path.Combine(Config.Dist, Config.Gameparam));
+        UserConfig userConfig = new(true, "do not", "do not", "do not");
 
-        var engusMsgbnd = BND4.Read(Path.Combine(Config.Dist, Config.EngusItemMsgbnd));
-        var enggbMsgbnd = BND4.Read(Path.Combine(Config.Dist, Config.EngGbItemMsgbnd));
+        Console.WriteLine("Successfully loaded user config");
 
-        WeaponFMG engusWeaponFMG = new(engusMsgbnd);
-        WeaponFMG enggbWeaponFMG = new(engusMsgbnd);
+        var gameparam = BND4.Read(Path.Combine(StaticConfig.Dist, StaticConfig.Gameparam));
 
         Console.WriteLine("Successfully loaded game files");
         
         ItemLotRandomizer itemLotRandomizer = new(
             initialData.AllItems,
             initialData.Areas,
-            initialData.LinkLots
+            initialData.LinkLots,
+            userConfig.KeyItemsLocation,
+            userConfig.BadgeLocation,
+            userConfig.RuneLocation
         );
 
         ShopLineupRandomizer shopLineupRandomizer = new(
             ShopLineupParam.GetEligibleRowIDs(
-                PARAM.Read(gameparam.Files.First(x => x.Name == Config.ShopLineupParamInterroot).Bytes)
+                PARAM.Read(gameparam.Files.First(x => x.Name == StaticConfig.ShopLineupParamInterroot).Bytes)
             )
         );
-
-        WeaponRandomizer weaponRandomizer = new(initialData.AvailableWeapons, initialData.AvailableGuns);
-
-        Console.WriteLine("Randomizing items...");
 
         var itemLotOutput = itemLotRandomizer.RandomizeItemLots();
         var shopLineupOutput = shopLineupRandomizer.RandomizeShopLineup();
 
         Console.WriteLine("Randomized items");
 
-        Console.WriteLine("Randomizing starting weapons...");
-
-        var weaponsOutput = weaponRandomizer.RandomizeStartingWeapons();
-
-        var engusWeaponNames = engusWeaponFMG.UpdateFMGs(weaponsOutput, true);
-        var enggbWeaponNames = enggbWeaponFMG.UpdateFMGs(weaponsOutput, false);
-
-        Console.WriteLine("Randomized starting weapons");
-
-        Console.WriteLine("Writing game files...");
-
         Dictionary<string, PARAM> paramsToWrite = new() {
-            { Config.ItemLotParamInterroot, ItemLotParam.RegenerateItemLotParamRows(gameparam, itemLotOutput) },
-            { Config.ShopLineupParamInterroot, ShopLineupParam.RegenerateShopLineupParam(gameparam, shopLineupOutput) },
-            { Config.EquipParamWeaponInterroot, EquipParamWeapon.RegenerateEquipParamWeapon(gameparam, weaponsOutput) }
+            { StaticConfig.ItemLotParamInterroot, ItemLotParam.RegenerateItemLotParamRows(gameparam, itemLotOutput) },
+            { StaticConfig.ShopLineupParamInterroot, ShopLineupParam.RegenerateShopLineupParam(gameparam, shopLineupOutput) }
         };
 
-        Gameparam.WriteGameparamWithReplacement(gameparam, paramsToWrite, Path.Combine(Config.dvdroot_ps4, Config.Gameparam));
+        BND4? engusMsgbnd = null;
+        BND4? enggbMsgbnd = null;
+        Dictionary<string, FMG>? engusWeaponInfo = null;
+        Dictionary<string, FMG>? enggbWeaponInfo = null;
 
-        ItemMsgbnd.WriteItemMsgbndWithReplacement(engusMsgbnd, engusWeaponNames, Path.Combine(Config.dvdroot_ps4, Config.EngusItemMsgbnd));
-        ItemMsgbnd.WriteItemMsgbndWithReplacement(enggbMsgbnd, enggbWeaponNames, Path.Combine(Config.dvdroot_ps4, Config.EngGbItemMsgbnd));
+        if (userConfig.RandomizeStartingWeapons)
+        {
+            WeaponRandomizer weaponRandomizer = new(initialData.AvailableWeapons, initialData.AvailableGuns);
+            engusMsgbnd = BND4.Read(Path.Combine(StaticConfig.Dist, StaticConfig.EngusItemMsgbnd));
+            enggbMsgbnd = BND4.Read(Path.Combine(StaticConfig.Dist, StaticConfig.EngGbItemMsgbnd));
+
+            WeaponFMG engusWeaponFMG = new(engusMsgbnd);
+            WeaponFMG enggbWeaponFMG = new(engusMsgbnd);
+
+            var weaponsOutput = weaponRandomizer.RandomizeStartingWeapons();
+
+            engusWeaponInfo = engusWeaponFMG.UpdateFMGs(weaponsOutput, true);
+            enggbWeaponInfo = enggbWeaponFMG.UpdateFMGs(weaponsOutput, false);
+
+            paramsToWrite.Add(StaticConfig.EquipParamWeaponInterroot, EquipParamWeapon.RegenerateEquipParamWeapon(gameparam, weaponsOutput));
+
+            Console.WriteLine("Randomized starting weapons");
+        }
+
+        Gameparam.WriteGameparamWithReplacement(gameparam, paramsToWrite, Path.Combine(StaticConfig.dvdroot_ps4, StaticConfig.Gameparam));
+
+        if (enggbMsgbnd is not null && engusMsgbnd is not null && engusWeaponInfo is not null && enggbWeaponInfo is not null)
+        {
+            ItemMsgbnd.WriteItemMsgbndWithReplacement(engusMsgbnd, engusWeaponInfo, Path.Combine(StaticConfig.dvdroot_ps4, StaticConfig.EngusItemMsgbnd));
+            ItemMsgbnd.WriteItemMsgbndWithReplacement(enggbMsgbnd, enggbWeaponInfo, Path.Combine(StaticConfig.dvdroot_ps4, StaticConfig.EngGbItemMsgbnd));
+        }
 
         Console.WriteLine("Wrote game files");
 
-        Console.WriteLine("Generating spoiler logs...");
-
-        File.WriteAllText(Config.spoiler, Spoiler.GenerateItemLot(itemLotRandomizer, itemLotOutput));
+        File.WriteAllText(StaticConfig.spoiler, Spoiler.GenerateItemLot(itemLotRandomizer, itemLotOutput));
 
         Console.WriteLine("Generated spoiler logs");
 

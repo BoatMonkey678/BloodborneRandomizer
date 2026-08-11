@@ -6,7 +6,7 @@ public class ShopLineupParam
 {
     public static List<int> GetEligibleRowIDs(PARAM shopLineupParam)
     {
-        List<int> excludedRows = [.. File.ReadAllText(Path.Combine(Config.Assets, Config.ExcludedShopTxt))
+        List<int> excludedRows = [.. File.ReadAllText(Path.Combine(StaticConfig.Assets, StaticConfig.ExcludedShopTxt))
             .Split("\n")
             .Select(int.Parse)];
    
@@ -35,8 +35,8 @@ public class ShopLineupParam
 
     public static PARAM RegenerateShopLineupParam(BND4 bnd, Dictionary<int, int> shopAssignment)
     {
-        var shopLineupParam = PARAM.Read(bnd.Files.First(x => x.Name == Config.ShopLineupParamInterroot).Bytes);
-        shopLineupParam.ApplyParamdef(PARAMDEF.XmlDeserialize(Path.Combine(Config.Dist, Config.Paramdef, "ShopLineupParam.xml")));
+        var shopLineupParam = PARAM.Read(bnd.Files.First(x => x.Name == StaticConfig.ShopLineupParamInterroot).Bytes);
+        shopLineupParam.ApplyParamdef(PARAMDEF.XmlDeserialize(Path.Combine(StaticConfig.Dist, StaticConfig.Paramdef, "ShopLineupParam.xml")));
 
         var originalRowValues = CreateRowValueSnapshot(shopLineupParam);
 
