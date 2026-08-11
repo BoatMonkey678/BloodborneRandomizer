@@ -1,8 +1,6 @@
-using Newtonsoft.Json;
-
 namespace BloodborneRandomizer.ItemRandomizer;
 
-public class RandomizerCore
+public class ItemLotRandomizer
 {
     private readonly List<ItemLot> allItemsLookup = [];
     private readonly List<ItemLot> allItems = [];
@@ -11,7 +9,7 @@ public class RandomizerCore
     private readonly Dictionary<int, int> output = [];
     private readonly List<LinkLot> linkLots = [];
 
-    public RandomizerCore(List<ItemLot> itemLots, List<JsonArea> jsonAreas, List<LinkLot> linkedLots)
+    public ItemLotRandomizer(List<ItemLot> itemLots, List<JsonArea> jsonAreas, List<LinkLot> linkedLots)
     {
         allItems = [.. itemLots];
         allItems.Sort((a, b) => b.Important.CompareTo(a.Important));
@@ -31,7 +29,7 @@ public class RandomizerCore
         }
     }
 
-    public Dictionary<int, int> Main()
+    public Dictionary<int, int> RandomizeItemLots()
     {
         RandomizeItems();
 

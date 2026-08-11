@@ -3,7 +3,7 @@ namespace BloodborneRandomizer;
 public static class Config
 {
     public const string ItemLotParamInterroot = @"N:\SPRJ\data\INTERROOT_ps4\param\GameParam\64bit\ItemLotParam.param";
-    public const string ShopLineupParamInterroot = @"N:\SPRJ\data\INTERROOT_ps4\param\GameParam\64bit\ItemLotParam.param";
+    public const string ShopLineupParamInterroot = @"N:\SPRJ\data\INTERROOT_ps4\param\GameParam\64bit\ShopLineupParam.param";
     public const string Paramdef = "paramdef";
     public static string Assets = Path.Combine(Directory.GetCurrentDirectory(), "Assets");
     public static string Dist = Path.Combine(Directory.GetCurrentDirectory(), "dist");

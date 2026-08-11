@@ -3,6 +3,7 @@ using BloodborneRandomizer.NormalFiles;
 using BloodborneRandomizer.ItemRandomizer;
 using BloodborneRandomizer.SoulsFiles;
 using SoulsFormats;
+using BloodborneRandomizer.ShopRandomizer;
 
 class Program
 {
@@ -14,22 +15,30 @@ class Program
             Path.Combine(Config.Assets, Config.LinkLotsJson)
         );
 
-        RandomizerCore randomizer = new(
+        var gameparam = BND4.Read(Path.Combine(Config.Dist, Config.Gameparam));
+
+        ItemLotRandomizer itemLotRandomizer = new(
             initialData.AllItems,
             initialData.Areas,
             initialData.LinkLots
         );
 
-        var output = randomizer.Main();
+        ShopLineupRandomizer shopLineupRandomizer = new(
+            ShopLineupParam.GetEligibleRowIDs(
+                PARAM.Read(gameparam.Files.First(x => x.Name == Config.ShopLineupParamInterroot).Bytes)
+            )
+        );
 
-        Spoiler.Generate(randomizer, output);
+        var itemLotOutput = itemLotRandomizer.RandomizeItemLots();
+        var shopLineupOutput = shopLineupRandomizer.RandomizeShopLineup();
 
-        var bnd = BND4.Read(Path.Combine(Config.Dist, Config.Gameparam));
+        Spoiler.GenerateItemLot(itemLotRandomizer, itemLotOutput);
 
-        Dictionary<string, PARAM> paramsToWrite = new(){{
-            Config.ItemLotParamInterroot, ItemLotParam.RegenerateItemLotParamRows(bnd, output)
-        }};
+        Dictionary<string, PARAM> paramsToWrite = new() {
+            { Config.ItemLotParamInterroot, ItemLotParam.RegenerateItemLotParamRows(gameparam, itemLotOutput) },
+            { Config.ShopLineupParamInterroot, ShopLineupParam.RegenerateShopLineupParam(gameparam, shopLineupOutput) }
+        };
 
-        Gameparam.WriteGameparamWithReplacement(bnd, paramsToWrite, Path.Combine(Config.dvdroot_ps4, Config.Gameparam));
+        Gameparam.WriteGameparamWithReplacement(gameparam, paramsToWrite, Path.Combine(Config.dvdroot_ps4, Config.Gameparam));
     }
 }
