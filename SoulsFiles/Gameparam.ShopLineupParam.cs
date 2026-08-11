@@ -60,7 +60,7 @@ public class ShopLineupParam
             row.Cells.First(x => x.InternalName == "equipType").Value = targetValues["equipType"];
 
             if (int.Parse(row.Cells.First(x => x.InternalName == "shopType").Value.ToString() ?? "") == 0)
-                row.Cells.First(x => x.InternalName == "value").Value = random.Next(200) * 10;
+                row.Cells.First(x => x.InternalName == "value").Value = random.Next(2, 200) * 10;
             
             #pragma warning restore CS8602 // Dereference of a possibly null reference.
             #pragma warning restore CS8601 // Possible null reference assignment.
