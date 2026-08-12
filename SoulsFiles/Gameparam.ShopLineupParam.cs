@@ -33,7 +33,7 @@ public class ShopLineupParam
         return snapshot;
     }
 
-    public static PARAM RegenerateShopLineupParam(BND4 bnd, Dictionary<int, int> shopAssignment)
+    public static PARAM RegenerateShopLineupParam(BND4 bnd, Dictionary<int, int> shopAssignment, Dictionary<int, int> insightToBloodEchoesPrices)
     {
         var shopLineupParam = PARAM.Read(bnd.Files.First(x => x.Name == StaticConfig.ShopLineupParamInterroot).Bytes);
         shopLineupParam.ApplyParamdef(PARAMDEF.XmlDeserialize(Path.Combine(StaticConfig.Dist, StaticConfig.Paramdef, "ShopLineupParam.xml")));
@@ -59,8 +59,12 @@ public class ShopLineupParam
             row.Cells.First(x => x.InternalName == "sellQuantity").Value = targetValues["sellQuantity"];
             row.Cells.First(x => x.InternalName == "equipType").Value = targetValues["equipType"];
 
-            if (int.Parse(row.Cells.First(x => x.InternalName == "shopType").Value.ToString() ?? "") == 0)
-                row.Cells.First(x => x.InternalName == "value").Value = random.Next(2, 200) * 10;
+            if (int.Parse(row.Cells.First(x => x.InternalName == "shopType").Value.ToString() ?? "") == 0 && int.Parse(targetValues["shopType"].ToString() ?? "") == 0)
+                row.Cells.First(x => x.InternalName == "value").Value = targetValues["value"];
+            else if (int.Parse(row.Cells.First(x => x.InternalName == "shopType").Value.ToString() ?? "") == 0 && int.Parse(targetValues["shopType"].ToString() ?? "") == 5)
+                // Console.WriteLine(row.ID);
+                row.Cells.First(x => x.InternalName == "value").Value = insightToBloodEchoesPrices[int.Parse(targetValues["equipId"].ToString() ?? "")];
+
             
             #pragma warning restore CS8602 // Dereference of a possibly null reference.
             #pragma warning restore CS8601 // Possible null reference assignment.

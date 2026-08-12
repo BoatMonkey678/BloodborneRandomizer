@@ -15,13 +15,14 @@ class Program
             Path.Combine(StaticConfig.Assets, StaticConfig.AreasJson),
             Path.Combine(StaticConfig.Assets, StaticConfig.LinkLotsJson),
             Path.Combine(StaticConfig.Assets, StaticConfig.AvailableWeaponsTxt),
-            Path.Combine(StaticConfig.Assets, StaticConfig.AvailableGunsTxt)
+            Path.Combine(StaticConfig.Assets, StaticConfig.AvailableGunsTxt),
+            Path.Combine(StaticConfig.Assets, StaticConfig.InsightToBloodEchoesPricesJson)
         );
 
 
         Console.WriteLine("Successfully loaded assets");
 
-        UserConfig userConfig = new(true, "important", "important", "important", "anywhere");
+        UserConfig userConfig = new(true, "important", "important", "important", "important");
 
         Console.WriteLine("Successfully loaded user config");
 
@@ -52,7 +53,7 @@ class Program
 
         Dictionary<string, PARAM> paramsToWrite = new() {
             { StaticConfig.ItemLotParamInterroot, ItemLotParam.RegenerateItemLotParamRows(gameparam, itemLotOutput) },
-            { StaticConfig.ShopLineupParamInterroot, ShopLineupParam.RegenerateShopLineupParam(gameparam, shopLineupOutput) }
+            { StaticConfig.ShopLineupParamInterroot, ShopLineupParam.RegenerateShopLineupParam(gameparam, shopLineupOutput, initialData.InsightToBloodEchoesPrices) }
         };
 
         BND4? engusMsgbnd = null;

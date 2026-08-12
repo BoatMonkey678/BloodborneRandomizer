@@ -13,6 +13,7 @@ public static class StaticConfig
     public static string Assets = Path.Combine(Directory.GetCurrentDirectory(), "Assets");
     public static string Dist = Path.Combine(Directory.GetCurrentDirectory(), "dist");
     public const string ItemLotsJson = "itemLots.json";
+    public const string InsightToBloodEchoesPricesJson = "insightToBloodEchoPrices.json";
     public const string ExcludedShopTxt = "excludedShop.txt";
     public const string AvailableWeaponsTxt = "availableWeapons.txt";
     public const string AvailableGunsTxt = "availableGuns.txt";

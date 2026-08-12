@@ -3,6 +3,7 @@ namespace BloodborneRandomizer.NormalFiles;
 public class AppConfig
 {
     public required int Seed { get; set; }
+    public required bool RandomizeItems { get; set; }
     public required ItemRandomizerOptions ItemRandomizerOptions { get; set; }
 }
 
