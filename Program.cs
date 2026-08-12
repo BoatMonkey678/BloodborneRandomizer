@@ -19,14 +19,26 @@ class Program
             Path.Combine(StaticConfig.Assets, StaticConfig.InsightToBloodEchoesPricesJson)
         );
 
-
         Console.WriteLine("Successfully loaded assets");
 
-        UserConfig userConfig = new(true, "important", "important", "important", "important");
+        AppConfig appConfig = AppConfig.New();
+
+        UserConfig userConfig = new(
+            appConfig.ItemRandomizerOptions.RandomizeStartingWeapons,
+            appConfig.ItemRandomizerOptions.RandomizeKeyItems,
+            appConfig.ItemRandomizerOptions.RandomizeBadges,
+            appConfig.ItemRandomizerOptions.RandomizeRunes,
+            appConfig.ItemRandomizerOptions.RandomizeTools
+        );
 
         Console.WriteLine("Successfully loaded user config");
+        
+        BND4 gameparam;
 
-        var gameparam = BND4.Read(Path.Combine(StaticConfig.Dist, StaticConfig.Gameparam));
+        if (appConfig.RemoveChaliceRequirements)
+            gameparam = BND4.Read(Path.Combine(StaticConfig.Dist, StaticConfig.Gameparam));
+        else
+            gameparam = BND4.Read(Path.Combine(StaticConfig.Dist, StaticConfig.GameparamWithoutRitual));
 
         Console.WriteLine("Successfully loaded game files");
         

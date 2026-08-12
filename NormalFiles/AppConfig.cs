@@ -1,10 +1,17 @@
+using Newtonsoft.Json;
 namespace BloodborneRandomizer.NormalFiles;
 
 public class AppConfig
 {
     public required int Seed { get; set; }
     public required bool RandomizeItems { get; set; }
+    public required bool RemoveChaliceRequirements { get; set; }
     public required ItemRandomizerOptions ItemRandomizerOptions { get; set; }
+
+    public static AppConfig New()
+    {
+        return JsonConvert.DeserializeObject<AppConfig>(File.ReadAllText(StaticConfig.appconfig)) ?? throw new Exception("Unable to deserialize appconfig.json");
+    }
 }
 
 public class ItemRandomizerOptions

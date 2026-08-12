@@ -6,5 +6,6 @@
         "RandomizeRunes": 1,
         "RandomizeTools": 1,
         "RandomizeStartingWeapons": true
-    }
+    },
+    "RemoveChaliceRequirements": true
 }

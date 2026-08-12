@@ -20,9 +20,10 @@ public static class StaticConfig
     public const string AreasJson = "areas.json";
     public const string LinkLotsJson = "linkLots.json";
     public static string Gameparam = Path.Combine("param", "gameparam", "gameparam.parambnd.dcx");
+    public static string GameparamWithoutRitual = Path.Combine("param_no_ritual", "gameparam", "gameparam.parambnd.dcx");
     public static string EngusItemMsgbnd = Path.Combine("msg", "engus", "item.msgbnd.dcx");
     public static string EngGbItemMsgbnd = Path.Combine("msg", "enggb", "item.msgbnd.dcx");
     public static string dvdroot_ps4 = Path.Combine(Directory.GetCurrentDirectory(), "output", "dvdroot_ps4");
     public static string spoiler = Path.Combine(Directory.GetCurrentDirectory(), "output", "spoiler.txt");
-    public static string config = Path.Combine(Directory.GetCurrentDirectory(), "config.toml");
+    public static string appconfig = Path.Combine(Directory.GetCurrentDirectory(), "appconfig.json");
 }

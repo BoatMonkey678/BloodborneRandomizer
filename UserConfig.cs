@@ -1,6 +1,6 @@
 namespace BloodborneRandomizer;
 
-public class UserConfig(bool randomizeWeapons, string keyItemRandomization, string badgeRandomization, string runeRandomization, string toolRandomization)
+public class UserConfig(bool randomizeWeapons, int keyItemRandomization, int badgeRandomization, int runeRandomization, int toolRandomization)
 {
     public bool RandomizeStartingWeapons { get; private set; } = randomizeWeapons;
 
@@ -12,12 +12,12 @@ public class UserConfig(bool randomizeWeapons, string keyItemRandomization, stri
     public ItemLocationTargets RuneLocation = GetLocationType(runeRandomization);
     public ItemLocationTargets ToolLocation = GetLocationType(toolRandomization);
 
-    public static ItemLocationTargets GetLocationType(string predicate)
+    public static ItemLocationTargets GetLocationType(int predicate)
     {
         return predicate switch
         {
-            "important" => ItemLocationTargets.ImportantLocations,
-            "do not" => ItemLocationTargets.DoNotRandomize,
+            1 => ItemLocationTargets.ImportantLocations,
+            0 => ItemLocationTargets.DoNotRandomize,
             _ => ItemLocationTargets.Anywhere,
         };
     }
