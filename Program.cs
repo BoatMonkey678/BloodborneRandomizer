@@ -23,14 +23,6 @@ class Program
 
         AppConfig appConfig = AppConfig.New();
 
-        UserConfig userConfig = new(
-            appConfig.ItemRandomizerOptions.RandomizeStartingWeapons,
-            appConfig.ItemRandomizerOptions.RandomizeKeyItems,
-            appConfig.ItemRandomizerOptions.RandomizeBadges,
-            appConfig.ItemRandomizerOptions.RandomizeRunes,
-            appConfig.ItemRandomizerOptions.RandomizeTools
-        );
-
         Console.WriteLine("Successfully loaded user config");
         
         BND4 gameparam;
@@ -40,40 +32,37 @@ class Program
         else
             gameparam = BND4.Read(Path.Combine(StaticConfig.Dist, StaticConfig.GameparamWithoutRitual));
 
-        Console.WriteLine("Successfully loaded game files");
+        Dictionary<string, PARAM> paramsToWrite = [];
         
-        ItemLotRandomizer itemLotRandomizer = new(
-            initialData.AllItems,
-            initialData.Areas,
-            initialData.LinkLots,
-            userConfig.KeyItemsLocation,
-            userConfig.BadgeLocation,
-            userConfig.RuneLocation,
-            userConfig.ToolLocation
-        );
+        if (appConfig.RandomizeItems)
+        {
+            Console.WriteLine("Successfully loaded game files");
+            ItemLotRandomizer itemLotRandomizer = new(initialData, appConfig);
+            
+            ShopLineupRandomizer shopLineupRandomizer = new(
+                ShopLineupParam.GetEligibleRowIDs(
+                    PARAM.Read(gameparam.Files.First(x => x.Name == StaticConfig.ShopLineupParamInterroot).Bytes)
+                )
+            );
 
-        ShopLineupRandomizer shopLineupRandomizer = new(
-            ShopLineupParam.GetEligibleRowIDs(
-                PARAM.Read(gameparam.Files.First(x => x.Name == StaticConfig.ShopLineupParamInterroot).Bytes)
-            )
-        );
+            var itemLotOutput = itemLotRandomizer.RandomizeItemLots();
+            var shopLineupOutput = shopLineupRandomizer.RandomizeShopLineup();
+            Console.WriteLine("Randomized items");
 
-        var itemLotOutput = itemLotRandomizer.RandomizeItemLots();
-        var shopLineupOutput = shopLineupRandomizer.RandomizeShopLineup();
+            File.WriteAllText(StaticConfig.spoiler, Spoiler.GenerateItemLot(itemLotRandomizer, itemLotOutput));
 
-        Console.WriteLine("Randomized items");
+            Console.WriteLine("Generated spoiler logs");
 
-        Dictionary<string, PARAM> paramsToWrite = new() {
-            { StaticConfig.ItemLotParamInterroot, ItemLotParam.RegenerateItemLotParamRows(gameparam, itemLotOutput) },
-            { StaticConfig.ShopLineupParamInterroot, ShopLineupParam.RegenerateShopLineupParam(gameparam, shopLineupOutput, initialData.InsightToBloodEchoesPrices) }
-        };
+            paramsToWrite.Add(StaticConfig.ItemLotParamInterroot, ItemLotParam.RegenerateItemLotParamRows(gameparam, itemLotOutput));
+            paramsToWrite.Add(StaticConfig.ShopLineupParamInterroot, ShopLineupParam.RegenerateShopLineupParam(gameparam, shopLineupOutput, initialData.InsightToBloodEchoesPrices));
+        }
 
         BND4? engusMsgbnd = null;
         BND4? enggbMsgbnd = null;
         Dictionary<string, FMG>? engusWeaponInfo = null;
         Dictionary<string, FMG>? enggbWeaponInfo = null;
 
-        if (userConfig.RandomizeStartingWeapons)
+        if (appConfig.ItemRandomizerOptions.RandomStartingWeapons)
         {
             WeaponRandomizer weaponRandomizer = new(initialData.AvailableWeapons, initialData.AvailableGuns);
             engusMsgbnd = BND4.Read(Path.Combine(StaticConfig.Dist, StaticConfig.EngusItemMsgbnd));
@@ -101,10 +90,6 @@ class Program
         }
 
         Console.WriteLine("Wrote game files");
-
-        File.WriteAllText(StaticConfig.spoiler, Spoiler.GenerateItemLot(itemLotRandomizer, itemLotOutput));
-
-        Console.WriteLine("Generated spoiler logs");
 
         Console.WriteLine("Randomization complete. Check output folder for game files and spoiler logs");
     }

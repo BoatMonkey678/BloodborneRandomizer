@@ -16,9 +16,40 @@ public class AppConfig
 
 public class ItemRandomizerOptions
 {
-    public required int RandomizeKeyItems { get; set; }
-    public required int RandomizeBadges { get; set; }
-    public required int RandomizeRunes { get; set; }
-    public required int RandomizeTools { get; set; }
-    public required bool RandomizeStartingWeapons { get; set; }
+    public enum ItemLocationTargets { Anywhere, ImportantLocations, DoNotRandomize };
+    public ItemLocationTargets KeyItemsLocation;
+    public ItemLocationTargets BadgeLocation;
+
+    public ItemLocationTargets RuneLocation;
+    public ItemLocationTargets ToolLocation;
+    public required bool RandomStartingWeapons { get; set; }
+    public required bool ScaleUpgradeMaterials { get; set; }
+
+    [JsonConstructor]
+    public ItemRandomizerOptions(
+        int RandomizeKeyItems,
+        int RandomizeBadges,
+        int RandomizeRunes,
+        int RandomizeTools,
+        bool RandomizeStartingWeapons,
+        bool UpgradeMaterialScaling
+    )
+    {
+        KeyItemsLocation = GetLocationType(RandomizeKeyItems);
+        BadgeLocation = GetLocationType(RandomizeBadges);
+        RuneLocation = GetLocationType(RandomizeRunes);
+        ToolLocation = GetLocationType(RandomizeTools);
+        RandomStartingWeapons = RandomizeStartingWeapons;
+        ScaleUpgradeMaterials = UpgradeMaterialScaling;
+    }
+
+    private static ItemLocationTargets GetLocationType(int predicate)
+    {
+        return predicate switch
+        {
+            1 => ItemLocationTargets.ImportantLocations,
+            0 => ItemLocationTargets.DoNotRandomize,
+            _ => ItemLocationTargets.Anywhere,
+        };
+    }
 }

@@ -5,6 +5,9 @@ public class JsonArea
     public required string Name;
     public required List<int> Requirements;
     public required bool Initial = false;
+    public required bool Early = false;
+    public required bool Mid = false;
+    public required bool Late = false;
     public List<string> Connections = [];
 }
 
@@ -13,6 +16,11 @@ public class Area
     public required string Name;
     public required List<int> Requirements;
     public required bool Initial;
+
+    public required bool Early = false;
+    public required bool Mid = false;
+    public required bool Late = false;
+
 
     public Area? Parent;
     public List<Area> Connections = [];
@@ -45,7 +53,10 @@ public class AreaTree
             {
                 Name = d.Name,
                 Initial = d.Initial,
-                Requirements = d.Requirements
+                Requirements = d.Requirements,
+                Early = d.Early,
+                Mid = d.Mid,
+                Late = d.Late
             }
         );
 

@@ -1,10 +1,12 @@
 {
     "Seed": -1,
+    "RandomizeItems": false,
     "ItemRandomizerOptions": {
         "RandomizeKeyItems": 1,
         "RandomizeBadges": 1,
         "RandomizeRunes": 1,
         "RandomizeTools": 1,
+        "UpgradeMaterialScaling": true,
         "RandomizeStartingWeapons": true
     },
     "RemoveChaliceRequirements": true

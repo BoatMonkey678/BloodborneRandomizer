@@ -18,13 +18,9 @@ public class InitialData
         LinkLots = JsonConvert.DeserializeObject<List<LinkLot>>(File.ReadAllText(linkLotsPath)) ?? throw new FileLoadException($"Failed to deserialize {linkLotsPath}");
         Areas = JsonConvert.DeserializeObject<List<JsonArea>>(File.ReadAllText(areasPath)) ?? throw new FileLoadException($"Failed to deserialize {areasPath}");
 
-        AvailableWeapons = [.. File.ReadAllText(weaponsPath)
-            .Split("\n")
-            .Select(int.Parse)];
+        AvailableWeapons = [.. File.ReadAllText(weaponsPath).Split("\n").Select(int.Parse)];
 
-        AvailableGuns = [.. File.ReadAllText(gunsPath)
-            .Split("\n")
-            .Select(int.Parse)];
+        AvailableGuns = [.. File.ReadAllText(gunsPath).Split("\n").Select(int.Parse)];
 
         InsightToBloodEchoesPrices = JsonConvert.DeserializeObject<Dictionary<int, int>>(File.ReadAllText(insightToBloodEchoPath)) ?? throw new FileLoadException($"Failed to deserialize {insightToBloodEchoPath}");
     }

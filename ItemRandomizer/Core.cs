@@ -1,3 +1,6 @@
+using System.Text.RegularExpressions;
+using BloodborneRandomizer.NormalFiles;
+
 namespace BloodborneRandomizer.ItemRandomizer;
 
 public class ItemLotRandomizer
@@ -9,36 +12,33 @@ public class ItemLotRandomizer
     private readonly Dictionary<int, int> output = [];
     private readonly List<LinkLot> linkLots;
     private readonly List<ItemLot> keyLocations = [];
-    private readonly bool randomizeKeys = true, randomizeBadges = true, randomizeRunes = true, randomizeTools = true;
+    private readonly bool randomizeKeys = true,
+        randomizeBadges = true,
+        randomizeRunes = true,
+        randomizeTools = true,
+        scaleUpgradeMaterials = false;
 
-    public ItemLotRandomizer(
-        List<ItemLot> itemLots,
-        List<JsonArea> jsonAreas,
-        List<LinkLot> linkedLots,
-        UserConfig.ItemLocationTargets keyItemLocationTarget,
-        UserConfig.ItemLocationTargets badgeLocationTarget,
-        UserConfig.ItemLocationTargets runeLocationTarget,
-        UserConfig.ItemLocationTargets toolLocationTarget
-    )
+    public ItemLotRandomizer(InitialData initialData, AppConfig appConfig)
     {
-        List<ItemLot> allItems = [.. itemLots];
+        scaleUpgradeMaterials = appConfig.ItemRandomizerOptions.ScaleUpgradeMaterials;
+        List<ItemLot> allItems = [.. initialData.AllItems];
         eligibleItems = [.. allItems];
         allItems.Sort((a, b) => b.Important.CompareTo(a.Important));
-        linkLots = linkedLots;
+        linkLots = initialData.LinkLots;
 
-        if (jsonAreas.FindAll(x => x.Initial).Count != 1)
-            throw new InvalidDataException($"There should be exactly 1 initial area ({jsonAreas.FindAll(x => x.Initial).Count} were found)");
+        if (initialData.Areas.FindAll(x => x.Initial).Count != 1)
+            throw new InvalidDataException($"There should be exactly 1 initial area ({initialData.Areas.FindAll(x => x.Initial).Count} were found)");
 
-        areaTree = new AreaTree(jsonAreas);
+        areaTree = new AreaTree(initialData.Areas);
 
-        switch (badgeLocationTarget)
+        switch (appConfig.ItemRandomizerOptions.BadgeLocation)
         {
-            case UserConfig.ItemLocationTargets.Anywhere:
+            case ItemRandomizerOptions.ItemLocationTargets.Anywhere:
                 break;
-            case UserConfig.ItemLocationTargets.DoNotRandomize:
+            case ItemRandomizerOptions.ItemLocationTargets.DoNotRandomize:
                 randomizeBadges = false;
                 break;
-            case UserConfig.ItemLocationTargets.ImportantLocations:
+            case ItemRandomizerOptions.ItemLocationTargets.ImportantLocations:
                 foreach (var badge in eligibleItems.FindAll(x => x.Badge))
                 {
                     badge.Important = true;
@@ -46,14 +46,14 @@ public class ItemLotRandomizer
                 break;
         }
 
-        switch (runeLocationTarget)
+        switch (appConfig.ItemRandomizerOptions.RuneLocation)
         {
-            case UserConfig.ItemLocationTargets.Anywhere:
+            case ItemRandomizerOptions.ItemLocationTargets.Anywhere:
                 break;
-            case UserConfig.ItemLocationTargets.DoNotRandomize:
+            case ItemRandomizerOptions.ItemLocationTargets.DoNotRandomize:
                 randomizeRunes = false;
                 break;
-            case UserConfig.ItemLocationTargets.ImportantLocations:
+            case ItemRandomizerOptions.ItemLocationTargets.ImportantLocations:
                 foreach (var rune in eligibleItems.FindAll(x => x.Rune))
                 {
                     rune.Important = true;
@@ -61,14 +61,14 @@ public class ItemLotRandomizer
                 break;
         }
 
-        switch (toolLocationTarget)
+        switch (appConfig.ItemRandomizerOptions.ToolLocation)
         {
-            case UserConfig.ItemLocationTargets.Anywhere:
+            case ItemRandomizerOptions.ItemLocationTargets.Anywhere:
                 break;
-            case UserConfig.ItemLocationTargets.DoNotRandomize:
+            case ItemRandomizerOptions.ItemLocationTargets.DoNotRandomize:
                 randomizeTools = false;
                 break;
-            case UserConfig.ItemLocationTargets.ImportantLocations:
+            case ItemRandomizerOptions.ItemLocationTargets.ImportantLocations:
                 foreach (var tool in eligibleItems.FindAll(x => x.Tool))
                 {
                     tool.Important = true;
@@ -77,22 +77,22 @@ public class ItemLotRandomizer
         }
 
         allItemsLookup = [.. eligibleItems];
-        availableLocations = [.. eligibleItems];            
+        availableLocations = [.. eligibleItems];
 
         foreach (var loc in availableLocations)
         {
             loc.AssignRequirements(areaTree.GetArea(loc.Area));
         }
 
-        switch (keyItemLocationTarget)
+        switch (appConfig.ItemRandomizerOptions.KeyItemsLocation)
         {
-            case UserConfig.ItemLocationTargets.Anywhere:
+            case ItemRandomizerOptions.ItemLocationTargets.Anywhere:
                 keyLocations = availableLocations;
                 break;
-            case UserConfig.ItemLocationTargets.DoNotRandomize:
+            case ItemRandomizerOptions.ItemLocationTargets.DoNotRandomize:
                 randomizeKeys = false;
                 break;
-            case UserConfig.ItemLocationTargets.ImportantLocations:
+            case ItemRandomizerOptions.ItemLocationTargets.ImportantLocations:
                 var keys = eligibleItems.FindAll(x => x.Important).ToList();
                 foreach (var key in keys)
                 {
@@ -221,10 +221,105 @@ public class ItemLotRandomizer
                 int nextLocationIndex = random.Next(availableLocations.Count);
                 var nextLocation = availableLocations[nextLocationIndex];
                 availableLocations.RemoveAt(nextLocationIndex);
-
+                if (scaleUpgradeMaterials)
+                {
+                    if (AssignScaledUpgradeMaterials(nextItem, nextLocation))
+                    {
+                        continue;
+                    }
+                }
                 AssignItem(output, nextItem, nextLocation);
             }
         }
+    }
+
+    private bool AssignScaledUpgradeMaterials(ItemLot nextItem, ItemLot nextLocation)
+    {
+        if (nextItem.ItemName.Contains("Twin Blood Stone Shards"))
+        {
+            if (!areaTree.GetArea(nextLocation.Area).Mid)
+            {
+                return true;
+            }
+        }
+        else if (nextItem.ItemName.Contains("Blood Stone Shard"))
+        {
+            if (!areaTree.GetArea(nextLocation.Area).Early)
+            {
+                return true;
+            }
+        }
+        else if (nextItem.ItemName.Contains("Blood Stone Chunk"))
+        {
+            if (!areaTree.GetArea(nextLocation.Area).Late)
+            {
+                return true;
+            }
+        }
+        else if (nextItem.ItemName.Contains("Blood Rock"))
+        {
+            if (!areaTree.GetArea(nextLocation.Area).Late)
+            {
+                return true;
+            }
+        }
+        for (int i = 1; i <= 3; i++)
+        {
+            if (nextItem.ItemName.Contains($"Coldblood Dew ({i})"))
+            {
+                if (!areaTree.GetArea(nextLocation.Area).Early)
+                {
+                    return true;
+                }
+            }
+        }
+        for (int i = 4; i <= 5; i++)
+        {
+            if (nextItem.ItemName.Contains($"Thick Coldblood ({i})"))
+            {
+                if (!areaTree.GetArea(nextLocation.Area).Early)
+                {
+                    return true;
+                }
+            }
+        }
+        if (nextItem.ItemName.Contains("Thick Coldblood (6)"))
+        {
+            if (!areaTree.GetArea(nextLocation.Area).Mid)
+            {
+                return true;
+            }
+        }
+        for (int i = 7; i <= 9; i++)
+        {
+            if (nextItem.ItemName.Contains($"Frenzied Coldblood ({i})"))
+            {
+                if (!areaTree.GetArea(nextLocation.Area).Mid)
+                {
+                    return true;
+                }
+            }
+        }
+        if (nextItem.ItemName.Contains("Kin Coldblood (10)"))
+        {
+            if (!areaTree.GetArea(nextLocation.Area).Mid)
+            {
+                return true;
+            }
+        }
+        for (int i = 11; i <= 12; i++)
+        {
+            if (nextItem.ItemName.Contains($"Kin Coldblood ({i})"))
+            {
+                if (!areaTree.GetArea(nextLocation.Area).Late)
+                {
+                    return true;
+                }
+            }
+        }
+        
+
+        return false;
     }
 
     private ItemLot PickKeyLocation(Random random, ItemLot item)
