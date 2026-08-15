@@ -102,7 +102,7 @@ public class ItemLotRandomizer
                     availableLocations.Remove(key);
                 }
 
-                var random = new Random();
+                var random = RandomGenerator.GenerateRandom(appConfig);
 
                 while (keyLocations.Count < keys.Count)
                 {
@@ -175,9 +175,9 @@ public class ItemLotRandomizer
         }
     }
 
-    public Dictionary<int, int> RandomizeItemLots()
+    public Dictionary<int, int> RandomizeItemLots(AppConfig appConfig)
     {
-        RandomizeItems();
+        RandomizeItems(appConfig);
 
         foreach (var lot in linkLots)
         {
@@ -202,9 +202,9 @@ public class ItemLotRandomizer
         return allItemsLookup.First(x => x.ID == ID);
     }
 
-    private void RandomizeItems()
+    private void RandomizeItems(AppConfig appConfig)
     {
-        var random = new Random();
+        var random = RandomGenerator.GenerateRandom(appConfig);;
 
         while (eligibleItems.Count > 0)
         {

@@ -1,3 +1,5 @@
+using BloodborneRandomizer.NormalFiles;
+
 namespace BloodborneRandomizer.StartingWeaponRandomizer;
 
 public class WeaponRandomizer(List<int> weapons, List<int> guns)
@@ -10,18 +12,18 @@ public class WeaponRandomizer(List<int> weapons, List<int> guns)
     private readonly List<int> availableGuns = [.. guns];
     private readonly Dictionary<int, int> output = [];
 
-    public Dictionary<int, int> RandomizeStartingWeapons()
+    public Dictionary<int, int> RandomizeStartingWeapons(AppConfig appConfig)
     {
-        AssignWeapons();
+        AssignWeapons(appConfig);
 
         AddUpgradedWeapons();
 
         return output;
     }
 
-    private void AssignWeapons()
+    private void AssignWeapons(AppConfig appConfig)
     {
-        var random = new Random();
+        var random = RandomGenerator.GenerateRandom(appConfig);
         foreach (var weapon in defaultWeapons)
         {
             var nextWeaponIndex = random.Next(availableWeapons.Count);

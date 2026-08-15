@@ -40,8 +40,6 @@ public class ShopLineupParam
 
         var originalRowValues = CreateRowValueSnapshot(shopLineupParam);
 
-        var random = new Random();
-
         foreach (var pair in shopAssignment)
         {
             var row = shopLineupParam.Rows.FirstOrDefault(x => x.ID == pair.Key) ?? throw new InvalidOperationException($"Missing row {pair.Key}");

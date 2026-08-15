@@ -1,3 +1,5 @@
+using BloodborneRandomizer.NormalFiles;
+
 namespace BloodborneRandomizer.ShopRandomizer;
 
 public class ShopLineupRandomizer(List<int> rows)
@@ -5,18 +7,18 @@ public class ShopLineupRandomizer(List<int> rows)
     private readonly List<int> items = [.. rows], locations = [.. rows];
     private readonly Dictionary<int, int> output = [];
 
-    public Dictionary<int, int> RandomizeShopLineup()
+    public Dictionary<int, int> RandomizeShopLineup(AppConfig appConfig)
     {
-        RandomizeShopEntries();
+        RandomizeShopEntries(appConfig);
 
         AddDuplicateRows();
 
         return output;
     }
 
-    private void RandomizeShopEntries()
+    private void RandomizeShopEntries(AppConfig appConfig)
     {
-        var random = new Random();
+        var random = RandomGenerator.GenerateRandom(appConfig);
 
         while (items.Count > 0)
         {

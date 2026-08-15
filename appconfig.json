@@ -1,6 +1,6 @@
 {
     "Seed": -1,
-    "RandomizeItems": false,
+    "RandomizeItems": true,
     "ItemRandomizerOptions": {
         "RandomizeKeyItems": 1,
         "RandomizeBadges": 1,

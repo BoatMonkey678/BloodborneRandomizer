@@ -45,8 +45,8 @@ class Program
                 )
             );
 
-            var itemLotOutput = itemLotRandomizer.RandomizeItemLots();
-            var shopLineupOutput = shopLineupRandomizer.RandomizeShopLineup();
+            var itemLotOutput = itemLotRandomizer.RandomizeItemLots(appConfig);
+            var shopLineupOutput = shopLineupRandomizer.RandomizeShopLineup(appConfig);
             Console.WriteLine("Randomized items");
 
             File.WriteAllText(StaticConfig.spoiler, Spoiler.GenerateItemLot(itemLotRandomizer, itemLotOutput));
@@ -71,7 +71,7 @@ class Program
             WeaponFMG engusWeaponFMG = new(engusMsgbnd);
             WeaponFMG enggbWeaponFMG = new(engusMsgbnd);
 
-            var weaponsOutput = weaponRandomizer.RandomizeStartingWeapons();
+            var weaponsOutput = weaponRandomizer.RandomizeStartingWeapons(appConfig);
 
             engusWeaponInfo = engusWeaponFMG.UpdateFMGs(weaponsOutput, true);
             enggbWeaponInfo = enggbWeaponFMG.UpdateFMGs(weaponsOutput, false);
